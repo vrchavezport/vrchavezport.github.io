@@ -1,0 +1,116 @@
+<!Doctype html>
+<html>
+	<header>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css" type="text/css">
+		<link rel="stylesheet" href="index.css" type="text/css">
+	</header>
+	
+	<body>
+		<div class="top">				<!--Top section for Menu Buttons-->
+			<div class="row">						<!--This row allows me to use the col-md-4 on Bootstrap which is best way to space these buttons-->
+				<div class="col-md-4" id="col1">
+					<a href="#bework" id="worklink">WORK</a>		<!--WORK button text-->
+					<hr>
+					<a href="#bework" id="icons3">&#xE051;</a>		<!--WORK button icon-->
+				</div>
+				<div class="col-md-4" id="col2">
+					<a href="#beabout" id="aboutlink">ABOUT<a>		<!--ABOUT button text-->
+					<hr>
+					<a href="#beabout"id="icons2">&#xE7FD;</a>		<!--ABOUT button icon-->
+				</div>
+				<div class="col-md-4" id="col3">
+					<a href="#bename" id="contlink">CONTACT</a>		<!--CONTACT button text-->
+					<hr>
+					<a href="#bename" id="icons">&#xE0B0;</a>		<!--CONTACT button icon-->
+				</div>
+			</div>
+		</div>
+		
+		<div class="most">				<!--Div where most of the Website's content resides. Under .top div-->
+			<div id="skillsec">								<!--This little div to the left of .most contains the SKILLS and SCHOOL buttons-->
+				<a href="#beskills" id="skilltext">SKILLS</a>		<!--CONTACT button text-->
+				<hr id="small">
+				<div id="skillpic">
+					<a href="#beskills" id="skillclick">&#xE86F;</a>		<!--SKILLS button icon-->
+				</div>
+			</div>
+			<div id="schoolsec">
+				<a href="#beschool" id="schooltext">SCHOOL</a>		<!--SCHOOL button text-->
+				<hr id="small">
+				<div id="schoolicon">
+					<a href="https://github.com/vrchavez" id="schoolclick">&#xE80C;</a>		<!--SCHOOL button icon-->
+				</div>
+			</div>
+			
+			<div id="resume">					<!--Div where all of the Resume's information resides-->
+				<hr id="bename">																												<!--Anchor for JQuery to go to CONTACT section-->
+				<p id="name">Victor Chavez</p>
+				<p id="email">vrchavez05@gmail.com | 909.230.1537</p>
+				<div id="gitimg">
+					<a href="https://github.com/vrchavez" target="_blank"id="gitimg2"><img id="gitimg3" src="http://dev.bowdenweb.com/a/fonts/symbols/pictonic/svgs/github-01.svg"></a>
+				</div>
+				<hr id="beabout">																												<!--Anchor for JQuery to go to ABOUT section-->
+				<p id="about">Front End Web Developer with 3+ years of experience.
+									  Passionate about integrating design and technology.
+									  Flexible in working enviornments, having collaborated with 
+									  graphic designers to design sites as well as fully designing 
+									  and building websites individually.</p>
+				<hr id="bework">																														<!--Anchor for JQuery to go to WORK section-->
+				<p id="work1"><a href="http://repairthere.com/" id="nounder">Via Cell Phone Repair</a></p>		<!--WORK section-->
+				<p id="work1a">Front End Web Developer + Web Designer | Jan 2016 - July 2016</p>
+				<p id="work1b">&#xE5C5;</p>
+				<p id="work1c">Formulated website design in accordance with business</p>
+				<p id="work1d">&#xE5C5;</p>
+				<p id="work1e">Transfered design concepts into HTML, CSS, and JavaScript</p>
+				<p id="work1f">&#xE5C5;</p>
+				<p id="work1g">Mobile and Desktop website responsivity: Bootstrap, JavaScript</p>
+				<p id="work1h">&#xE5C5;</p>
+				<p id="work1i">Cross Browser (IE, Firefox, Chrome, Safari)</p>
+				
+				<p id="work2"><a href="http://vrch1122.github.io/index.html" id="nounder">VIIER</a></p>
+				<p id="work2a">Front End Web Developer | May 2015 - December 2015</p>
+				<p id="work2b">&#xE5C5;</p>
+				<p id="work2c">Converted graphic designer's PSD into HTML, CSS, and Bootstrap</p>
+				<p id="work2d">&#xE5C5;</p>
+				<p id="work2e">Developed image slider for landing page using pure HTML and CSS</p>
+				<p id="work2f">&#xE5C5;</p>
+				<p id="work2g">Collaborated with graphic designer in creating clean interfaces</p>
+				<p id="work2h">&#xE5C5;</p>
+				<p id="work2i">Coordinated various web pages with appropriate links</p>
+				
+				<hr id="beskills">																													<!--Anchor for JQuery to go to SKILLS section-->
+				<p id="skills">HTML | CSS | JavaScript | Python | C</p>		<!--SKILLS section-->
+				
+				<hr id="beschool">																												<!--Anchor for JQuery to go to SCHOOL section-->
+				<p id="school">University of California, Los Angeles</p>		<!--SCHOOL section-->
+				<p id="location">Los Angeles, Ca</p>
+				<p id="major">Major - Philosophy | Minor - Cognitive Science</p>
+				<p id="highschool">A.B. Miller High School</p>
+				<p id="location2">Fontana, Ca</p>
+			</div>
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		
+		<!--Created this script to change the color of the Menu Buttons 
+			 (CONTACT, ABOUT, WORK, etc) based on the position of the 
+			 page (or better yet value of scrollTop)-->
+		<script type='text/javascript' src='checkplace.js'></script>
+
+		<!--Created this script to Smooth Scroll to section based on what 
+			 button was clicked.The scroller() function gets the href of link 
+			 pressed and goes to it-->
+		<script type='text/javascript' src='scroller.js'></script>
+		
+		<!--Created this script to Smooth Scroll when the up or down arrow
+			  keys are pressed. In order to go to the right place of the page,
+			  first it reads key pressed, then based on the place of the page
+			  (better yet scrollTop) makes the page scroll to certain position-->
+		<script type='text/javascript' src='keyer.js'></script>
+	</body>
+</html>
