@@ -261,6 +261,7 @@ hr {
 	position: relative;
 	transform: rotate(-45deg);
 	background-color: #bdbdbd;
+	z-index: 100;
 }
 
 
@@ -279,6 +280,7 @@ hr {
 	background-position: center;
 	background-repeat: no-repeat;
 	border-radius: 70px;
+	z-index: 200;
 }
 
 /*Styles text for name on resume*/
