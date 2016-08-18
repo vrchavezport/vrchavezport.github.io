@@ -258,8 +258,6 @@ hr {
 #theline {
 	top: 0;
 	width: 130%;
-	left: 0;
-	right: 0;
 	position: relative;
 	transform: rotate(-45deg);
 	background-color: #bdbdbd;
