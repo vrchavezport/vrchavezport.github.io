@@ -256,13 +256,13 @@ hr {
 /*Styles Person image over Name and Contact info*/
 #myimg {
 	position: absolute;
-	top: 130px;
+	top: 90px;
 	left: 0;
 	right: 0;
 	text-align: center;
 	margin: auto;
-	height: 200px;
-	width: 200px;
+	height: 150px;
+	width: 150px;
 	background-image: url("http://i.imgur.com/fUvfceL.jpg");
 	background-size: 100%;
 	background-position: center;
