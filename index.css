@@ -36,6 +36,7 @@ a:hover {
 	cursor: pointer;
 }
 
+
 /*Styles text for CONTACT button*/
 #contlink {
 	position: relative;
@@ -47,6 +48,7 @@ a:hover {
 	color: #7EB7A1;
 	outline: none;
 	text-decoration: none;
+	transition: .30s;
 }
 
 /*Styles icon for CONTACT button*/
@@ -60,6 +62,7 @@ a:hover {
 	padding: 0;
 	outline: none;
 	text-decoration: none;
+	transition: .30s;
 }
 
 /*Styles text for ABOUT button*/
@@ -68,6 +71,7 @@ a:hover {
 	top: 40px;
 	left: 30%;
 	font-family: "Lato", sans-serif;
+	transition: .30s;
 	font-size: 20px;
 	color: black;
 	text-align: left;
@@ -85,6 +89,7 @@ a:hover {
 	font-size: 40px;
 	outline: none;
 	text-decoration: none;
+	transition: .30s;
 }
 
 /*Styles text for WORK button*/
@@ -98,6 +103,7 @@ a:hover {
 	text-align: left;
 	outline: none;
 	text-decoration: none;
+	transition: .30s;
 }
 
 /*Styles icon for WORK button*/
@@ -111,6 +117,7 @@ a:hover {
 	outline: none;
 	underline: none;
 	text-decoration: none;
+	transition: .30s;	
 }
 
 /*Styles page breaks in general (used these for grey skewed lines on menu buttons)*/
@@ -152,6 +159,7 @@ hr {
 	color: black;
 	outline: none;
 	text-decoration: none;
+	transition: .30s;
 }
 
 /*Styles small div for SKILLS and icon*/
@@ -175,6 +183,7 @@ hr {
 	color: black;
 	text-decoration: none;
 	outline: none;
+	transition: .30s;
 }
 
 /*Styles div for SCHOOL button*/
@@ -198,6 +207,7 @@ hr {
 	underline: none;
 	outline: none;
 	text-decoration: none;
+	transition: .30s;
 }
 
 /*Styles small div for SCHOOL and icon*/
@@ -222,6 +232,7 @@ hr {
 	color: black;
 	text-decoration: none;
 	outline: none;
+	transition: .30s;
 }
 
 /*Styles hr line inside SCHOOL and SKILLS button*/
@@ -243,6 +254,7 @@ hr {
 	z-index: 5;
 	background-color: #f8f8f8;
 }
+
 
 /*Styles hr line before CONTACT section (serves as anchor for JQuery)*/
 #bename {
@@ -276,7 +288,7 @@ hr {
 	border: none;
 	position: relative;
 	transform: rotate(-45deg);
-	background-color: #bdbdbd;
+	background-color: #7EB7A1;
 }
 
 
@@ -295,10 +307,12 @@ hr {
 	background-position: center;
 	background-repeat: no-repeat;
 	border-radius: 70px;
+	border: solid 2px  #7EB7A1;
 	z-index: 200;
+	background-color: black;
 }
 
-/*Styles text for name on resume*/
+/*Styles text for nme on resume*/
 #name {
 	position: absolute;
 	text-align: center;
@@ -401,6 +415,13 @@ hr {
 #nounder {
 	text-decoration: none;
 	color: black;
+	transition: .30s;
+}
+
+#nounder2 {
+	text-decoration: none;
+	color: black;
+	transition: .30s;
 }
 
 #work1a {
