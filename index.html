@@ -1,29 +1,30 @@
 <!Doctype html>
 <html>
 	<header>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Lato:400,300italic' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="bootstrap.css" type="text/css">
+		<link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css" type="text/css">
 		<link rel="stylesheet" href="index.css" type="text/css">
 	</header>
 	
 	<body>
-		<div class="top">				<!--Top section for Menu Buttons-->
+		<div class="top hidden-xs hidden-sm hidden-md"">				<!--Top section for Menu Buttons-->
 			<div class="row">						<!--This row allows me to use the col-md-4 on Bootstrap which is best way to space these buttons-->
-				<div class="col-md-4" id="col1">
+				<div class="col-xs-6 col-sm-4 col-md-4" id="col1">
 					<a href="#bework" id="worklink">WORK</a>		<!--WORK button text-->
 					<hr>
 					<a href="#bework" id="icons3">&#xE051;</a>		<!--WORK button icon-->
 				</div>
-				<div class="col-md-4" id="col2">
+				<div class="col-xs-6 col-sm-4 col-md-4" id="col2">
 					<a href="#beabout" id="aboutlink">ABOUT<a>		<!--ABOUT button text-->
 					<hr>
 					<a href="#beabout"id="icons2">&#xE7FD;</a>		<!--ABOUT button icon-->
 				</div>
-				<div class="col-md-4" id="col3">
+				<div class="col-xs-6 col-sm-4 col-md-4" id="col3">
 					<a href="#bename" id="contlink">CONTACT</a>		<!--CONTACT button text-->
 					<hr>
 					<a href="#bename" id="icons">&#xE0B0;</a>		<!--CONTACT button icon-->
@@ -47,12 +48,12 @@
 				</div>
 			</div>
 			
-			<div id="resume">
-				<div id="thisline">
-					<hr id="theline">
+			<div id="resume">					<!--Div where all of the Resume's information resides-->
+				<div id="lineishere">
+					<hr id="theline" >
 				</div>
 				<div id="myimg">
-				</div>					<!--Div where all of the Resume's information resides-->
+				</div>
 				<hr id="bename">																												<!--Anchor for JQuery to go to CONTACT section-->
 				<p id="name">Victor Chavez</p>
 				<p id="email">vrchavez05@gmail.com | 909.230.1537</p>
