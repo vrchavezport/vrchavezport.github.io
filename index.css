@@ -253,15 +253,26 @@ hr {
 	transform: none;
 }
 
+#thisline {
+	position: absolute;
+	top: 55px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	margin: auto;
+	height: 140px;
+	width: 140px;
+	background-color: transparent;
+	z-index: 100;
+}
+
 
 
 #theline {
-	top: 0;
 	width: 130%;
 	position: relative;
 	transform: rotate(-45deg);
 	background-color: #bdbdbd;
-	z-index: 100;
 }
 
 
@@ -279,7 +290,7 @@ hr {
 	background-size: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
-	border-radius: 70px;
+	border-radius: 35px;
 	z-index: 200;
 }
 
