@@ -263,13 +263,13 @@ hr {
 	height: 140px;
 	width: 140px;
 	background-color: transparent;
-	z-index: 100;
+	z-index: 300;
 }
 
 
 
 #theline {
-	width: 130%;
+	width: 100%;
 	position: relative;
 	transform: rotate(-45deg);
 	background-color: #bdbdbd;
@@ -290,7 +290,7 @@ hr {
 	background-size: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
-	border-radius: 35px;
+	border-radius: 65px;
 	z-index: 200;
 }
 
