@@ -253,28 +253,18 @@ hr {
 	transform: none;
 }
 
-/*Styles box for line through image*/
-#dotheline {
-	position: absolute;
-	top: 55px;
-	left: 0;
-	right: 0;
-	text-align: center;
-	margin: auto;
-	height: 190px;
-	width: 190px;
-	background-color: transparent;
-}
+
 
 #theline {
-	top: 20px;
-	width: 90%;
-	left: 5%;
+	top: 0;
+	width: 130%;
+	left: 0;
+	right: 0;
 	position: relative;
 	transform: rotate(-45deg);
 	background-color: #bdbdbd;
 }
-}
+
 
 /*Styles Person image over Name and Contact info*/
 #myimg {
