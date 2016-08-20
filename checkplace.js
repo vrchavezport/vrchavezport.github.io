@@ -20,8 +20,8 @@ function checkplace() {
 	}
 			
 	if($(".top").css("position") == "fixed"){
-		var nu=600;
-		var eh = 1200;		
+		var nu=500;
+		var eh = 1000;		
 		$(window).bind('scroll', function() {
 			if($(window).scrollTop() > nu && $(window).scrollTop() < eh) {
 				$('#aboutlink').css({"color" : "#7EB7A1"})
@@ -34,8 +34,8 @@ function checkplace() {
 	}
 			
 	if($(".top").css("position") == "fixed"){
-		var so=1600;
-		var wha = 2400;		
+		var so=1200;
+		var wha = 1900;		
 		$(window).bind('scroll', function() {
 			if($(window).scrollTop() > so && $(window).scrollTop() < wha) {
 				$('#worklink').css({"color" : "#7EB7A1"})
@@ -48,8 +48,8 @@ function checkplace() {
 	}
 			
 	if($(".top").css("position") == "fixed"){
-		var fin=2550;
-		var alm=2950;		
+		var fin=2100;
+		var alm=2450;		
 		$(window).bind('scroll', function() {
 			if($(window).scrollTop() > fin && $(window).scrollTop() < alm) {
 				$('#skilltext').css({"color" : "#7EB7A1"})
@@ -62,7 +62,7 @@ function checkplace() {
 	}
 			
 	if($(".top").css("position") == "fixed"){
-		var don=3100;	
+		var don=2600;	
 		$(window).bind('scroll', function() {
 			if($(window).scrollTop() > don) {
 				$('#schooltext').css({"color" : "#7EB7A1"})
