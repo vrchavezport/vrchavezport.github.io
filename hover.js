@@ -40,7 +40,7 @@
 			$(this).css("color", "#e9e9e9");
 			$("#icons2").css("color", "#e9e9e9");
 		}, function(){
-			if($(window).scrollTop() > 400 && $(window).scrollTop() < 1200) {
+			if($(window).scrollTop() > 500 && $(window).scrollTop() < 1000) {
 				$(this).css({"color" : "#7EB7A1"})
 				$('#icons2').css({"color" : "#7EB7A1"});
 			} else {
@@ -53,7 +53,7 @@
 			$(this).css("color", "#e9e9e9");
 			$("#aboutlink").css("color", "#e9e9e9");
 		}, function(){
-			if($(window).scrollTop() > 400 && $(window).scrollTop() < 1200) {
+			if($(window).scrollTop() > 500 && $(window).scrollTop() < 1000) {
 				$(this).css({"color" : "#7EB7A1"})
 				$('#aboutlink').css({"color" : "#7EB7A1"});
 			} else {
@@ -66,7 +66,7 @@
 			$(this).css("color", "#e9e9e9");
 			$("#icons3").css("color", "#e9e9e9");
 		}, function(){
-			if($(window).scrollTop() > 1600 && $(window).scrollTop() < 2400) {
+			if($(window).scrollTop() > 1200 && $(window).scrollTop() < 1900) {
 				$(this).css({"color" : "#7EB7A1"})
 				$('#icons3').css({"color" : "#7EB7A1"});
 			} else {
@@ -79,7 +79,7 @@
 			$(this).css("color", "#e9e9e9");
 			$("#worklink").css("color", "#e9e9e9");
 		}, function(){
-			if($(window).scrollTop() > 1200 && $(window).scrollTop() < 2400) {
+			if($(window).scrollTop() > 1200 && $(window).scrollTop() < 1900) {
 				$(this).css({"color" : "#7EB7A1"})
 				$('#worklink').css({"color" : "#7EB7A1"});
 			} else {
@@ -92,7 +92,7 @@
 			$(this).css("color", "#e9e9e9");
 			$("#skillclick").css("color", "#e9e9e9");
 		}, function(){
-			if($(window).scrollTop() > 2550 && $(window).scrollTop() < 2950) {
+			if($(window).scrollTop() > 2100 && $(window).scrollTop() < 2450) {
 				$(this).css({"color" : "#7EB7A1"})
 				$('#skillclick').css({"color" : "#7EB7A1"});
 			} else {
@@ -105,7 +105,7 @@
 			$(this).css("color", "#e9e9e9");
 			$("#skilltext").css("color", "#e9e9e9");
 		}, function(){
-			if($(window).scrollTop() > 2550 && $(window).scrollTop() < 2950) {
+			if($(window).scrollTop() > 2100 && $(window).scrollTop() < 2450) {
 				$(this).css({"color" : "#7EB7A1"})
 				$('#skilltext').css({"color" : "#7EB7A1"});
 			} else {
@@ -118,7 +118,7 @@
 			$(this).css("color", "#e9e9e9");
 			$("#schoolclick").css("color", "#e9e9e9");
 		}, function(){
-			if($(window).scrollTop() > 3100) {
+			if($(window).scrollTop() > 2600) {
 				$(this).css({"color" : "#7EB7A1"})
 				$('#schoolclick').css({"color" : "#7EB7A1"});
 			} else {
@@ -131,7 +131,7 @@
 			$(this).css("color", "#e9e9e9");
 			$("#schooltext").css("color", "#e9e9e9");
 		}, function(){
-			if($(window).scrollTop() > 3100) {
+			if($(window).scrollTop() > 2600) {
 				$(this).css({"color" : "#7EB7A1"})
 				$('#schooltext').css({"color" : "#7EB7A1"});
 			} else {
