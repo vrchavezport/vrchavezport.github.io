@@ -126,6 +126,7 @@ hr {
 	left: 5%;
 	position: relative;
 	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
 	background-color: #bdbdbd;
 }
 
@@ -239,6 +240,7 @@ hr {
 	left: 0;
 	position: relative;
 	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
 	background-color: #bdbdbd;
 }
 
@@ -261,6 +263,7 @@ hr {
 	width: 80%;
 	border: 0;
 	transform: none;
+	-webkit-transform: none;
 }
 
 /*Styles box that contains line behind image*/
@@ -286,6 +289,7 @@ hr {
 	border: none;
 	position: relative;
 	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
 	background-color: #7EB7A1;
 }
 
@@ -384,6 +388,7 @@ hr {
 	position: relative;
 	top: 490px;
 	transform: none;
+	-webkit-transform: none;
 	width: 80%;
 	border: 0;
 }
@@ -405,6 +410,7 @@ hr {
 	position: absolute;
 	top: 1320px;
 	transform: none;
+	-webkit-transform: none;
 	width: 80%;
 	border: none;
 }
@@ -480,6 +486,7 @@ hr {
 	top: 2000px;
 	width: 80%;
 	transform: none;
+	-webkit-transform: none;
 	border: 0;
 }
 
@@ -502,6 +509,7 @@ hr {
 	top: 2800px;
 	width: 80%;
 	transform: none;
+	-webkit-transform: none;
 	border: 0;
 }
 
@@ -868,6 +876,7 @@ hr {
 		left: 5%;
 		position: absolute;
 		transform: rotate(-45deg);
+		-webkit-transform: none;
 		background-color: #bdbdbd;
 	}
 
