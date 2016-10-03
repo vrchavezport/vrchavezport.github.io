@@ -10,8 +10,6 @@ body {
 	background-color: #f8f8f8;
 }
 
-
-
 /*Styles Name Bar on Top of Screen*/
 #topName {
 	position: absolute;
@@ -78,10 +76,10 @@ img {
 
 .gitimg {
 	position: fixed;
-	right: 30px;
-	top: 15px;
-	height: 80px;
-	width: 80px;
+	right: 0;
+	top: 0;
+	height: 50px;
+	width: 50px;
 	display: block;
 	outline: none;
 	text-decoration: none;
@@ -101,8 +99,8 @@ img {
 /*Styles actual image for Github Profile link*/
 .gitimg3 {
 	position: relative;
-	height: 80px;
-	width: 80px;
+	height: 50px;
+	width: 50px;
 	outline: none;
 	text-decoration: none;
 	background-image: url("http://i.imgur.com/f0b7fd5.png");
@@ -112,10 +110,10 @@ img {
 	transition: .30s;
 }
 
-
 .changeToBlack {
 	background-image: url("http://i.imgur.com/hoOOTtQ.png");
 }
+
 .changeToWhite {
 	background-image: url("http://i.imgur.com/f0b7fd5.png");
 }
@@ -144,8 +142,6 @@ img {
 	left: 0;
 	text-align: center;
 }
-
-
 
 /*Styles menu bar*/
 .menu {
@@ -293,7 +289,6 @@ hr {
 	height: 550px;
 	left: 0;
 	text-align: center;
-	
 }
 
 #uclaimg {
@@ -423,7 +418,6 @@ hr {
 	font-weight: 700;
 }
 
-
 #htmimg {
 	position: absolute;
 	top: 110px;
@@ -504,7 +498,6 @@ hr {
 	color: black;
 	font-weight: 100;
 }
-
 
 #work0a {
 	position: absolute;
@@ -905,12 +898,3 @@ hr {
 	font-size: 32px;
 	color: black;
 }
-/*<p id="schoolhead">SCHOOL</p><!--Anchor for JQuery to go to SCHOOL section-->
-					<p id="school">University of California, Los Angeles</p>	
-					<p id="location">Los Angeles, Ca</p>
-					<p id="major">Major - Philosophy | Minor - Cognitive Science</p>
-					<p id="highschool">A.B. Miller High School</p>
-					<p id="location2">Fontana, Ca</p>*/
-
-					
-/*From here on to #include12, text inside Recent Events section is styled by line*/
