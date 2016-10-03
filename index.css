@@ -245,6 +245,7 @@ hr {
 	text-align: center;
 	top: 55px;
 	transform: rotate(-5deg);
+	-webkit-transform: rotate(-5deg);
 }
 
 #bouthere {
