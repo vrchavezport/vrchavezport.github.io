@@ -1107,6 +1107,7 @@ hr {
 		text-align: center;
 		top: 55px;
 		transform: rotate(-5deg);
+		-webkit-transform: rotate(-5deg);
 	}
 
 	#bouthere {
@@ -1451,7 +1452,7 @@ hr {
 		right: 0;
 		top: 375px;
 		font-family: 'Raleway', sans-serif;
-		font-size: 20px;
+		font-size: 18px;
 		color: #545454;
 		font-weight: 100;
 	}
@@ -1681,7 +1682,7 @@ hr {
 		right: 0;
 		top: 995px;
 		font-family: 'Raleway', sans-serif;
-		font-size: 20px;
+		font-size: 18px;
 		color: #545454;
 		font-weight: 100;
 	}
