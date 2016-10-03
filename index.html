@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Victor Chavez</title>		
+		<title>About</title>		
 		<meta charset="utf-8"/>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -10,7 +10,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-		<link rel="stylesheet" href="index.css"> 
+		<link rel="stylesheet" href="about.css"> 
 	</head>
 		<body>
 			<!--Small strip on top of site. Contains question and button-->
@@ -24,6 +24,11 @@
 					<!--Actual Logo img in <a>-->	
 					<a href="index.html"><img src="http://i.imgur.com/fUvfceL.jpg" alt="thisislogo"></a>
 				</div>
+				<div class="gitimg">
+					<div class="gitimg3">
+						<a href="https://github.com/vrchavez" target="_blank" class="gitimg2"></a>
+					</div>
+				</div>
 				<div id="topDev">
 					<p id="topDever">Front End Developer</p>
 				</div>
@@ -31,11 +36,11 @@
 			<!--Nav Menu after first image. Gets fixed on top of page after it gets scrolled by-->
 			<nav class="menu">
 				<ul id="menutext">
-					<li id="home"><a href="#bouthere"><img class="toma" src="http://i.imgur.com/eNHDmU0.png" alt="tomate">ABOUT</a></li>
-					<li id="menus"><a href="#schoolsIsHere"><img class="toma" src="http://i.imgur.com/eNHDmU0.png" alt="tomate">SCHOOL</a></li>
-					<li id="test"><a href="#skillshere"><img class="toma" src="http://i.imgur.com/eNHDmU0.png" alt="tomate">SKILLS</a></li>
-					<li id="req"><a href="#workishere"><img class="toma" src="http://i.imgur.com/eNHDmU0.png" alt="tomate">WORK</a></li>
-					<li id="about"><a href="#contactishere"><img class="toma" src="http://i.imgur.com/eNHDmU0.png" alt="tomate">CONTACT</a></li>
+					<li ><a id="home" href="#bouthere"><img class="toma" src="http://i.imgur.com/eNHDmU0.png" alt="tomate">ABOUT</a></li>
+					<li ><a id="menus" href="#schoolsIsHere"><img class="toma" src="http://i.imgur.com/eNHDmU0.png" alt="tomate">SCHOOL</a></li>
+					<li ><a id="test" href="#skillshere"><img class="toma" src="http://i.imgur.com/eNHDmU0.png" alt="tomate">SKILLS</a></li>
+					<li ><a id="req" href="#workishere"><img class="toma" src="http://i.imgur.com/eNHDmU0.png" alt="tomate">WORK</a></li>
+					<li ><a id="about" href="#contactishere"><img class="toma" src="http://i.imgur.com/eNHDmU0.png" alt="tomate">CONTACT</a></li>
 				</ul>
 			</nav>
 			<!--Container for rest of content of website. Contains the footer of page as well-->
@@ -72,6 +77,7 @@
 				<div id="workdiv">
 					<hr />
 					<p id="workheader">WORK</p>
+					<div id="clickpic"></div>
 					<div id="saborpic"></div>
 					<p id="work0"><a href="http://saborcu.github.io/" id="nounder" target="_blank">Sabor Culichi</a></p>				<!--WORK section-->
 					<p id="work0a">Front End Web Developer + Web Designer | June 2016 - August 2016</p>
@@ -126,12 +132,26 @@
 					$(window).bind('scroll', function() {
 						if($(window).scrollTop() > num) {
 							$('.menu').addClass('fixed');
+							$('.gitimg3').css("background-image", "url('http://i.imgur.com/hoOOTtQ.png')");
+							$('.gitimg3').mouseenter(function() {
+								$(this).css("background-image", "url('http://i.imgur.com/f0b7fd5.png')");
+							}).mouseleave(function() {
+								$(this).css("background-image", "url('http://i.imgur.com/hoOOTtQ.png')");
+							});
 						} else {
 							$('.menu').removeClass('fixed');
+							$('.gitimg3').css("background-image", "url('http://i.imgur.com/f0b7fd5.png')");							
+							$('.gitimg3').mouseenter(function() {
+								$(this).css("background-image", "url('http://i.imgur.com/hoOOTtQ.png')");
+							}).mouseleave(function() {
+								$(this).css("background-image", "url('http://i.imgur.com/f0b7fd5.png')");
+							});
 						}
 					});
 				}
 			};
+			
 			</script>
+
 		</body>
 </html>
