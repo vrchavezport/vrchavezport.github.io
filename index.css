@@ -45,7 +45,10 @@ body {
 	right: 0;
 	height: 450px;
 	background-color: black;
-	background-image: url('http://www.publicdomainpictures.net/pictures/130000/velka/turquoise-fabric-background-pattern.jpg');
+	background-image: url('http://i.imgur.com/EKax48c.jpg');
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
 }	
 
 /*Styles container for Logo img in the middle of Larger img*/
