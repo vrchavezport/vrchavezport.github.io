@@ -1,4 +1,4 @@
-/*Height and width of website*/
+/*Height and width of website as well as overflow*/
 body {
 	left: 0;
 	right: 0;
@@ -10,8 +10,22 @@ body {
 	background-color: #f8f8f8;
 }
 
-/*Styles Name Bar on Top of Screen*/
-#topName {
+/*Styles image on the top of the site (Sets the image as background)*/ 
+.topimg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 450px;
+	background-color: black;
+	background-image: url('http://i.imgur.com/EKax48c.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: repeat;
+}
+
+/*Styles Name Bar over my circular pic in middle*/
+.topimg__name {
 	position: absolute;
 	top: 40px;
 	left: 0;
@@ -24,9 +38,9 @@ body {
 }
 
 /*Styles text in Name Bar*/
-#topNamer {
-	position: absolute;
-	color: black;
+.topimg__name--text {
+	position: relative;
+	color: #141823;
 	font-family: 'Raleway', sans-serif;
 	font-size: 32px;
 	font-weight: 700;
@@ -35,24 +49,10 @@ body {
 	right: 0;
 	left: 0;
 	text-align: center;
-}
-
-/*Styles image on the top of the site (Sets the image as background)*/ 
-#siteimg {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	height: 450px;
-	background-color: black;
-	background-image: url('http://i.imgur.com/EKax48c.jpg');
-	background-position: center;
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
 }	
 
-/*Styles container for Logo img in the middle of Larger img*/
-#logoimg {
+/*Styles container for my img in the middle of "siteimg"*/
+.topimg__myimg {
 	position: absolute;
 	top: 33%;
 	left: 0;
@@ -68,8 +68,8 @@ body {
 	border-radius: 70px;
 }
 
-/*Styles actual Logo image*/
-img {
+/*Styles my image into a circle and size*/
+.topimg__myimg--circle {
 	position: relative;
 	border-radius: 70px;
 	margin: auto;
@@ -77,51 +77,8 @@ img {
 	width: 140px;
 }
 
-.gitimg {
-	position: fixed;
-	left: 0;
-	top: 0;
-	height: 50px;
-	width: 50px;
-	display: block;
-	outline: none;
-	text-decoration: none;
-	z-index: 20000;
-}
-
-.gitimg2 {
-	outline: none;
-	text-decoration: none;
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-}
-
-/*Styles actual image for Github Profile link*/
-.gitimg3 {
-	position: relative;
-	height: 50px;
-	width: 50px;
-	outline: none;
-	text-decoration: none;
-	background-image: url("http://i.imgur.com/f0b7fd5.png");
-	background-position: center;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	transition: .30s;
-}
-
-.changeToBlack {
-	background-image: url("http://i.imgur.com/hoOOTtQ.png");
-}
-
-.changeToWhite {
-	background-image: url("http://i.imgur.com/f0b7fd5.png");
-}
-
-#topDev {
+/*Container for text under my circular image*/
+.topimg__dev {
 	position: absolute;
 	top: 350px;
 	left: 0;
@@ -133,9 +90,10 @@ img {
 	background-color: #e9e9e9;
 }
 
-#topDever {
-	position: absolute;
-	color: black;
+/*Styles actual text for dev container*/
+.topimg__dev--text {
+	position: relative;
+	color: #141823;
 	font-family: 'Raleway', sans-serif;
 	font-size: 32px;
 	font-weight: 700;
@@ -144,6 +102,47 @@ img {
 	right: 0;
 	left: 0;
 	text-align: center;
+}
+
+/*Container for GitHub img link on top left of site*/
+.topimg__git {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 50px;
+	width: 50px;
+	display: block;
+	outline: none;
+	text-decoration: none;
+	z-index: 20000;
+	cursor: pointer;
+}
+
+/*Styles actual image for GitHub Profile link*/
+.topimg__git--back {
+	position: relative;
+	height: 50px;
+	width: 50px;
+	outline: none;
+	text-decoration: none;
+	background-image: url("http://i.imgur.com/f0b7fd5.png");
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	transition: .30s;
+	cursor: pointer;
+}
+
+/*Makes git image into a clickable link*/
+.topimg__git--click{
+	outline: none;
+	text-decoration: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	cursor: pointer;
 }
 
 /*Styles menu bar*/
@@ -159,33 +158,24 @@ img {
 	background-color: #f8f8f8;
 }
 
-/*Hides tomato image for .menu*/
-.toma {
-	position: relative;
-	top: 5px;
-	height: 30px;
-	width: 30px;
-	background-color: black;
-	opacity: 0;
-}
-
-/*Styles text in .menu*/
+/*Styles text in ".menu"*/
 #menutext {
 	position: relative;
 	left: -40px;
 	right: 0;
-	top: -13px;
+	top: 0;
 	bottom: 0;
 	list-style: none;
 	font-family: 'Lato', sans-serif;
 	font-size: 15px;
-	color: black;
+	color: #141823;
 	text-align: center;
 }
 
 /*Used with jQuery to make .menu fixed after scrolling past certain part in webpage*/
 .fixed {
 	position: fixed;
+	text-align: center;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -203,13 +193,13 @@ li {
 a {
 	text-decoration: none;
 	outline: none;
-	color: black;
+	color: #141823;
 	transition: .30s;
 }
 
-/*Makes tomato pop out when hovering over element in .menu*/
+/*Makes text disappear when hovered over in .menu nav*/
 a:hover {
-	color: #e9e9e9;
+	color: #f8f8f8;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -226,8 +216,8 @@ a:hover {
 	background-color: #f8f8f8;
 }
 
-/*Styles header for page (About)*/
-#formhead {
+/*Styles Header for EVERY section*/
+.head {
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -235,11 +225,12 @@ a:hover {
 	text-align: center;
 	font-size: 39px;
 	font-family: 'Raleway', sans-serif;
-	color: black;
+	color: #141823;
 	z-index: 5000;
 	font-weight: 700;
 }
 
+/*Styles line through Header in EVERY section*/
 hr {
 	position: absolute;
 	width: 200px;
@@ -250,14 +241,14 @@ hr {
 	transform: rotate(-5deg);
 }
 
-#bouthere {
+#aboutAnchor {
 	top: -50px;
 	height: 0;
 	width: 0;
 }
 
-/*Styles container that contains all of "Recently Catered Events"*/
-#taquiza {
+/*Container for About section*/
+.about {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -267,187 +258,211 @@ hr {
 	background-color: #f8f8f8;
 }
 
-/*Styles text for Taquiza header*/
-#taquizatext {
+/*Body for About section*/
+.about__body {
 	position: absolute;
 	left: 17%;
+	line-height: 55px;
 	right: 17%;
-	top: 120px;
+	top: 150px;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
 	font-size: 32px;
-	color: black;
+	color: #141823;
 }
 
-#schoolsIsHere {
+/*Anchor for Skills section*/
+#skillAnchor {
 	top: 370px;
 	height: 0;
 	width: 0;
 }
 
-#schooldiv {
+/*Skills section container*/
+.skill {
 	position: absolute;
 	top: 420px;
 	right: 0;
-	height: 550px;
+	height: 630px;
 	left: 0;
 	text-align: center;
+	overflow: hidden;
+	cursor: crosshair;
 }
 
-#uclaimg {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	width: 100%;
-	height: 550px;
-	background-image: url('http://brand.ucla.edu/wp-content/uploads/2013/08/ucla-wordmark-main-1.jpg'); 
-	background-position: center;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	opacity: .17;
-}
-
-#schoolhead {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	text-align: center;
-	font-size: 39px;
-	font-family: 'Raleway', sans-serif;
-	color: black;
-	z-index: 5000;
-	font-weight: 700;
-}
-
-#school {
-	position: absolute;
-	top: 125px;
-	left: 0;
-	right: 0;
-	text-align: center;
-	font-size: 35px;
-	font-family: 'Raleway', sans-serif;
-	color: black;
-	z-index: 5000;
-}
-
-#location {
-	position: absolute;
-	top: 185px;
-	left: 0;
-	right: 0;
-	text-align: center;
-	font-size: 20px;
-	font-family: 'Raleway', sans-serif;
-	color: black;
-	z-index: 5000;
-}
-
-#major {
-	position: absolute;
-	top: 225px;
-	left: 0;
-	right: 0;
-	text-align: center;
-	font-size: 25px;
-	font-family: 'Raleway', sans-serif;
-	color: black;
-	z-index: 5000;
-}
-
-#minor {
-	position: absolute;
-	top: 255px;
-	left: 0;
-	right: 0;
-	text-align: center;
-	font-size: 25px;
-	font-family: 'Raleway', sans-serif;
-	color: black;
-	z-index: 5000;
-}
-
-#highschool {
-	position: absolute;
-	top: 345px;
-	left: 0;
-	right: 0;
-	text-align: center;
-	font-size: 35px;
-	font-family: 'Raleway', sans-serif;
-	color: black;
-	z-index: 5000;
-}
-
-#location2 {
-	position: absolute;
-	top: 405px;
-	left: 0;
-	right: 0;
-	text-align: center;
-	font-size: 20px;
-	font-family: 'Raleway', sans-serif;
-	color: black;
-	z-index: 5000;
-}
-
-#skillshere {
-	top: 920px;
-	height: 0;
-	width: 0;
-}
-
-#skillsdiv {
-	position: absolute;
-	top: 970px;
-	right: 0;
-	height: 600px;
-	left: 0;
-	text-align: center;
-}
-
-#skillshead {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	text-align: center;
-	font-size: 39px;
-	font-family: 'Raleway', sans-serif;
-	color: black;
-	z-index: 5000;
-	font-weight: 700;
-}
-
-#htmimg {
+/*Image over skills in Skills section*/
+.skill__slider {
 	position: absolute;
 	top: 110px;
-	margin: auto;
 	right: 0;
-	left: 0;
 	bottom: 0;
-	height: 500px;
-	width: 80%;
-	background-image: url('http://i.imgur.com/cF2ssqJ.png');
+	height: 630px;
+	width: 100%;
+	background-image: url('http://i.imgur.com/DvWOp6N.jpg');
 	background-position: center;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
+	z-index: 1000;
+	transition: .8s;
+	cursor: crosshair;
 }
 
-#workishere {
-	top: 1620px;
+/*Makes image slide to right when hover over .skills*/
+.skill:hover .skill__slider {
+	right: -350%;
+	transition: .8s;
+	z-index: 960;
+	cursor: crosshair;
+}
+
+/*Small container for <ul> element in Skills section*/
+.skill__cont {
+	position: absolute;
+	top: 110px;
+	right: 0;
+	left: 0;
+	height: 500px;
+	width: 100%;
+	background-color: #f8f8f8;
+	text-align: center;
+	z-index: 980;
+}
+
+/*Left two TEXT elements of Skills section*/
+.skill__cont__left {
+	position: absolute;
+	top: -30px;
+	left: 0;
+	right: 50%;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 38px;
+	color: #141823;
+	text-align: center;
+	padding: 0;
+}
+
+/*Right two TEXT elements of Skills section*/
+.skill__cont__right {
+	top: -30px;
+	position: absolute;
+	left: 50%;
+	right: 0;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 38px;
+	color: #141823;
+	text-align: center;
+	padding: 0;
+}
+
+/*Top of each left and right TEXT columns in Skills, no padding*/
+.skill__cont--nopad {
+	position: relative;
+	left: 0;
+	right: 0;
+	padding-top: 0;
+	display: block;
+	text-align: center;
+}
+
+/*Second of each left and right TEXT columns in Skills, yes padding*/
+.skill__cont--yespad {
+	position: relative;
+	left: 0;
+	right: 0;
+	padding-top: 155px;
+	display: block;
+	text-align: center;
+}
+
+/*First of each left and right PICTURE columns in skills*/
+.skill__cont__first {
+	position: relative;
+	top: 20px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 100px;
+	width: 100px;
+	border-radius: 0;
+}
+
+/*First of each left and right PICTURE columns in skills*/
+.skill__cont__second{
+	position: relative;
+	top: 20px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 100px;
+	width: 100px;
+	border-radius: 0;
+}
+
+/*Text for "AngularJS" element in Skills section*/
+#angular {
+	top: 25%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 38px;
+	color: #141823;
+	text-align: center;
+	padding: 0;
+}
+
+/*Image for "AngularJS" element in Skills section*/
+#underAngular {
+	position: absolute;
+	top: 45%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+	height: 100px;
+	width: 100px;
+}
+
+/*Anchor for Work section*/
+#workAnchor {
+	top: 1105px;
 	height: 0;
 	width: 0;
 }
 
-#clickpic {
+/*Work section container*/
+.work {
+	position: absolute;
+	top: 1155px;
+	right: 0;
+	height: 1300px;
+	left: 0;
+	text-align: center;
+	overflow: hidden;
+}
+
+/*Small container inside Work for SaborCulichi job
+(Allows for hover opacity effect on img)*/
+.work__sabor{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 130px;
+	width: 100%;
+	height: 330px;
+	cursor: pointer;	
+}
+
+/*Small image by .work__sabor header, alerts user that header of each job is clickable*/
+#guidepic {
 	position: absolute;
 	height: 70px;
 	width: 160px;
 	left: 315px;
-	top: 110px;
+	top: 0;
 	background-image: url('http://i.imgur.com/AgjFCMy.png');
 	background-position: center;
 	background-size: cover;
@@ -455,156 +470,46 @@ hr {
 	z-index: 100;
 }
 
-#workdiv {
+/*Div that covers .work__sabor container with image*/
+.work__sabor--pic {
 	position: absolute;
-	top: 1670px;
-	right: 0;
-	height: 600px;
-	left: 0;
-	text-align: center;
-}
-
-#workheader {
-	position: absolute;
-	left: 0;
-	right: 0;
 	top: 0;
-	text-align: center;
-	font-size: 39px;
-	font-family: 'Raleway', sans-serif;
-	color: black;
-	z-index: 5000;
-	font-weight: 700;
-}
-
-#saborpic {
-	position: absolute;
-	top: 130px;
-	left: 0;
 	right: 0;
 	width: 100%;
 	height: 330px;
-	background-image: url('http://i.imgur.com/cBAFUZv.png');
+	background-image: url('http://i.imgur.com/okbgutU.jpg');
 	background-size: 100%;
 	background-position: center;
-	opacity: .15;
+	opacity: 1;
+	z-index: 200;
+	transition: .5s;
+	cursor: pointer;
 }
 
-#work0 {
+/*When you hover over .work__sabor container,
+pic inside .work__sabor--pic changes opacity & z-index*/
+.work__sabor:hover .work__sabor--pic {
+	transition: .5s;
+	cursor: pointer;
+	opacity: .07;
+	z-index: 1;
+}
+
+/*Small container inside .work for Via job*/
+.work__via {
 	position: absolute;
 	left: 0;
 	right: 0;
-	text-align: center;
-	top: 125px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 38px;
-	color: black;
-	font-weight: 100;
-}
-
-#work0a {
-	position: absolute;
-	text-align: center;
-	left: 0;
-	right: 0;
-	top: 180px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 20px;
-	color: black;
-	font-weight: 100;
-}
-
-#work0b {
-	position: absolute;
-	left: 35px;
-	top: 225px;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 25px;
-	color: black;
-	font-weight: 100;
-}
-
-#work0c {
-	position: absolute;
-	text-align: center;
-	left: 0;
-	right: 0;
-	top: 225px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 28px;
-	color: #545454;
-	font-weight: 100;
-}
-
-#work0d {
-	position: absolute;
-	left: 40px;
-	top: 265px;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 26px;
-	color: #a8a8a8;
-	font-weight: 100;
-}
-
-#work0e {
-	position: absolute;
-	text-align: center;
-	left: 0;
-	right: 0;
-	top: 265px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 28px;
-	color: #545454;
-	font-weight: 100;
-}
-
-#work0f {
-	position: absolute;
-	left: 65px;
-	top: 308px;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 25px;
-	color: #a8a8a8;
-	font-weight: 100;
-}
-
-#work0g {
-	position: absolute;
-	left: 0;
-	right: 0;
-	text-align: center;
-	top: 305px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 28px;
-	color: #545454;
-	font-weight: 100;
-}
-
-#work0h{
-	position: absolute;
-	left: 35px;
-	top: 3223px;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 26px;
-	color: #a8a8a8;
-	font-weight: 100;
-}
-
-#work0i {
-	position: absolute;
-	text-align: center;
-	left: 0;
-	right: 0;
-	top: 345px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 28px;
-	color: #545454;
-	font-weight: 100;
-}
-
-#viapic {
-	position: absolute;
 	top: 470px;
+	width: 100%;
+	height: 330px;
+	cursor: pointer;	
+}
+
+/*Div that covers .work__via container with image*/
+.work__via--pic{
+	position: absolute;
+	top: 0;
 	left: 0;
 	right: 0;
 	width: 100%;
@@ -612,275 +517,267 @@ hr {
 	background-image: url('http://i.imgur.com/d91h7x7.png');
 	background-size: 100%;
 	background-position: center;
-	opacity: .15;
+	opacity: 1;
+	z-index: 200;
+	transition: .5s;
+	cursor: pointer;
 }
 
-#work1 {
+/*When you hover over .work__via container,
+pic inside .work__via--pic changes opacity & z-index*/
+.work__via:hover .work__via--pic {
+	transition: .5s;
+	cursor: pointer;
+	opacity: .07;
+	z-index: 1;
+}
+
+/*Small container inside .work for Viier job*/
+.work__viier {
 	position: absolute;
-	text-align: center;
 	left: 0;
 	right: 0;
-	top: 475px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 38px;
-	color: black;
-	font-weight: 100;
-}
-
-#work1a {
-	position: absolute;
-	text-align: center;
-	left: 0;
-	right: 0;
-	top: 530px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 20px;
-	color: black;
-	font-weight: 100;
-}
-
-#work1b {
-	position: absolute;
-	left: 80px;
-	top: 3453px;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 25px;
-	color: #a8a8a8;
-	font-weight: 100;
-}
-
-#work1c {
-	position: absolute;
-	text-align: center;
-	left: 0;
-	right: 0;
-	top: 575px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 28px;
-	color: #545454;
-	font-weight: 100;
-}
-
-#work1d {
-	position: absolute;
-	left: 70px;
-	top: 3493px;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 25px;
-	color: #a8a8a8;
-	font-weight: 100;
-}
-
-#work1e {
-	position: absolute;
-	text-align: center;
-	left: 0;
-	right: 0;
-	top: 615px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 28px;
-	color: #545454;
-	font-weight: 100;
-}
-
-#work1f {
-	position: absolute;
-	left: 60px;
-	top: 3533px;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 25px;
-	color: #a8a8a8;
-	font-weight: 100;
-}
-
-#work1g {
-	position: absolute;
-	text-align: center;
-	left: 0;
-	right: 0;
-	top: 655px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 28px;
-	color: #545454;
-	font-weight: 100;
-}
-
-#work1h{
-	position: absolute;
-	left: 175px;
-	top: 3573px;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 25px;
-	color: #a8a8a8;
-	font-weight: 100;
-}
-
-#work1i {
-	position: absolute;
-	text-align: center;
-	left: 0;
-	right: 0;
-	top: 695px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 28px;
-	color: #545454;
-	font-weight: 100;
-}
-
-#viierpic {
-	position: absolute;
 	top: 810px;
+	width: 100%;
+	height: 330px;
+	cursor: pointer;	
+}
+
+/*Div that covers .work__viier container with image*/
+.work__viier--pic {
+	position: absolute;
+	top: 0;
 	left: 0;
 	right: 0;
 	width: 100%;
 	height: 330px;
 	background-image: url('http://i.imgur.com/kY6cxN2.jpg');
-	background-size: 100%;
+	background-size: 100% 100%;
 	background-position: center;
-	opacity: .15;
+	opacity: 1;
+	z-index: 200;
+	transition: .5s;
+	cursor: pointer;
 }
 
-#work2 {
+/*When you hover over .work__viier container,
+pic inside .work__viier--pic changes opacity & z-index*/
+.work__viier:hover .work__viier--pic {
+	transition: .5s;
+	cursor: pointer;
+	opacity: .07;
+	z-index: 1;
+}
+
+/*Styles the header for each of the Job sections in .work*/
+.work0 {
 	position: absolute;
-	text-align: center;
 	left: 0;
 	right: 0;
-	top: 825px;
+	text-align: center;
+	top: -5px;
 	font-family: 'Raleway', sans-serif;
 	font-size: 38px;
-	color: black;
+	color: #141823;
 	font-weight: 100;
+	z-index: 180;
 }
 
-#work2a {
+/*Styles Job Position for each of the Job sections in .work*/
+.work0a {
 	position: absolute;
 	text-align: center;
 	left: 0;
 	right: 0;
-	top: 880px;
+	top: 50px;
 	font-family: 'Raleway', sans-serif;
 	font-size: 20px;
-	color: black;
+	color: #141823;
 	font-weight: 100;
 }
 
-#work2b {
-	position: absolute;
-	left: 35px;
-	top: 3803px;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 25px;
-	color: #a8a8a8;
-	font-weight: 100;
-}
-
-#work2c {
+/*Styles first Job Description for each of Job sections in .work*/
+.work0c {
 	position: absolute;
 	text-align: center;
 	left: 0;
 	right: 0;
-	top: 925px;
+	top: 95px;
 	font-family: 'Raleway', sans-serif;
 	font-size: 28px;
-	color: #545454;
+	color: #141823;
 	font-weight: 100;
 }
 
-#work2d {
-	position: absolute;
-	left: 65px;
-	top: 3843px;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 25px;
-	color: #a8a8a8;
-	font-weight: 100;
-}
-
-#work2e {
+/*Styles second Job Description for each of Job sections in .work*/
+.work0e {
 	position: absolute;
 	text-align: center;
 	left: 0;
 	right: 0;
-	top: 965px;
+	top: 135px;
 	font-family: 'Raleway', sans-serif;
 	font-size: 28px;
-	color: #545454;
+	color: #141823;
 	font-weight: 100;
 }
 
-#work2f {
+/*Styles third Job Description for each of Job sections in .work*/
+.work0g {
 	position: absolute;
-	left: 40px;
-	top: 3883px;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 25px;
-	color: #a8a8a8;
+	left: 0;
+	right: 0;
+	text-align: center;
+	top: 175px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 28px;
+	color: #141823;
 	font-weight: 100;
 }
 
-#work2g {
+/*Styles fourth Job Description for each of Job sections in .work*/
+.work0i {
 	position: absolute;
 	text-align: center;
 	left: 0;
 	right: 0;
-	top: 1005px;
+	top: 215px;
 	font-family: 'Raleway', sans-serif;
 	font-size: 28px;
-	color: #545454;
+	color: #141823;
 	font-weight: 100;
 }
 
-#work2h{
-	position: absolute;
-	left: 95px;
-	top: 3923px;
-	font-family: 'Material Icons', sans-serif;
-	font-size: 25px;
-	color: #a8a8a8;
-	font-weight: 100;
+/*Anchor for School section*/
+#schoolAnchor {
+	top: 2370px;
+	height: 0;
+	width: 0;
 }
 
-#work2i {
+/*School section container*/
+.school {
 	position: absolute;
+	top: 2420px;
+	right: 0;
+	height: 550px;
+	left: 0;
 	text-align: center;
+}
+
+/*Styles background image for School section
+(Had to use DIV for opacity on img not text)*/
+#uclaimg {
+	position: absolute;
+	top: 110px;
 	left: 0;
 	right: 0;
-	top: 1045px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 28px;
-	color: #545454;
-	font-weight: 100;
+	width: 100%;
+	height: 440px;
+	background-image: url('http://brand.ucla.edu/wp-content/uploads/2013/08/ucla-wordmark-main-1.jpg'); 
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	opacity: .17;
 }
 
-#contactdiv {
+/*Styles University name*/
+.school__ucla {
 	position: absolute;
-	top: 2870px;
+	top: 125px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: 35px;
+	font-family: 'Raleway', sans-serif;
+	color: #141823;
+	z-index: 5000;
+}
+
+/*Styles University location text*/
+.school__location {
+	position: absolute;
+	top: 185px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+	color: #141823;
+	z-index: 5000;
+}
+
+/*Styles major text*/
+.school__major {
+	position: absolute;
+	top: 225px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Raleway', sans-serif;
+	color: #141823;
+	z-index: 5000;
+}
+
+/*Styles minor text*/
+.school__minor {
+	position: absolute;
+	top: 255px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Raleway', sans-serif;
+	color: #141823;
+	z-index: 5000;
+}
+
+/*Styles HighSchool name*/
+.school__high {
+	position: absolute;
+	top: 345px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: 35px;
+	font-family: 'Raleway', sans-serif;
+	color: #141823;
+	z-index: 5000;
+}
+
+/*Styles HighSchool location text*/
+.school__location2 {
+	position: absolute;
+	top: 405px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+	color: #141823;
+	z-index: 5000;
+}
+
+/*Anchor for Contact section*/
+#contactAnchor {
+	top: 3020px;
+	height: 0;
+	width: 0;
+}
+
+/*Container for Contact section*/
+.contact{
+	position: absolute;
+	top: 3070px;
 	right: 0;
 	height: 700px;
 	left: 0;
 	text-align: center;
 }
 
-#contactishere {
-	top: 2820px;
-	height: 0;
-	width: 0;
-}
-
-#contacthead {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	text-align: center;
-	font-size: 39px;
-	font-family: 'Raleway', sans-serif;
-	color: black;
-	z-index: 5000;
-	font-weight: 700;
-}
-
-#phone{
+/*Styles text for Phone Number in Contact section*/
+.contact__phone{
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -888,10 +785,11 @@ hr {
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
 	font-size: 32px;
-	color: black;
+	color: #141823;
 }
 
-#email{
+/*Styles text for Email in Contact section*/
+.contact__email{
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -899,7 +797,7 @@ hr {
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
 	font-size: 32px;
-	color: black;
+	color: #141823;
 }
 
 @media all and (max-width: 1000px) and (min-width: 330px) {
@@ -908,25 +806,33 @@ hr {
 		top: 0;
 		left: 0;
 		right: 0;
-		height: 2500px;
+		background-size: cover;
 		width: 100%;
 		overflow: visible;
 		overflow-x: hidden;
 		background-color: #f8f8f8;
+		padding: 0;
+		margin: auto;
 	}
 	
-	#contain {
+	/*Styles image on the top of the site (Sets the image as background)*/ 
+	.topimg {
+		position: absolute;
 		top: 0;
 		left: 0;
 		right: 0;
-		height: 2500px;
+		height: 450px;
 		width: 100%;
 		overflow: hidden;
-		overflow-x: hidden;
+		background-color: black;
+		background-image: url('http://i.imgur.com/EKax48c.jpg');
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
 	}
 
-	/*Styles Name Bar on Top of Screen*/
-	#topName {
+	/*Styles Name Bar over my circular pic in middle*/
+	.topimg__name {
 		position: absolute;
 		top: 40px;
 		left: 0;
@@ -939,9 +845,9 @@ hr {
 	}
 
 	/*Styles text in Name Bar*/
-	#topNamer {
+	.topimg__name--text {
 		position: absolute;
-		color: black;
+		color: #141823;
 		font-family: 'Raleway', sans-serif;
 		font-size: 32px;
 		font-weight: 700;
@@ -950,26 +856,10 @@ hr {
 		right: 0;
 		left: 0;
 		text-align: center;
-	}
-
-	/*Styles image on the top of the site (Sets the image as background)*/ 
-	#siteimg {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		height: 450px;
-		width: 100%;
-		overflow: hidden;
-		background-color: black;
-		background-image: url('http://i.imgur.com/EKax48c.jpg');
-		background-position: center;
-		background-size: 100% 100%;
-		background-repeat: no-repeat;
 	}	
 
-	/*Styles container for Logo img in the middle of Larger img*/
-	#logoimg {
+	/*Styles container for my img in the middle of "siteimg"*/
+	.topimg__myimg {
 		position: absolute;
 		top: 33%;
 		left: 0;
@@ -986,8 +876,8 @@ hr {
 		overflow: hidden;
 	}
 
-	/*Styles actual Logo image*/
-	img {
+	/*Styles my image into a circle and size*/
+	.topimg__myimg--circle {
 		position: relative;
 		border-radius: 70px;
 		margin: auto;
@@ -995,54 +885,8 @@ hr {
 		width: 140px;
 	}
 
-	.gitimg {
-		position: fixed;
-		left: 5px;
-		top: 10px;
-		height: 50px;
-		width: 50px;
-		display: block;
-		outline: none;
-		text-decoration: none;
-		z-index: 20000;
-		overflow: hidden;
-	}
-
-	.gitimg2 {
-		outline: none;
-		text-decoration: none;
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
-		overflow: hidden;
-	}
-
-	/*Styles actual image for Github Profile link*/
-	.gitimg3 {
-		position: relative;
-		height: 50px;
-		width: 50px;
-		outline: none;
-		text-decoration: none;
-		background-image: url("http://i.imgur.com/f0b7fd5.png");
-		background-position: center;
-		background-size: 100%;
-		background-repeat: no-repeat;
-		transition: .30s;
-		overflow: hidden;
-	}
-
-	.changeToBlack {
-		background-image: url("http://i.imgur.com/hoOOTtQ.png");
-	}
-
-	.changeToWhite {
-		background-image: url("http://i.imgur.com/f0b7fd5.png");
-	}
-
-	#topDev {
+	/*Container for text under my circular image*/
+	.topimg__dev {
 		position: absolute;
 		top: 350px;
 		left: 0;
@@ -1054,9 +898,10 @@ hr {
 		background-color: #e9e9e9;
 	}
 
-	#topDever {
+	/*Styles actual text for dev container*/
+	.topimg__dev--text {
 		position: absolute;
-		color: black;
+		color: #141823;
 		font-family: 'Raleway', sans-serif;
 		font-size: 32px;
 		font-weight: 700;
@@ -1066,11 +911,52 @@ hr {
 		left: 0;
 		text-align: center;
 	}
+	
+	/*Container for GitHub img link on top left of site*/
+	.topimg__git {
+		position: fixed;
+		left: 5px;
+		top: 10px;
+		height: 50px;
+		width: 50px;
+		display: block;
+		outline: none;
+		text-decoration: none;
+		z-index: 20000;
+	}
 
-	/*Styles menu bar*/
+	/*Styles actual image for Github Profile link*/
+	.topimg__git--back {
+		position: relative;
+		height: 50px;
+		width: 50px;
+		outline: none;
+		text-decoration: none;
+		background-image: url("http://i.imgur.com/f0b7fd5.png");
+		background-position: center;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		transition: .30s;
+		overflow: hidden;
+	}
+	
+	/*Makes GitHub img clickable link*/
+	.topimg__git--click {
+		outline: none;
+		text-decoration: none;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		overflow: hidden;
+	}
+
+	/*Styles menu bar (HIDES IT HERE, FOR MOBILE)*/
 	.menu {
 		position: absolute;
 		display: none;
+		height: 0px;
 	}
 
 	/*Styles container for the rest of website content*/
@@ -1085,8 +971,9 @@ hr {
 		background-color: #f8f8f8;
 	}
 
-	/*Styles header for page (About)*/
-	#formhead {
+	
+	/*Styles the Header for EVERY section*/
+	.head {
 		position: absolute;
 		left: 0;
 		right: 0;
@@ -1094,11 +981,12 @@ hr {
 		text-align: center;
 		font-size: 39px;
 		font-family: 'Raleway', sans-serif;
-		color: black;
+		color: #141823;
 		z-index: 5000;
 		font-weight: 700;
 	}
-
+	
+	/*Styles line through Header for EVERY section*/
 	hr {
 		position: absolute;
 		width: 200px;
@@ -1109,15 +997,18 @@ hr {
 		transform: rotate(-5deg);
 		-webkit-transform: rotate(-5deg);
 	}
-
-	#bouthere {
+	
+	/*Anchor for About section*/
+	#aboutAnchor {
 		top: -50px;
 		height: 0;
 		width: 0;
+		left: 0;
+		right: 0;
 	}
-
-	/*Styles container that contains all of "Recently Catered Events"*/
-	#taquiza {
+	
+	/*Container for About section*/
+	.about {
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -1127,34 +1018,469 @@ hr {
 		text-align: center;
 		background-color: #f8f8f8;
 	}
-
-	/*Styles text for Taquiza header*/
-	#taquizatext {
+	
+	/*Body for About section*/
+	.about__body {
 		position: absolute;
 		left: 5%;
 		right: 5%;
 		top: 90px;
 		text-align: center;
 		font-family: 'Raleway', sans-serif;
-		font-size: 32px;
-		color: black;
+		font-size: 30px;
+		color: #141823;
+		line-height: 40px;
 	}
-
-	#schoolsIsHere {
+	
+	/*Anchor for Skills section*/
+	#skillAnchor {
 		top: 370px;
 		height: 0;
 		width: 0;
+		right: 0;
+		left: 0;
 	}
 
-	#schooldiv {
+	/*Skills section container*/
+	.skill {
 		position: absolute;
 		top: 420px;
+		right: 0;
+		height: 600px;
+		width: 100%;
+		overflow: hidden;
+		left: 0;
+		text-align: center;
+	}
+	
+	/*Image over skills in Skills section*/
+	.skill__slider {
+		position: absolute;
+		top: 110px;
+		right: 0;
+		bottom: 0;
+		height: 630px;
+		width: 100%;
+		background-image: url('http://i.imgur.com/DvWOp6N.jpg');
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		z-index: 1000;
+		transition: .8s;
+	}
+
+	/*Makes image slide to right when hover over .skills*/
+	.skill:hover .skill__slider {
+		right: -350%;
+		transition: .8s;
+		z-index: 960;
+	}
+
+	/*Small container for <ul> element in Skills section*/
+	.skill__cont {
+		position: absolute;
+		top: 110px;
+		margin: auto;
+		right: 0;
+		left: 0;
+		height: 480px;
+		width: 100%;
+		background-color: #f8f8f8;
+	}
+	
+	/*Left two TEXT elements of Skills section*/
+	.skill__cont__left {
+		position: absolute;
+		top: -30px;
+		left: 0;
+		right: 50%;
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+		font-size: 32px;
+		color: #141823;
+		text-align: center;
+		padding: 0;
+	}
+
+	/*Right two TEXT elements of Skills section*/
+	.skill__cont__right {
+		top: -30px;
+		position: absolute;
+		left: 50%;
+		right: 0;
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+		font-size: 32px;
+		color: #141823;
+		text-align: center;
+		padding: 0;
+	}
+
+	/*Top of each left and right TEXT columns in Skills, no padding*/
+	.skill__cont--nopad {
+		position: relative;
+		left: 0;
+		right: 0;
+		padding-top: 0;
+		display: block;
+		text-align: center;
+	}
+
+	/*Second of each left and right TEXT columns in Skills, yes padding*/
+	.skill__cont__yespad {
+		position: relative;
+		left: 0;
+		right: 0;
+		padding-top: 155px;
+		display: block;
+		text-align: center;
+	}
+
+	/*First of each left and right PICTURE columns in skills*/
+	.skill__cont__first {
+		position: relative;
+		top: 20px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		height: 80px;
+		width: 80px;
+		border-radius: 0;
+	}
+
+	/*First of each left and right PICTURE columns in skills*/
+	.skill__cont__second{
+		position: relative;
+		top: 20px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		height: 80px;
+		width: 80px;
+		border-radius: 0;
+	}
+	
+	#javcont {
+		position: relative;
+		left: -13px;
+		right: 0;
+		padding-top: 155px;
+		display: block;
+		text-align: center;
+	}
+	
+	/*Text for "AngularJS" element in Skills section*/
+	#angular {
+		top: 24%;
+		position: absolute;
+		left: 0;
+		right: 0;
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+		font-size: 32px;
+		color: #141823;
+		text-align: center;
+		padding: 0;
+	}
+
+	/*Image for "AngularJS" element in Skills section*/
+	#underAngular {
+		position: absolute;
+		top: 42%;
+		left: 0;
+		right: 0;
+		margin: auto;
+		text-align: center;
+		height: 80px;
+		width: 80px;
+	}
+	
+	/*Anchor for Work section*/
+	#workAnchor {
+		top: 1105px;
+		height: 0;
+		width: 0;
+		left: 0;
+		right: 0;
+	}
+	
+	/*Work section container*/
+	.work {
+		position: absolute;
+		top: 1100px;
+		right: 0;
+		height: 1300px;
+		left: 0;
+		text-align: center;
+		width: 100%;
+	}
+
+	/*Small container inside Work for SaborCulichi job
+	(Allows for hover opacity effect on img)*/
+	.work__sabor{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 130px;
+		width: 100%;
+		height: 330px;
+		text-decoration: none;	
+		color: transparent;
+	}
+		
+	/*Small image by .work__sabor header, alerts user that header of each job is clickable*/
+	#guidepic {
+		position: absolute;
+		height: 40px;
+		width: 90px;
+		left: 2px;
+		top: 10px;
+		background-image: url('http://i.imgur.com/TrFdaVn.png');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		z-index: 100;
+	}
+	
+	/*Div that covers .work__sabor container with image*/
+	.work__sabor--pic {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 330px;
+		background-image: url('http://i.imgur.com/cBAFUZv.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-position: center;
+		opacity: 1;
+		transition: .5s;
+		z-index: 200;
+		text-decoration: none;
+		background-color: transparent;
+		color: transparent;
+	}
+	
+	/*When you hover over .work__sabor container,
+	pic inside .work__sabor--pic changes opacity & z-index*/
+	.work__sabor:hover .work__sabor--pic {
+		transition: .5s;
+		cursor: pointer;
+		opacity: .07;
+		z-index: 1;
+		text-decoration: none;
+		color: transparent;
+	}
+
+	/*Small container inside .work for Via job*/
+	.work__via {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 470px;
+		width: 100%;
+		height: 330px;
+		cursor: pointer;
+		text-decoration: none;		
+	}
+
+	/*Div that covers .work__via container with image*/
+	.work__via--pic{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 330px;
+		background-image: url('http://i.imgur.com/d91h7x7.png');
+		background-size: 100% 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		opacity: 1;
+		z-index: 200;
+		transition: .5s;
+		cursor: pointer;
+		text-decoration: none;
+	}
+	
+	/*When you hover over .work__via container,
+	pic inside .work__via--pic changes opacity & z-index*/
+	.work__via:hover .work__via--pic {
+		transition: .5s;
+		cursor: pointer;
+		opacity: .07;
+		z-index: 1;
+		text-decoration: none;
+	}
+	
+	/*Small container inside .work for Viier job*/
+	.work__viier {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 810px;
+		width: 100%;
+		height: 330px;
+		cursor: pointer;
+		text-decoration: none;		
+	}
+
+	/*Div that covers .work__viier container with image*/
+	.work__viier--pic {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 330px;
+		background-image: url('http://i.imgur.com/kY6cxN2.jpg');
+		background-size: 100% 100%;
+		background-position: center;
+		opacity: 1;
+		z-index: 200;
+		transition: .5s;
+		cursor: pointer;
+		text-decoration: none;
+	}
+
+	/*When you hover over .work__viier container,
+	pic inside .work__viier--pic changes opacity & z-index*/
+	.work__viier:hover .work__viier--pic {
+		transition: .5s;
+		cursor: pointer;
+		opacity: .07;
+		z-index: 1;
+		text-decoration: none;
+	}
+	
+	/*Styles the header for each of the Job sections in .work*/
+	.work0 {
+		position: absolute;
+		left: 0;
+		right: 0;
+		text-align: center;
+		top: -20px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 38px;
+		color: #141823;
+		font-weight: 100;
+	}
+	
+	/*Styles the header (.work0) for the Via section in MOBILE
+	becuase name too long and text overlaps.*/
+	#viaSmaller {
+		position: absolute;
+		left: 0;
+		right: 0;
+		text-align: center;
+		top: -15px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 34px;
+		color: #141823;
+		font-weight: 100;
+	}
+
+	/*Styles Job Position for each of the Job sections in .work*/
+	.work0a {
+		position: absolute;
+		text-align: center;
+		left: 0;
+		right: 0;
+		top: 40px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 18px;
+		color: #141823;
+		font-weight: 100;
+	}
+	
+	/*Styles Via Job Position (.work0a) because
+	Header is smaller, and it seems far*/
+	#viaCloser {
+		position: absolute;
+		text-align: center;
+		left: 0;
+		right: 0;
+		top: 35px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 18px;
+		color: #141823;
+		font-weight: 100;
+	}
+
+	/*Styles first Job Description for each of Job sections in .work*/
+	.work0c {
+		position: absolute;
+		text-align: center;
+		left: 0;
+		right: 0;
+		top: 95px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 20px;
+		color: #141823;
+		font-weight: 100;
+	}
+
+	/*Styles second Job Description for each of Job sections in .work*/
+	.work0e {
+		position: absolute;
+		text-align: center;
+		left: 0;
+		right: 0;
+		top: 145px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 20px;
+		color: #141823;
+		font-weight: 100;
+	}
+
+	/*Styles third Job Description for each of Job sections in .work*/
+	.work0g {
+		position: absolute;
+		left: 0;
+		right: 0;
+		text-align: center;
+		top: 195px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 20px;
+		color: #141823;
+		font-weight: 100;
+	}
+
+	/*Styles fourth Job Description for each of Job sections in .work*/
+	.work0i {
+		position: absolute;
+		text-align: center;
+		left: 0;
+		right: 0;
+		top: 245px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 20px;
+		color: #141823;
+		font-weight: 100;
+	}
+
+	/*Anchor for School section*/
+	#schoolAnchor {
+		top: 2370px;
+		height: 0;
+		width: 0;
+		right: 0;
+		left: 0;
+	}
+	
+	/*School section container*/
+	.school {
+		position: absolute;
+		top: 2320px;
 		right: 0;
 		height: 550px;
 		left: 0;
 		text-align: center;
 	}
 
+	/*Styles background image for School section
+	(Had to use DIV for opacity on img not text)*/
 	#uclaimg {
 		position: absolute;
 		top: 0;
@@ -1169,20 +1495,8 @@ hr {
 		opacity: .17;
 	}
 
-	#schoolhead {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		text-align: center;
-		font-size: 39px;
-		font-family: 'Raleway', sans-serif;
-		color: black;
-		z-index: 5000;
-		font-weight: 700;
-	}
-
-	#school {
+	/*Styles University name*/
+	.school__ucla {
 		position: absolute;
 		top: 95px;
 		left: 0;
@@ -1190,11 +1504,12 @@ hr {
 		text-align: center;
 		font-size: 30px;
 		font-family: 'Raleway', sans-serif;
-		color: black;
+		color: #141823;
 		z-index: 5000;
 	}
 
-	#location {
+	/*Styles University location text*/
+	.school__location {
 		position: absolute;
 		top: 190px;
 		left: 0;
@@ -1202,11 +1517,12 @@ hr {
 		text-align: center;
 		font-size: 20px;
 		font-family: 'Raleway', sans-serif;
-		color: black;
+		color: #141823;
 		z-index: 5000;
 	}
 
-	#major {
+	/*Styles major text*/
+	.school__major {
 		position: absolute;
 		top: 225px;
 		left: 0;
@@ -1214,11 +1530,12 @@ hr {
 		text-align: center;
 		font-size: 25px;
 		font-family: 'Raleway', sans-serif;
-		color: black;
+		color: #141823;
 		z-index: 5000;
 	}
 
-	#minor {
+	/*Styles minor text*/
+	.school__minor {
 		position: absolute;
 		top: 255px;
 		left: 0;
@@ -1226,11 +1543,12 @@ hr {
 		text-align: center;
 		font-size: 25px;
 		font-family: 'Raleway', sans-serif;
-		color: black;
+		color: #141823;
 		z-index: 5000;
 	}
 
-	#highschool {
+	/*Styles HighSchool name*/
+	.school__high {
 		position: absolute;
 		top: 345px;
 		left: 0;
@@ -1238,11 +1556,12 @@ hr {
 		text-align: center;
 		font-size: 30px;
 		font-family: 'Raleway', sans-serif;
-		color: black;
+		color: #141823;
 		z-index: 5000;
 	}
 
-	#location2 {
+	/*Styles HighSchool location text*/
+	.school__location2 {
 		position: absolute;
 		top: 405px;
 		left: 0;
@@ -1250,494 +1569,29 @@ hr {
 		text-align: center;
 		font-size: 20px;
 		font-family: 'Raleway', sans-serif;
-		color: black;
+		color: #141823;
 		z-index: 5000;
 	}
 
-	#skillshere {
-		top: 920px;
+	/*Anchor for Contact section*/
+	#contactAnchor {
+		top: 3020px;
 		height: 0;
 		width: 0;
 	}
-
-	#skillsdiv {
+	
+	/*Container for Contact section*/
+	.contact {
 		position: absolute;
-		top: 970px;
-		right: 0;
-		height: 600px;
-		width: 100%;
-		overflow: hidden;
-		left: 0;
-		text-align: center;
-	}
-
-	#skillshead {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		text-align: center;
-		font-size: 39px;
-		font-family: 'Raleway', sans-serif;
-		color: black;
-		z-index: 5000;
-		font-weight: 700;
-	}
-
-	#htmimg {
-		position: absolute;
-		top: 110px;
-		margin: auto;
-		right: 0;
-		left: 0;
-		bottom: 0;
-		height: 480px;
-		width: 100%;
-		background-image: url('http://i.imgur.com/cF2ssqJ.png');
-		background-position: center;
-		background-size: 100% 100%;
-		background-repeat: no-repeat;
-	}
-
-	#workishere {
-		top: 1620px;
-		height: 0;
-		width: 0;
-	}
-
-	#clickpic {
-		position: absolute;
-		height: 40px;
-		width: 90px;
-		left: 2px;
-		top: 120px;
-		background-image: url('http://i.imgur.com/TrFdaVn.png');
-		background-position: center;
-		background-size: cover;
-		background-repeat: no-repeat;
-		z-index: 100;
-	}
-
-	#workdiv {
-		position: absolute;
-		top: 1670px;
-		right: 0;
-		height: 600px;
-		left: 0;
-		text-align: center;
-		width: 100%;
-	}
-
-	#workheader {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		text-align: center;
-		font-size: 39px;
-		font-family: 'Raleway', sans-serif;
-		color: black;
-		z-index: 5000;
-		font-weight: 700;
-	}
-
-	#saborpic {
-		position: absolute;
-		top: 130px;
-		left: 0;
-		right: 0;
-		width: 100%;
-		height: 330px;
-		background-image: url('http://i.imgur.com/cBAFUZv.png');
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
-		background-position: center;
-		opacity: .09;
-	}
-
-	#work0 {
-		position: absolute;
-		left: 0;
-		right: 0;
-		text-align: center;
-		top: 100px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 38px;
-		color: black;
-		font-weight: 100;
-	}
-
-	#work0a {
-		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
-		top: 155px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 18px;
-		color: black;
-		font-weight: 100;
-	}
-
-	#work0c {
-		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
-		top: 200px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 20px;
-		color: #545454;
-		font-weight: 100;
-	}
-
-	#work0d {
-		position: absolute;
-		left: 40px;
-		top: 265px;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 26px;
-		color: #a8a8a8;
-		font-weight: 100;
-	}
-
-	#work0e {
-		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
-		top: 255px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 20px;
-		color: #545454;
-		font-weight: 100;
-	}
-
-	#work0f {
-		position: absolute;
-		left: 65px;
-		top: 308px;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 25px;
-		color: #a8a8a8;
-		font-weight: 100;
-	}
-
-	#work0g {
-		position: absolute;
-		left: 0;
-		right: 0;
-		text-align: center;
-		top: 315px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 20px;
-		color: #545454;
-		font-weight: 100;
-	}
-
-	#work0h{
-		position: absolute;
-		left: 35px;
-		top: 3223px;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 26px;
-		color: #a8a8a8;
-		font-weight: 100;
-	}
-
-	#work0i {
-		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
-		top: 375px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 20px;
-		color: #545454;
-		font-weight: 100;
-	}
-
-	#viapic {
-		position: absolute;
-		top: 470px;
-		left: 0;
-		right: 0;
-		width: 100%;
-		height: 330px;
-		background-image: url('http://i.imgur.com/d91h7x7.png');
-		background-size: 100% 100%;
-		background-position: center;
-		background-repeat: no-repeat;
-		opacity: .10;
-	}
-
-	#work1 {
-		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
-		top: 440px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 30px;
-		color: black;
-		font-weight: 100;
-	}
-
-	#work1a {
-		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
-		top: 495px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 18px;
-		color: black;
-		font-weight: 100;
-	}
-
-	#work1b {
-		position: absolute;
-		left: 80px;
-		top: 3453px;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 25px;
-		color: #a8a8a8;
-		font-weight: 100;
-	}
-
-	#work1c {
-		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
-		top: 540px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 20px;
-		color: #545454;
-		font-weight: 100;
-	}
-
-	#work1d {
-		position: absolute;
-		left: 70px;
-		top: 3493px;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 25px;
-		color: #a8a8a8;
-		font-weight: 100;
-	}
-
-	#work1e {
-		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
-		top: 595px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 20px;
-		color: #545454;
-		font-weight: 100;
-	}
-
-	#work1f {
-		position: absolute;
-		left: 60px;
-		top: 3533px;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 25px;
-		color: #a8a8a8;
-		font-weight: 100;
-	}
-
-	#work1g {
-		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
-		top: 650px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 20px;
-		color: #545454;
-		font-weight: 100;
-	}
-
-	#work1h{
-		position: absolute;
-		left: 175px;
-		top: 3573px;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 25px;
-		color: #a8a8a8;
-		font-weight: 100;
-	}
-
-	#work1i {
-		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
-		top: 705px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 20px;
-		color: #545454;
-		font-weight: 100;
-	}
-
-	#viierpic {
-		position: absolute;
-		top: 810px;
-		left: 0;
-		right: 0;
-		width: 100%;
-		height: 330px;
-		background-image: url('http://i.imgur.com/kY6cxN2.jpg');
-		background-size: 100% 100%;
-		background-position: center;
-		background-repeat: no-repeat;
-		opacity: .15;
-	}
-
-	#work2 {
-		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
-		top: 785px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 38px;
-		color: black;
-		font-weight: 100;
-	}
-
-	#work2a {
-		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
-		top: 840px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 18px;
-		color: black;
-		font-weight: 100;
-	}
-
-	#work2b {
-		position: absolute;
-		left: 35px;
-		top: 3803px;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 25px;
-		color: #a8a8a8;
-		font-weight: 100;
-	}
-
-	#work2c {
-		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
-		top: 885px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 20px;
-		color: #545454;
-		font-weight: 100;
-	}
-
-	#work2d {
-		position: absolute;
-		left: 65px;
-		top: 3843px;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 25px;
-		color: #a8a8a8;
-		font-weight: 100;
-	}
-
-	#work2e {
-		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
-		top: 940px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 20px;
-		color: #545454;
-		font-weight: 100;
-	}
-
-	#work2f {
-		position: absolute;
-		left: 40px;
-		top: 3883px;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 25px;
-		color: #a8a8a8;
-		font-weight: 100;
-	}
-
-	#work2g {
-		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
-		top: 995px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 20px;
-		color: #545454;
-		font-weight: 100;
-	}
-
-	#work2h{
-		position: absolute;
-		left: 95px;
-		top: 3923px;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 25px;
-		color: #a8a8a8;
-		font-weight: 100;
-	}
-
-	#work2i {
-		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
-		top: 1055px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 20px;
-		color: #545454;
-		font-weight: 100;
-	}
-
-	#contactdiv {
-		position: absolute;
-		top: 2820px;
+		top: 2950px;
 		right: 0;
 		height: 400px;
 		left: 0;
 		text-align: center;
 	}
 
-	#contactishere {
-		top: 2820px;
-		height: 0;
-		width: 0;
-	}
-
-	#contacthead {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		text-align: center;
-		font-size: 39px;
-		font-family: 'Raleway', sans-serif;
-		color: black;
-		z-index: 5000;
-		font-weight: 700;
-	}
-
-	#phone{
+	/*Styles text for Phone Number in Contact section*/
+	.contact__phone{
 		position: absolute;
 		left: 0;
 		right: 0;
@@ -1745,19 +1599,21 @@ hr {
 		text-align: center;
 		font-family: 'Raleway', sans-serif;
 		font-size: 25px;
-		color: black;
+		color: #141823;
 	}
 
-	#email{
+	/*Styles text for Email in Contact section*/
+	.contact__email{
 		position: absolute;
 		left: 0;
 		right: 0;
 		top: 180px;
 		text-align: center;
 		font-family: 'Raleway', sans-serif;
-		font-size: 25px;
-		color: black;
+		font-size: 22px;
+		color: #141823;
 	}
+	
 }
 
 @media all and (max-width: 330px) and (min-width: 300px) {
@@ -1766,52 +1622,17 @@ hr {
 		top: 0;
 		left: 0;
 		right: 0;
-		height: 2500px;
+		background-size: cover;
 		width: 100%;
 		overflow: visible;
 		overflow-x: hidden;
 		background-color: #f8f8f8;
+		padding: 0;
+		margin: auto;
 	}
 	
-	#contain {
-		top: 0;
-		left: 0;
-		right: 0;
-		height: 2500px;
-		width: 100%;
-		overflow: hidden;
-		overflow-x: hidden;
-	}
-
-	/*Styles Name Bar on Top of Screen*/
-	#topName {
-		position: absolute;
-		top: 40px;
-		left: 0;
-		right: 0;
-		width: 190px;
-		height: 40px;
-		margin: auto;
-		text-align: center;
-		background-color: #e9e9e9;
-	}
-
-	/*Styles text in Name Bar*/
-	#topNamer {
-		position: absolute;
-		color: black;
-		font-family: 'Raleway', sans-serif;
-		font-size: 28px;
-		font-weight: 700;
-		top: -24px;
-		bottom: 0;
-		right: 0;
-		left: 0;
-		text-align: center;
-	}
-
 	/*Styles image on the top of the site (Sets the image as background)*/ 
-	#siteimg {
+	.topimg {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -1824,10 +1645,37 @@ hr {
 		background-position: center;
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
+	}
+
+	/*Styles Name Bar over my circular pic in middle*/
+	.topimg__name {
+		position: absolute;
+		top: 40px;
+		left: 0;
+		right: 0;
+		width: 210px;
+		height: 45px;
+		margin: auto;
+		text-align: center;
+		background-color: #e9e9e9;
+	}
+
+	/*Styles text in Name Bar*/
+	.topimg__name--text {
+		position: absolute;
+		color: #141823;
+		font-family: 'Raleway', sans-serif;
+		font-size: 30px;
+		font-weight: 700;
+		top: -24px;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		text-align: center;
 	}	
 
-	/*Styles container for Logo img in the middle of Larger img*/
-	#logoimg {
+	/*Styles container for my img in the middle of "siteimg"*/
+	.topimg__myimg {
 		position: absolute;
 		top: 33%;
 		left: 0;
@@ -1844,8 +1692,8 @@ hr {
 		overflow: hidden;
 	}
 
-	/*Styles actual Logo image*/
-	img {
+	/*Styles my image into a circle and size*/
+	.topimg__myimg--circle {
 		position: relative;
 		border-radius: 70px;
 		margin: auto;
@@ -1853,32 +1701,48 @@ hr {
 		width: 140px;
 	}
 
-	.gitimg {
-		position: fixed;
+	/*Container for text under my circular image*/
+	.topimg__dev {
+		position: absolute;
+		top: 350px;
 		left: 0;
-		top: 5px;
+		right: 0;
+		width: 305px;
+		height: 45px;
+		margin: auto;
+		text-align: center;
+		background-color: #e9e9e9;
+	}
+
+	/*Styles actual text for dev container*/
+	.topimg__dev--text {
+		position: absolute;
+		color: #141823;
+		font-family: 'Raleway', sans-serif;
+		font-size: 30px;
+		font-weight: 700;
+		top: -24px;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		text-align: center;
+	}
+	
+	/*Container for GitHub img link on top left of site*/
+	.topimg__git {
+		position: fixed;
+		left: 5px;
+		top: 10px;
 		height: 50px;
 		width: 50px;
 		display: block;
 		outline: none;
 		text-decoration: none;
 		z-index: 20000;
-		overflow: hidden;
-	}
-
-	.gitimg2 {
-		outline: none;
-		text-decoration: none;
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
-		overflow: hidden;
 	}
 
 	/*Styles actual image for Github Profile link*/
-	.gitimg3 {
+	.topimg__git--back {
 		position: relative;
 		height: 50px;
 		width: 50px;
@@ -1891,44 +1755,24 @@ hr {
 		transition: .30s;
 		overflow: hidden;
 	}
-
-	.changeToBlack {
-		background-image: url("http://i.imgur.com/hoOOTtQ.png");
-	}
-
-	.changeToWhite {
-		background-image: url("http://i.imgur.com/f0b7fd5.png");
-	}
-
-	#topDev {
+	
+	/*Makes GitHub img clickable link*/
+	.topimg__git--click {
+		outline: none;
+		text-decoration: none;
 		position: absolute;
-		top: 350px;
 		left: 0;
 		right: 0;
-		width: 280px;
-		height: 40px;
-		margin: auto;
-		text-align: center;
-		background-color: #e9e9e9;
-	}
-
-	#topDever {
-		position: absolute;
-		color: black;
-		font-family: 'Raleway', sans-serif;
-		font-size: 28px;
-		font-weight: 700;
-		top: -24px;
+		top: 0;
 		bottom: 0;
-		right: 0;
-		left: 0;
-		text-align: center;
+		overflow: hidden;
 	}
 
-	/*Styles menu bar*/
+	/*Styles menu bar (HIDES IT HERE, FOR MOBILE)*/
 	.menu {
 		position: absolute;
 		display: none;
+		height: 0px;
 	}
 
 	/*Styles container for the rest of website content*/
@@ -1943,8 +1787,9 @@ hr {
 		background-color: #f8f8f8;
 	}
 
-	/*Styles header for page (About)*/
-	#formhead {
+	
+	/*Styles the Header for EVERY section*/
+	.head {
 		position: absolute;
 		left: 0;
 		right: 0;
@@ -1952,11 +1797,12 @@ hr {
 		text-align: center;
 		font-size: 39px;
 		font-family: 'Raleway', sans-serif;
-		color: black;
+		color: #141823;
 		z-index: 5000;
 		font-weight: 700;
 	}
-
+	
+	/*Styles line through Header for EVERY section*/
 	hr {
 		position: absolute;
 		width: 200px;
@@ -1967,15 +1813,18 @@ hr {
 		transform: rotate(-5deg);
 		-webkit-transform: rotate(-5deg);
 	}
-
-	#bouthere {
+	
+	/*Anchor for About section*/
+	#aboutAnchor {
 		top: -50px;
 		height: 0;
 		width: 0;
+		left: 0;
+		right: 0;
 	}
-
-	/*Styles container that contains all of "Recently Catered Events"*/
-	#taquiza {
+	
+	/*Container for About section*/
+	.about {
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -1985,34 +1834,469 @@ hr {
 		text-align: center;
 		background-color: #f8f8f8;
 	}
-
-	/*Styles text for Taquiza header*/
-	#taquizatext {
+	
+	/*Body for About section*/
+	.about__body {
 		position: absolute;
 		left: 5%;
 		right: 5%;
-		top: 90px;
+		top: 80px;
 		text-align: center;
 		font-family: 'Raleway', sans-serif;
 		font-size: 29px;
-		color: black;
+		color: #141823;
+		line-height: 40px;
 	}
-
-	#schoolsIsHere {
+	
+	/*Anchor for Skills section*/
+	#skillAnchor {
 		top: 370px;
 		height: 0;
 		width: 0;
+		right: 0;
+		left: 0;
 	}
 
-	#schooldiv {
+	/*Skills section container*/
+	.skill {
 		position: absolute;
 		top: 420px;
+		right: 0;
+		height: 600px;
+		width: 100%;
+		overflow: hidden;
+		left: 0;
+		text-align: center;
+	}
+	
+	/*Image over skills in Skills section*/
+	.skill__slider {
+		position: absolute;
+		top: 110px;
+		right: 0;
+		bottom: 0;
+		height: 630px;
+		width: 100%;
+		background-image: url('http://i.imgur.com/DvWOp6N.jpg');
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		z-index: 1000;
+		transition: .8s;
+	}
+
+	/*Makes image slide to right when hover over .skills*/
+	.skill:hover .skill__slider {
+		right: -350%;
+		transition: .8s;
+		z-index: 960;
+	}
+
+	/*Small container for <ul> element in Skills section*/
+	.skill__cont {
+		position: absolute;
+		top: 110px;
+		margin: auto;
+		right: 0;
+		left: 0;
+		height: 480px;
+		width: 100%;
+		background-color: #f8f8f8;
+	}
+	
+	/*Left two TEXT elements of Skills section*/
+	.skill__cont__left {
+		position: absolute;
+		top: -30px;
+		left: 0;
+		right: 50%;
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+		font-size: 32px;
+		color: #141823;
+		text-align: center;
+		padding: 0;
+	}
+
+	/*Right two TEXT elements of Skills section*/
+	.skill__cont__right {
+		top: -30px;
+		position: absolute;
+		left: 50%;
+		right: 0;
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+		font-size: 32px;
+		color: #141823;
+		text-align: center;
+		padding: 0;
+	}
+
+	/*Top of each left and right TEXT columns in Skills, no padding*/
+	.skill__cont--nopad {
+		position: relative;
+		left: 0;
+		right: 0;
+		padding-top: 0;
+		display: block;
+		text-align: center;
+	}
+
+	/*Second of each left and right TEXT columns in Skills, yes padding*/
+	.skill__cont__yespad {
+		position: relative;
+		left: 0;
+		right: 0;
+		padding-top: 155px;
+		display: block;
+		text-align: center;
+	}
+
+	/*First of each left and right PICTURE columns in skills*/
+	.skill__cont__first {
+		position: relative;
+		top: 20px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		height: 80px;
+		width: 80px;
+		border-radius: 0;
+	}
+
+	/*First of each left and right PICTURE columns in skills*/
+	.skill__cont__second{
+		position: relative;
+		top: 20px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		height: 80px;
+		width: 80px;
+		border-radius: 0;
+	}
+	
+	#javcont {
+		position: relative;
+		left: -28px;
+		right: 0;
+		padding-top: 155px;
+		display: block;
+		text-align: center;
+	}
+	
+	/*Text for "AngularJS" element in Skills section*/
+	#angular {
+		top: 24%;
+		position: absolute;
+		left: 0;
+		right: 0;
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+		font-size: 32px;
+		color: #141823;
+		text-align: center;
+		padding: 0;
+	}
+
+	/*Image for "AngularJS" element in Skills section*/
+	#underAngular {
+		position: absolute;
+		top: 42%;
+		left: 0;
+		right: 0;
+		margin: auto;
+		text-align: center;
+		height: 80px;
+		width: 80px;
+	}
+	
+	/*Anchor for Work section*/
+	#workAnchor {
+		top: 1105px;
+		height: 0;
+		width: 0;
+		left: 0;
+		right: 0;
+	}
+	
+	/*Work section container*/
+	.work {
+		position: absolute;
+		top: 1100px;
+		right: 0;
+		height: 1300px;
+		left: 0;
+		text-align: center;
+		width: 100%;
+	}
+
+	/*Small container inside Work for SaborCulichi job
+	(Allows for hover opacity effect on img)*/
+	.work__sabor{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 130px;
+		width: 100%;
+		height: 330px;
+		text-decoration: none;	
+		color: transparent;
+	}
+		
+	/*Small image by .work__sabor header, alerts user that header of each job is clickable*/
+	#guidepic {
+		position: absolute;
+		height: 40px;
+		width: 90px;
+		left: 3px;
+		top: 5px;
+		background-image: url('http://i.imgur.com/ZuX2DI7.png');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		z-index: 100;
+	}
+	
+	/*Div that covers .work__sabor container with image*/
+	.work__sabor--pic {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 330px;
+		background-image: url('http://i.imgur.com/cBAFUZv.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-position: center;
+		opacity: 1;
+		transition: .5s;
+		z-index: 200;
+		text-decoration: none;
+		background-color: transparent;
+		color: transparent;
+	}
+	
+	/*When you hover over .work__sabor container,
+	pic inside .work__sabor--pic changes opacity & z-index*/
+	.work__sabor:hover .work__sabor--pic {
+		transition: .5s;
+		cursor: pointer;
+		opacity: .07;
+		z-index: 1;
+		text-decoration: none;
+		color: transparent;
+	}
+
+	/*Small container inside .work for Via job*/
+	.work__via {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 470px;
+		width: 100%;
+		height: 330px;
+		cursor: pointer;
+		text-decoration: none;		
+	}
+
+	/*Div that covers .work__via container with image*/
+	.work__via--pic{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 330px;
+		background-image: url('http://i.imgur.com/d91h7x7.png');
+		background-size: 100% 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		opacity: 1;
+		z-index: 200;
+		transition: .5s;
+		cursor: pointer;
+		text-decoration: none;
+	}
+	
+	/*When you hover over .work__via container,
+	pic inside .work__via--pic changes opacity & z-index*/
+	.work__via:hover .work__via--pic {
+		transition: .5s;
+		cursor: pointer;
+		opacity: .07;
+		z-index: 1;
+		text-decoration: none;
+	}
+	
+	/*Small container inside .work for Viier job*/
+	.work__viier {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 810px;
+		width: 100%;
+		height: 330px;
+		cursor: pointer;
+		text-decoration: none;		
+	}
+
+	/*Div that covers .work__viier container with image*/
+	.work__viier--pic {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 330px;
+		background-image: url('http://i.imgur.com/kY6cxN2.jpg');
+		background-size: 100% 100%;
+		background-position: center;
+		opacity: 1;
+		z-index: 200;
+		transition: .5s;
+		cursor: pointer;
+		text-decoration: none;
+	}
+
+	/*When you hover over .work__viier container,
+	pic inside .work__viier--pic changes opacity & z-index*/
+	.work__viier:hover .work__viier--pic {
+		transition: .5s;
+		cursor: pointer;
+		opacity: .07;
+		z-index: 1;
+		text-decoration: none;
+	}
+	
+	/*Styles the header for each of the Job sections in .work*/
+	.work0 {
+		position: absolute;
+		left: 0;
+		right: 0;
+		text-align: center;
+		top: -15px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 34px;
+		color: #141823;
+		font-weight: 100;
+	}
+	
+	/*Styles the header (.work0) for the Via section in MOBILE
+	becuase name too long and text overlaps.*/
+	#viaSmaller {
+		position: absolute;
+		left: 0;
+		right: 0;
+		text-align: center;
+		top: -15px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 30px;
+		color: #141823;
+		font-weight: 100;
+	}
+
+	/*Styles Job Position for each of the Job sections in .work*/
+	.work0a {
+		position: absolute;
+		text-align: center;
+		left: 0;
+		right: 0;
+		top: 40px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 16px;
+		color: #141823;
+		font-weight: 100;
+	}
+	
+	/*Styles Via Job Position (.work0a) because
+	Header is smaller, and it seems far*/
+	#viaCloser {
+		position: absolute;
+		text-align: center;
+		left: 0;
+		right: 0;
+		top: 35px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 16px;
+		color: #141823;
+		font-weight: 100;
+	}
+
+	/*Styles first Job Description for each of Job sections in .work*/
+	.work0c {
+		position: absolute;
+		text-align: center;
+		left: 0;
+		right: 0;
+		top: 95px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 19px;
+		color: #141823;
+		font-weight: 100;
+	}
+
+	/*Styles second Job Description for each of Job sections in .work*/
+	.work0e {
+		position: absolute;
+		text-align: center;
+		left: 0;
+		right: 0;
+		top: 145px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 19px;
+		color: #141823;
+		font-weight: 100;
+	}
+
+	/*Styles third Job Description for each of Job sections in .work*/
+	.work0g {
+		position: absolute;
+		left: 0;
+		right: 0;
+		text-align: center;
+		top: 195px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 19px;
+		color: #141823;
+		font-weight: 100;
+	}
+
+	/*Styles fourth Job Description for each of Job sections in .work*/
+	.work0i {
+		position: absolute;
+		text-align: center;
+		left: 0;
+		right: 0;
+		top: 245px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 19px;
+		color: #141823;
+		font-weight: 100;
+	}
+
+	/*Anchor for School section*/
+	#schoolAnchor {
+		top: 2370px;
+		height: 0;
+		width: 0;
+		right: 0;
+		left: 0;
+	}
+	
+	/*School section container*/
+	.school {
+		position: absolute;
+		top: 2320px;
 		right: 0;
 		height: 550px;
 		left: 0;
 		text-align: center;
 	}
 
+	/*Styles background image for School section
+	(Had to use DIV for opacity on img not text)*/
 	#uclaimg {
 		position: absolute;
 		top: 0;
@@ -2027,575 +2311,103 @@ hr {
 		opacity: .17;
 	}
 
-	#schoolhead {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		text-align: center;
-		font-size: 39px;
-		font-family: 'Raleway', sans-serif;
-		color: black;
-		z-index: 5000;
-		font-weight: 700;
-	}
-
-	#school {
+	/*Styles University name*/
+	.school__ucla {
 		position: absolute;
 		top: 95px;
 		left: 0;
 		right: 0;
 		text-align: center;
-		font-size: 26px;
+		font-size: 30px;
 		font-family: 'Raleway', sans-serif;
-		color: black;
+		color: #141823;
 		z-index: 5000;
 	}
 
-	#location {
+	/*Styles University location text*/
+	.school__location {
 		position: absolute;
-		top: 170px;
-		left: 0;
-		right: 0;
-		text-align: center;
-		font-size: 18px;
-		font-family: 'Raleway', sans-serif;
-		color: black;
-		z-index: 5000;
-	}
-
-	#major {
-		position: absolute;
-		top: 215px;
-		left: 0;
-		right: 0;
-		text-align: center;
-		font-size: 22px;
-		font-family: 'Raleway', sans-serif;
-		color: black;
-		z-index: 5000;
-	}
-
-	#minor {
-		position: absolute;
-		top: 245px;
-		left: 0;
-		right: 0;
-		text-align: center;
-		font-size: 22px;
-		font-family: 'Raleway', sans-serif;
-		color: black;
-		z-index: 5000;
-	}
-
-	#highschool {
-		position: absolute;
-		top: 345px;
-		left: 0;
-		right: 0;
-		text-align: center;
-		font-size: 26px;
-		font-family: 'Raleway', sans-serif;
-		color: black;
-		z-index: 5000;
-	}
-
-	#location2 {
-		position: absolute;
-		top: 390px;
+		top: 190px;
 		left: 0;
 		right: 0;
 		text-align: center;
 		font-size: 20px;
 		font-family: 'Raleway', sans-serif;
-		color: black;
+		color: #141823;
 		z-index: 5000;
 	}
 
-	#skillshere {
-		top: 920px;
-		height: 0;
-		width: 0;
-	}
-
-	#skillsdiv {
+	/*Styles major text*/
+	.school__major {
 		position: absolute;
-		top: 970px;
-		right: 0;
-		height: 600px;
-		width: 100%;
-		overflow: hidden;
-		left: 0;
-		text-align: center;
-	}
-
-	#skillshead {
-		position: absolute;
+		top: 225px;
 		left: 0;
 		right: 0;
-		top: 0;
 		text-align: center;
-		font-size: 39px;
+		font-size: 25px;
 		font-family: 'Raleway', sans-serif;
-		color: black;
+		color: #141823;
 		z-index: 5000;
-		font-weight: 700;
 	}
 
-	#htmimg {
+	/*Styles minor text*/
+	.school__minor {
 		position: absolute;
-		top: 110px;
-		margin: auto;
-		right: 0;
-		left: 0;
-		bottom: 0;
-		height: 480px;
-		width: 100%;
-		background-image: url('http://i.imgur.com/cF2ssqJ.png');
-		background-position: center;
-		background-size: 100% 90%;
-		background-repeat: no-repeat;
-	}
-
-	#workishere {
-		top: 1620px;
-		height: 0;
-		width: 0;
-	}
-
-	#clickpic {
-		position: absolute;
-		height: 40px;
-		width: 90px;
-		left: 0;
-		top: 120px;
-		background-image: url('http://i.imgur.com/ZuX2DI7.png');
-		background-position: center;
-		background-size: cover;
-		background-repeat: no-repeat;
-		z-index: 100;
-	}
-
-	#workdiv {
-		position: absolute;
-		top: 1670px;
-		right: 0;
-		height: 600px;
-		left: 0;
-		text-align: center;
-		width: 100%;
-	}
-
-	#workheader {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		text-align: center;
-		font-size: 39px;
-		font-family: 'Raleway', sans-serif;
-		color: black;
-		z-index: 5000;
-		font-weight: 700;
-	}
-
-	#saborpic {
-		position: absolute;
-		top: 130px;
-		left: 0;
-		right: 0;
-		width: 100%;
-		height: 330px;
-		background-image: url('http://i.imgur.com/cBAFUZv.png');
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
-		background-position: center;
-		opacity: .09;
-	}
-
-	#work0 {
-		position: absolute;
-		left: 0;
-		right: 0;
-		text-align: center;
-		top: 100px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 38px;
-		color: black;
-		font-weight: 100;
-	}
-
-	#work0a {
-		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
-		top: 160px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 16px;
-		color: black;
-		font-weight: 100;
-	}
-
-	#work0c {
-		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
-		top: 200px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 18px;
-		color: #545454;
-		font-weight: 100;
-	}
-
-	#work0d {
-		position: absolute;
-		left: 40px;
-		top: 265px;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 26px;
-		color: #a8a8a8;
-		font-weight: 100;
-	}
-
-	#work0e {
-		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
 		top: 255px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 18px;
-		color: #545454;
-		font-weight: 100;
-	}
-
-	#work0f {
-		position: absolute;
-		left: 65px;
-		top: 308px;
-		font-family: 'Material Icons', sans-serif;
+		left: 0;
+		right: 0;
+		text-align: center;
 		font-size: 25px;
-		color: #a8a8a8;
-		font-weight: 100;
+		font-family: 'Raleway', sans-serif;
+		color: #141823;
+		z-index: 5000;
 	}
 
-	#work0g {
+	/*Styles HighSchool name*/
+	.school__high {
 		position: absolute;
+		top: 345px;
 		left: 0;
 		right: 0;
 		text-align: center;
-		top: 315px;
+		font-size: 30px;
 		font-family: 'Raleway', sans-serif;
-		font-size: 18px;
-		color: #545454;
-		font-weight: 100;
+		color: #141823;
+		z-index: 5000;
 	}
 
-	#work0h{
+	/*Styles HighSchool location text*/
+	.school__location2 {
 		position: absolute;
-		left: 35px;
-		top: 3223px;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 26px;
-		color: #a8a8a8;
-		font-weight: 100;
-	}
-
-	#work0i {
-		position: absolute;
+		top: 405px;
+		left: 0;
+		right: 0;
 		text-align: center;
-		left: 0;
-		right: 0;
-		top: 375px;
+		font-size: 20px;
 		font-family: 'Raleway', sans-serif;
-		font-size: 18px;
-		color: #545454;
-		font-weight: 100;
+		color: #141823;
+		z-index: 5000;
 	}
 
-	#viapic {
-		position: absolute;
-		top: 470px;
-		left: 0;
-		right: 0;
-		width: 100%;
-		height: 330px;
-		background-image: url('http://i.imgur.com/d91h7x7.png');
-		background-size: 100% 100%;
-		background-position: center;
-		background-repeat: no-repeat;
-		opacity: .10;
+	/*Anchor for Contact section*/
+	#contactAnchor {
+		top: 3020px;
+		height: 0;
+		width: 0;
 	}
-
-	#work1 {
+	
+	/*Container for Contact section*/
+	.contact {
 		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
-		top: 455px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 28px;
-		color: black;
-		font-weight: 100;
-	}
-
-	#work1a {
-		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
-		top: 495px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 16px;
-		color: black;
-		font-weight: 100;
-	}
-
-	#work1b {
-		position: absolute;
-		left: 80px;
-		top: 3453px;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 25px;
-		color: #a8a8a8;
-		font-weight: 100;
-	}
-
-	#work1c {
-		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
-		top: 540px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 18px;
-		color: #545454;
-		font-weight: 100;
-	}
-
-	#work1d {
-		position: absolute;
-		left: 70px;
-		top: 3493px;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 25px;
-		color: #a8a8a8;
-		font-weight: 100;
-	}
-
-	#work1e {
-		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
-		top: 595px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 18px;
-		color: #545454;
-		font-weight: 100;
-	}
-
-	#work1f {
-		position: absolute;
-		left: 60px;
-		top: 3533px;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 25px;
-		color: #a8a8a8;
-		font-weight: 100;
-	}
-
-	#work1g {
-		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
-		top: 650px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 18px;
-		color: #545454;
-		font-weight: 100;
-	}
-
-	#work1h{
-		position: absolute;
-		left: 175px;
-		top: 3573px;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 25px;
-		color: #a8a8a8;
-		font-weight: 100;
-	}
-
-	#work1i {
-		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
-		top: 705px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 18px;
-		color: #545454;
-		font-weight: 100;
-	}
-
-	#viierpic {
-		position: absolute;
-		top: 810px;
-		left: 0;
-		right: 0;
-		width: 100%;
-		height: 330px;
-		background-image: url('http://i.imgur.com/kY6cxN2.jpg');
-		background-size: 100% 100%;
-		background-position: center;
-		background-repeat: no-repeat;
-		opacity: .15;
-	}
-
-	#work2 {
-		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
-		top: 785px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 38px;
-		color: black;
-		font-weight: 100;
-	}
-
-	#work2a {
-		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
-		top: 840px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 16px;
-		color: black;
-		font-weight: 100;
-	}
-
-	#work2b {
-		position: absolute;
-		left: 35px;
-		top: 3803px;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 25px;
-		color: #a8a8a8;
-		font-weight: 100;
-	}
-
-	#work2c {
-		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
-		top: 885px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 18px;
-		color: #545454;
-		font-weight: 100;
-	}
-
-	#work2d {
-		position: absolute;
-		left: 65px;
-		top: 3843px;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 25px;
-		color: #a8a8a8;
-		font-weight: 100;
-	}
-
-	#work2e {
-		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
-		top: 940px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 18px;
-		color: #545454;
-		font-weight: 100;
-	}
-
-	#work2f {
-		position: absolute;
-		left: 40px;
-		top: 3883px;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 25px;
-		color: #a8a8a8;
-		font-weight: 100;
-	}
-
-	#work2g {
-		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
-		top: 995px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 17px;
-		color: #545454;
-		font-weight: 100;
-	}
-
-	#work2h{
-		position: absolute;
-		left: 95px;
-		top: 3923px;
-		font-family: 'Material Icons', sans-serif;
-		font-size: 25px;
-		color: #a8a8a8;
-		font-weight: 100;
-	}
-
-	#work2i {
-		position: absolute;
-		text-align: center;
-		left: 0;
-		right: 0;
-		top: 1055px;
-		font-family: 'Raleway', sans-serif;
-		font-size: 18px;
-		color: #545454;
-		font-weight: 100;
-	}
-
-	#contactdiv {
-		position: absolute;
-		top: 2820px;
+		top: 2950px;
 		right: 0;
 		height: 400px;
 		left: 0;
 		text-align: center;
 	}
 
-	#contactishere {
-		top: 2820px;
-		height: 0;
-		width: 0;
-	}
-
-	#contacthead {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		text-align: center;
-		font-size: 39px;
-		font-family: 'Raleway', sans-serif;
-		color: black;
-		z-index: 5000;
-		font-weight: 700;
-	}
-
-	#phone{
+	/*Styles text for Phone Number in Contact section*/
+	.contact__phone{
 		position: absolute;
 		left: 0;
 		right: 0;
@@ -2603,18 +2415,19 @@ hr {
 		text-align: center;
 		font-family: 'Raleway', sans-serif;
 		font-size: 25px;
-		color: black;
+		color: #141823;
 	}
 
-	#email{
+	/*Styles text for Email in Contact section*/
+	.contact__email{
 		position: absolute;
 		left: 0;
 		right: 0;
 		top: 180px;
 		text-align: center;
 		font-family: 'Raleway', sans-serif;
-		font-size: 25px;
-		color: black;
+		font-size: 22px;
+		color: #141823;
 	}
 }
 	
