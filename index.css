@@ -308,6 +308,16 @@ hr {
 	cursor: crosshair;
 }
 
+.touch {
+	position: absolute;
+	display: none;
+}
+
+.touchTwo {
+	position: absolute;
+	display: none;
+}
+
 /*Makes image slide to right when hover over .skills*/
 .skill:hover .skill__slider {
 	right: -350%;
@@ -1087,6 +1097,7 @@ pic inside .work__viier--pic changes opacity & z-index*/
 		height: 480px;
 		width: 100%;
 		background-color: #f8f8f8;
+		transition: .8s;
 	}
 	
 	/*Left two TEXT elements of Skills section*/
@@ -1247,6 +1258,22 @@ pic inside .work__viier--pic changes opacity & z-index*/
 		text-decoration: none;	
 		color: none;
 	}
+	
+	/*Small Gif on top of Skills and Work section,
+	allows user to know section is clickable.*/
+	.touch {
+		position: absolute;
+		display: inline;
+		height: 80px;
+		width: 80px;
+		right: 15px;
+		top: -61px;
+		background-image: url('http://i.giphy.com/l3vQWD6g6duMsX8VG.gif');
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		z-index: 1000;
+	}	
 		
 	/*Small image by .work__sabor header, alerts user that header of each job is clickable*/
 	#guidepic {
@@ -1904,7 +1931,22 @@ pic inside .work__viier--pic changes opacity & z-index*/
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
 		z-index: 1000;
-		transition: .8s;
+	}
+	
+	/*Small Gif on top of Skills and Work section,
+	allows user to know section is clickable.*/
+	.touch {
+		position: absolute;
+		display: inline;
+		height: 70px;
+		width: 70px;
+		right: 5px;
+		top: -54px;
+		background-image: url('http://i.giphy.com/l3vQWD6g6duMsX8VG.gif');
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		z-index: 1000;
 	}
 
 	/*Makes image slide to right when hover over .skills*/
@@ -2471,3 +2513,4 @@ pic inside .work__viier--pic changes opacity & z-index*/
 		color: #141823;
 	}
 }
+	
