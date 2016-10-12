@@ -288,6 +288,7 @@ hr {
 	text-align: center;
 	overflow: hidden;
 	cursor: crosshair;
+	transition: 1s;
 }
 
 /*Image over skills in Skills section*/
@@ -303,14 +304,14 @@ hr {
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	z-index: 1000;
-	transition: .8s;
+	transition: 1s;
 	cursor: crosshair;
 }
 
 /*Makes image slide to right when hover over .skills*/
 .skill:hover .skill__slider {
 	right: -350%;
-	transition: .8s;
+	transition: 1s;
 	z-index: 960;
 	cursor: crosshair;
 }
@@ -1215,6 +1216,25 @@ pic inside .work__viier--pic changes opacity & z-index*/
 		width: 100%;
 	}
 
+	/*This whole weird section makes it so
+	that when clicked, Image doesn't turn blue
+	on MOBILE*/
+	*::selection {
+		background-color: transparent;
+	}
+	*::-moz-selection {
+		background-color: transparent;
+	}
+	* {
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	}
+	input[type="text"], textarea, [contenteditable] {
+		-webkit-user-select: text;
+		-moz-user-select: text;
+		-ms-user-select: text;
+		user-select: text;
+	}	
+	
 	/*Small container inside Work for SaborCulichi job
 	(Allows for hover opacity effect on img)*/
 	.work__sabor{
@@ -1225,7 +1245,7 @@ pic inside .work__viier--pic changes opacity & z-index*/
 		width: 100%;
 		height: 330px;
 		text-decoration: none;	
-		color: transparent;
+		color: none;
 	}
 		
 	/*Small image by .work__sabor header, alerts user that header of each job is clickable*/
@@ -1258,19 +1278,21 @@ pic inside .work__viier--pic changes opacity & z-index*/
 		transition: .5s;
 		z-index: 200;
 		text-decoration: none;
-		background-color: transparent;
-		color: transparent;
+		color: none;
 	}
 	
 	/*When you hover over .work__sabor container,
 	pic inside .work__sabor--pic changes opacity & z-index*/
 	.work__sabor:hover .work__sabor--pic {
 		transition: .5s;
-		cursor: pointer;
 		opacity: .07;
 		z-index: 1;
 		text-decoration: none;
-		color: transparent;
+		color: none;
+	}
+	
+	.work__sabor:active {
+		color: none;
 	}
 
 	/*Small container inside .work for Via job*/
@@ -1284,7 +1306,7 @@ pic inside .work__viier--pic changes opacity & z-index*/
 		cursor: pointer;
 		text-decoration: none;		
 	}
-
+	
 	/*Div that covers .work__via container with image*/
 	.work__via--pic{
 		position: absolute;
@@ -2030,6 +2052,25 @@ pic inside .work__viier--pic changes opacity & z-index*/
 		text-align: center;
 		width: 100%;
 	}
+	
+	/*This whole weird section makes it so
+	that when clicked, Image doesn't turn blue
+	on MOBILE*/
+	*::selection {
+		background-color: transparent;
+	}
+	*::-moz-selection {
+		background-color: transparent;
+	}
+	* {
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	}
+	input[type="text"], textarea, [contenteditable] {
+		-webkit-user-select: text;
+		-moz-user-select: text;
+		-ms-user-select: text;
+		user-select: text;
+	}
 
 	/*Small container inside Work for SaborCulichi job
 	(Allows for hover opacity effect on img)*/
@@ -2430,4 +2471,3 @@ pic inside .work__viier--pic changes opacity & z-index*/
 		color: #141823;
 	}
 }
-	
