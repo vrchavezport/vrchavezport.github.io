@@ -785,6 +785,33 @@ pic inside .work__viier--pic changes opacity & z-index*/
 	height: 700px;
 	left: 0;
 	text-align: center;
+	overflow: hidden;
+}
+
+/*Just made the class so that .reform underneath
+can be added when form button is pressed*/
+.forma {
+	height: auto;
+	width: 100%;
+}
+
+/*This gets added to .forma it moves it out of view
+from the webpage*/
+.remform {
+	display: none;
+}
+
+.aftersent {
+	position: absolute;
+	top: 120px;
+	left: 100%;
+	right: -175%;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 34px;
+	color: #141823;
+	font-weight: 300;
+	border: 3px solid #141823;
 }
 
 /*Generally styles input area (all of the boxes) for user information*/
@@ -1793,6 +1820,21 @@ textarea {
 		overflow-x: hidden;
 	}
 
+	/*Uses jQuery to add to Contact section after "Send"
+	button is pressed*/
+	.aftersent {
+		position: absolute;
+		top: 510px;
+		left: 100%;
+		right: -175%;
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+		font-size: 34px;
+		color: #141823;
+		font-weight: 300;
+		border: 3px solid #141823;
+	}
+	
 	/*Generally styles input area (all of the boxes) for user information*/
 	input {
 		font-family: 'Raleway', sans-serif;
@@ -2807,6 +2849,21 @@ textarea {
 		overflow-x: hidden;
 	}
 
+	/*Uses jQuery to add to Contact section after "Send"
+	button is pressed*/
+	.aftersent {
+		position: absolute;
+		top: 510px;
+		left: 100%;
+		right: -175%;
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+		font-size: 34px;
+		color: #141823;
+		font-weight: 300;
+		border: 3px solid #141823;
+	}
+	
 	/*Generally styles input area (all of the boxes) for user information*/
 	input {
 		font-family: 'Raleway', sans-serif;
