@@ -787,13 +787,155 @@ pic inside .work__viier--pic changes opacity & z-index*/
 	text-align: center;
 }
 
-/*Styles text for Phone Number in Contact section*/
-.contact__phone{
+/*Generally styles input area (all of the boxes) for user information*/
+input {
+	font-family: 'Raleway', sans-serif;
+	background-color: black;
+	font-size: 22px;
+	color: #141823;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+/*Styles small container for "Name" input text area*/
+.nombre {
 	position: absolute;
+	top: 170px;
 	left: 0;
 	right: 0;
-	top: 120px;
+	margin: auto;
+}
+
+/*Styles text for "Name" area*/
+#nombredos {
+	outline: none;
+	border: solid 3px #141823;
+	background-color: transparent;
+	height: 40px;
+	width: 375px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 200px;
+}
+
+/*Styles small container for "Email" input text area*/
+.correo {
+	position: absolute;
+	top: 230px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+/*Styles text for "Email" area*/
+#correodos {
+	outline: none;
+	border: solid 3px #141823;
+	background-color: transparent;
+	height: 40px;
+	width: 375px;
+}
+
+/*Styles small container for "Name" input text area*/
+.telefo {
+	position: absolute;
+	top: 290px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+/*Styles text for "Phone" area*/
+#telefodos {
+	outline: none;
+	border: solid 3px #141823;
+	background-color: transparent;
+	height: 40px;
+	width: 375px;
+	left: 30px;
+	top: 200px;
+}
+
+/*Styles small container for "Location of event" input text area*/
+.donde {
+	position: absolute;
+	background-color: transparent;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 350px;
+}
+
+/*Styles text and size for textarea of "Location of event" input box area*/
+textarea {
+	background-color: transparent;
+	border: solid 3px #141823;
+	resize: none;
+	font-family: 'Raleway', sans-serif;
+	font-size: 23px;
+	padding-left: 8px;
+	padding-right: 8px;
+	color: #141823;
+	outline: none;
+	width: 375px;
+	height: 190px;
+}
+
+#usebut {
+	position: absolute;
+	left: 30px;
+	top: 640px;
+}
+
+/*Styles "Send" button and text inside it*/
+#sendMessage {
+	position: absolute;
+	left: calc(50% + 108px);
+	top: 560px;
+	cursor: pointer;
+	height: 40px;
+	width: 90px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	outline: none;
+	text-decoration: none;
+	border: 3px solid #141823;
+	background-color: #f8f8f8;
+	color: #141823;
+}
+
+/*Styles text for Phone Number in Contact section*/
+.contact__phone__text{
+	position: absolute;
+	left: 0;
+	right: calc(50% + 187.5px);
+	top: 220px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 32px;
+	color: #141823;
 	text-align: center;
+}
+
+/*Styles text for Phone Number in Contact section*/
+.contact__phone__number{
+	position: absolute;
+	left: 0;
+	right: calc(50% + 187.5px);
+	top: 260px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 32px;
+	color: #141823;
+	text-align: center;
+}
+
+/*Styles text for Email in Contact section*/
+.contact__email__top{
+	position: absolute;
+	left: calc(50% + 187.5px);
+	right: 0;
+	top: 220px;
 	font-family: 'Raleway', sans-serif;
 	font-size: 32px;
 	color: #141823;
@@ -802,10 +944,9 @@ pic inside .work__viier--pic changes opacity & z-index*/
 /*Styles text for Email in Contact section*/
 .contact__email{
 	position: absolute;
-	left: 0;
+	left: calc(50% + 187.5px);
 	right: 0;
-	top: 180px;
-	text-align: center;
+	top: 260px;
 	font-family: 'Raleway', sans-serif;
 	font-size: 32px;
 	color: #141823;
@@ -1645,20 +1786,170 @@ pic inside .work__viier--pic changes opacity & z-index*/
 		position: absolute;
 		top: 2950px;
 		right: 0;
-		height: 400px;
+		height: 1100px;
 		left: 0;
+		text-align: center;
+		overflow: hidden;
+		overflow-x: hidden;
+	}
+
+	/*Generally styles input area (all of the boxes) for user information*/
+	input {
+		font-family: 'Raleway', sans-serif;
+		background-color: black;
+		font-size: 20px;
+		color: #141823;
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+	/*Styles small container for "Name" input text area*/
+	.nombre {
+		position: absolute;
+		top: 510px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	/*Styles text for "Name" area*/
+	#nombredos {
+		outline: none;
+		border: solid 3px #141823;
+		background-color: transparent;
+		height: 40px;
+		width: 70%;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	/*Styles small container for "Email" input text area*/
+	.correo {
+		position: absolute;
+		top: 570px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	/*Styles text for "Email" area*/
+	#correodos {
+		outline: none;
+		border: solid 3px #141823;
+		background-color: transparent;
+		height: 40px;
+		width: 70%;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	/*Styles small container for "Name" input text area*/
+	.telefo {
+		position: absolute;
+		top: 630px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	/*Styles text for "Phone" area*/
+	#telefodos {
+		outline: none;
+		border: solid 3px #141823;
+		background-color: transparent;
+		height: 40px;
+		width: 70%;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	/*Styles small container for "Location of event" input text area*/
+	.donde {
+		position: absolute;
+		background-color: transparent;
+		left: 0;
+		right: 0;
+		margin: auto;
+		top: 690px;
+	}
+
+	/*Styles text and size for textarea of "Location of event" input box area*/
+	textarea {
+		background-color: transparent;
+		border: solid 3px #141823;
+		resize: none;
+		font-family: 'Raleway', sans-serif;
+		font-size: 23px;
+		padding-left: 8px;
+		padding-right: 8px;
+		color: #141823;
+		outline: none;
+		height: 190px;
+		width: 70%;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	#usebut {
+		position: absolute;
+		left: 30px;
+		top: 640px;
+	}
+
+	/*Styles "Send" button and text inside it*/
+	#sendMessage {
+		position: absolute;
+		left: calc(90% - 96px);
+		top: 900px;
+		cursor: pointer;
+		height: 40px;
+		width: 90px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 20px;
+		font-weight: 600;
+		outline: none;
+		text-decoration: none;
+		border: 3px solid #141823;
+		background-color: #f8f8f8;
+		color: #141823;
+	}
+
+	/*Styles text for Phone Number in Contact section*/
+	.contact__phone__text{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 145px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 32px;
+		color: #141823;
 		text-align: center;
 	}
 
 	/*Styles text for Phone Number in Contact section*/
-	.contact__phone{
+	.contact__phone__number{
 		position: absolute;
 		left: 0;
 		right: 0;
-		top: 120px;
-		text-align: center;
+		top: 185px;
 		font-family: 'Raleway', sans-serif;
-		font-size: 25px;
+		font-size: 32px;
+		color: #141823;
+		text-align: center;
+	}
+
+	/*Styles text for Email in Contact section*/
+	.contact__email__top{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 285px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 32px;
 		color: #141823;
 	}
 
@@ -1667,10 +1958,9 @@ pic inside .work__viier--pic changes opacity & z-index*/
 		position: absolute;
 		left: 0;
 		right: 0;
-		top: 180px;
-		text-align: center;
+		top: 325px;
 		font-family: 'Raleway', sans-serif;
-		font-size: 22px;
+		font-size: 32px;
 		color: #141823;
 	}
 	
@@ -2510,20 +2800,170 @@ pic inside .work__viier--pic changes opacity & z-index*/
 		position: absolute;
 		top: 2950px;
 		right: 0;
-		height: 400px;
+		height: 1100px;
 		left: 0;
+		text-align: center;
+		overflow: hidden;
+		overflow-x: hidden;
+	}
+
+	/*Generally styles input area (all of the boxes) for user information*/
+	input {
+		font-family: 'Raleway', sans-serif;
+		background-color: black;
+		font-size: 20px;
+		color: #141823;
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+	/*Styles small container for "Name" input text area*/
+	.nombre {
+		position: absolute;
+		top: 510px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	/*Styles text for "Name" area*/
+	#nombredos {
+		outline: none;
+		border: solid 3px #141823;
+		background-color: transparent;
+		height: 40px;
+		width: 70%;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	/*Styles small container for "Email" input text area*/
+	.correo {
+		position: absolute;
+		top: 570px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	/*Styles text for "Email" area*/
+	#correodos {
+		outline: none;
+		border: solid 3px #141823;
+		background-color: transparent;
+		height: 40px;
+		width: 70%;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	/*Styles small container for "Name" input text area*/
+	.telefo {
+		position: absolute;
+		top: 630px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	/*Styles text for "Phone" area*/
+	#telefodos {
+		outline: none;
+		border: solid 3px #141823;
+		background-color: transparent;
+		height: 40px;
+		width: 70%;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	/*Styles small container for "Location of event" input text area*/
+	.donde {
+		position: absolute;
+		background-color: transparent;
+		left: 0;
+		right: 0;
+		margin: auto;
+		top: 690px;
+	}
+
+	/*Styles text and size for textarea of "Location of event" input box area*/
+	textarea {
+		background-color: transparent;
+		border: solid 3px #141823;
+		resize: none;
+		font-family: 'Raleway', sans-serif;
+		font-size: 23px;
+		padding-left: 8px;
+		padding-right: 8px;
+		color: #141823;
+		outline: none;
+		height: 190px;
+		width: 70%;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	#usebut {
+		position: absolute;
+		left: 30px;
+		top: 640px;
+	}
+
+	/*Styles "Send" button and text inside it*/
+	#sendMessage {
+		position: absolute;
+		left: calc(90% - 96px);
+		top: 900px;
+		cursor: pointer;
+		height: 40px;
+		width: 90px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 20px;
+		font-weight: 600;
+		outline: none;
+		text-decoration: none;
+		border: 3px solid #141823;
+		background-color: #f8f8f8;
+		color: #141823;
+	}
+
+	/*Styles text for Phone Number in Contact section*/
+	.contact__phone__text{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 145px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 32px;
+		color: #141823;
 		text-align: center;
 	}
 
 	/*Styles text for Phone Number in Contact section*/
-	.contact__phone{
+	.contact__phone__number{
 		position: absolute;
 		left: 0;
 		right: 0;
-		top: 120px;
-		text-align: center;
+		top: 185px;
 		font-family: 'Raleway', sans-serif;
-		font-size: 25px;
+		font-size: 32px;
+		color: #141823;
+		text-align: center;
+	}
+
+	/*Styles text for Email in Contact section*/
+	.contact__email__top{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 285px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 32px;
 		color: #141823;
 	}
 
@@ -2532,10 +2972,9 @@ pic inside .work__viier--pic changes opacity & z-index*/
 		position: absolute;
 		left: 0;
 		right: 0;
-		top: 180px;
-		text-align: center;
+		top: 325px;
 		font-family: 'Raleway', sans-serif;
-		font-size: 22px;
+		font-size: 32px;
 		color: #141823;
 	}
 }
