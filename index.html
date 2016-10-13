@@ -48,8 +48,8 @@
 					</div>		<!--End of "aboutDiv" div-->
 					
 					<hr id="skillAnchor" />
-					<div class="skill" onclick="">
-						<div class="skill__slider" onclick="">
+					<div class="skill">
+						<div class="skill__slider">
 							<div class="touch"></div>
 						</div>						
 						<hr />
@@ -76,7 +76,7 @@
 					<div class="work">
 						<hr />
 						<p class="head">WORK</p>
-						<div class="work__sabor" onclick="">
+						<div class="work__sabor">
 							<div class="touch"></div>
 							<div id="guidepic"></div>
 							<div class="work__sabor--pic"></div>
@@ -88,7 +88,7 @@
 							<p class="work0i">Cross Browser (IE, Firefox, Chrome, Safari) & Mobile responsive.</p>
 						</div>
 
-						<div class="work__via" onclick="">
+						<div class="work__via">
 							<div class="work__via--pic"></div>
 							<p class="work0" id="viaSmaller"><a href="http://repairthere.com/" target="_blank">Via Cell Phone Repair</a></p>	
 							<p class="work0a" id="viaCloser">Front End Web Developer + Web Designer | February 2016 - May 2016</p>
@@ -98,7 +98,7 @@
 							<p class="work0i">Cross Browser (IE, Firefox, Chrome, Safari).</p>
 						</div>
 						
-						<div class="work__viier" onclick="">
+						<div class="work__viier">
 							<div class="work__viier--pic"></div>
 							<p class="work0"><a href="http://vrch1122.github.io/index.html" target="_blank">VIIER</a></p>
 							<p class="work0a">Front End Web Developer | September 2015 - December 2015</p>
@@ -126,13 +126,38 @@
 					<div class="contact">
 						<hr />
 						<p class="head">CONTACT</p>
-						<p class="contact__phone">Phone: 909.230.1537</p>
-						<p class="contact__email">Email: vrchavez07@gmail.com</p>					
-					</div>		<!--End of "contactdiv" div-->
-					
+						<p class="contact__phone__text">Phone:</p>
+						<p class="contact__phone__number">909.230.1537</p>
+						<p class="contact__email__top">Email:</p>
+						<p class="contact__email">vrchavez07@gmail</p>					
+
+						<div class="forma">
+							<div id="actform">
+								<form id="contactform" method="POST">
+									<div class="form-group">
+										<div class="nombre">
+											<input type="text" name="name" id="nombredos" class="form-control" placeholder="Name">
+										</div>
+										<div class="correo">
+											<input type="email" name="_replyto" id="correodos" class="form-control" placeholder="Email" required>
+										</div>
+										<div class="telefo">
+											<input type="text" name="numero" id="telefodos" class="form-control" placeholder="Phone">
+										</div>											
+										<div class="donde">
+											<textarea name="locationof" id="dondedos" class="form-control" rows="2" cols="60" placeholder="Message" required></textarea>
+										</div>									
+										<input type="text" name="_gotcha" id="usebut" style="display:none" />
+										<!--Button to send information from form-->
+										<button id="sendMessage">Send</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
 				</div>		<!--End of "info" div-->	
 
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 			<!--Script used on both desktop and mobile. First if() statement makes Github logo turn
 			black under top 450px and white otherwise. Second if() statement makes nav menu stick on
 			top (become fixed) after you scroll past 450px on Desktop site.-->
@@ -177,6 +202,24 @@
 				
 			};
 			</script>
+
 			<script type='text/javascript' src='scroller.js'></script>
+			
+			<script>
+			$("#sendMessage").on("click", function(e) {
+				var name = $('input[name="name"]').val();
+				var email = $('input[name="_replyto"]').val();
+				var num = $('input[name="_numero"]').val();
+				var locationof = $('textarea[name="locationof"]').val();
+				e.preventDefault();
+				$.ajax({
+					url: "//formspree.io/vrchavez07@gmail.com", 
+					method: "POST",
+					data: {NAME: name, EMAIL: email, PHONE: num, LOCATION: locationof},
+					dataType: "json"
+				});
+				return false;
+			});
+			</script>			
 		</body>
 </html>
