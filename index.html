@@ -73,10 +73,10 @@
 					</div>		<!--End of "skilldiv" div-->
 					
 					<hr id="workAnchor" />
-					<div class="work" onclick="">
+					<div class="work">
 						<hr />
 						<p class="head">WORK</p>
-						<div class="work__sabor">
+						<div class="work__sabor" onclick="">
 							<div class="touch"></div>
 							<div id="guidepic"></div>
 							<div class="work__sabor--pic"></div>
@@ -154,6 +154,8 @@
 								</form>
 							</div>
 						</div>
+						<p class="aftersent">Thank you for your message. I will be in contact promptly.</p>
+						
 					</div>
 				</div>		<!--End of "info" div-->	
 
@@ -202,9 +204,6 @@
 				
 			};
 			</script>
-
-			<script type='text/javascript' src='scroller.js'></script>
-			
 			<script>
 			$("#sendMessage").on("click", function(e) {
 				var name = $('input[name="name"]').val();
@@ -218,8 +217,15 @@
 					data: {NAME: name, EMAIL: email, PHONE: num, LOCATION: locationof},
 					dataType: "json"
 				});
+				$('.forma').addClass('remform');
+				if($(".menu").css("height") == "50px"){
+					$(".aftersent").css("right", "30%").css("left", "30%");
+				} else if($(".menu").css("height") != "50px"){
+					$(".aftersent").css("right", "7%").css("left", "7%");
+				}
 				return false;
 			});
-			</script>			
+			</script>
+			<script type='text/javascript' src='scroller.js'></script>
 		</body>
 </html>
