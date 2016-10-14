@@ -1,2353 +1,3038 @@
+/*Height and width of website as well as overflow*/
 body {
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    height: auto;
-    width: 100%;
-    overflow: visible;
-    background-color: #f8f8f8
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	height: auto;
+	width: 100%;
+	overflow: visible;
+	background-color: #f8f8f8;
 }
 
-.topimg,.topimg__name {
-    position: absolute;
-    left: 0;
-    right: 0
-}
-
+/*Styles image on the top of the site (Sets the image as background)*/ 
 .topimg {
-    background-image: url(http://i.imgur.com/EKax48c.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: repeat;
-    top: 0;
-    height: 450px;
-    background-color: #000
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 450px;
+	background-color: black;
+	background-image: url('http://i.imgur.com/EKax48c.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: repeat;
 }
 
+/*Styles Name Bar over my circular pic in middle*/
 .topimg__name {
-    top: 40px;
-    width: 230px;
-    height: 50px;
-    margin: auto;
-    text-align: center;
-    background-color: #e9e9e9
+	position: absolute;
+	top: 40px;
+	left: 0;
+	right: 0;
+	width: 230px;
+	height: 50px;
+	margin: auto;
+	text-align: center;
+	background-color: #e9e9e9;
 }
 
+/*Styles text in Name Bar*/
 .topimg__name--text {
-    position: relative;
-    color: #141823;
-    font-family: 'Raleway',sans-serif;
-    font-size: 32px;
-    font-weight: 700;
-    top: -24px;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    text-align: center
-}
+	position: relative;
+	color: #141823;
+	font-family: 'Raleway', sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+	top: -24px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	text-align: center;
+}	
 
-.topimg__myimg,.topimg__myimg--circle {
-    border-radius: 70px;
-    margin: auto;
-    height: 140px;
-    width: 140px
-}
-
+/*Styles container for my img in the middle of "siteimg"*/
 .topimg__myimg {
-    top: 33%;
-    left: 0;
-    right: 0;
-    text-align: center;
-    background-color: #000;
-    border: solid 2px #7eb7a1;
-    position: absolute
+	position: absolute;
+	top: 33%;
+	left: 0;
+	right: 0;	
+	text-align: center;
+	height: auto;
+	width: 100%;
+	background-color: black;
+	border: solid 2px  #7EB7A1;
+	margin: auto;
+	height: 140px;
+	width: 140px;
+	border-radius: 70px;
 }
 
+/*Styles my image into a circle and size*/
 .topimg__myimg--circle {
-    position: relative
+	position: relative;
+	border-radius: 70px;
+	margin: auto;
+	height: 140px;
+	width: 140px;
 }
 
+/*Container for text under my circular image*/
 .topimg__dev {
-    position: absolute;
-    top: 350px;
-    left: 0;
-    right: 0;
-    width: 330px;
-    height: 50px;
-    margin: auto;
-    text-align: center;
-    background-color: #e9e9e9
+	position: absolute;
+	top: 350px;
+	left: 0;
+	right: 0;
+	width: 330px;
+	height: 50px;
+	margin: auto;
+	text-align: center;
+	background-color: #e9e9e9;
 }
 
+/*Styles actual text for dev container*/
 .topimg__dev--text {
-    position: relative;
-    color: #141823;
-    font-family: 'Raleway',sans-serif;
-    font-size: 32px;
-    font-weight: 700;
-    top: -24px;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    text-align: center
+	position: relative;
+	color: #141823;
+	font-family: 'Raleway', sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+	top: -24px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	text-align: center;
 }
 
+/*Container for GitHub img link on top left of site*/
 .topimg__git {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 50px;
-    width: 50px;
-    display: block;
-    z-index: 20000
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 50px;
+	width: 50px;
+	display: block;
+	outline: none;
+	text-decoration: none;
+	z-index: 20000;
+	cursor: pointer;
 }
 
-.topimg__git,.topimg__git--back,.topimg__git--click {
-    outline: none;
-    text-decoration: none;
-    cursor: pointer
-}
-
+/*Styles actual image for GitHub Profile link*/
 .topimg__git--back {
-    height: 50px;
-    width: 50px;
-    background-image: url(http://i.imgur.com/f0b7fd5.png);
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    transition: .3s;
-    position: relative
+	position: relative;
+	height: 50px;
+	width: 50px;
+	outline: none;
+	text-decoration: none;
+	background-image: url("http://i.imgur.com/f0b7fd5.png");
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	transition: .30s;
+	cursor: pointer;
 }
 
-.topimg__git--click {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0
+/*Makes git image into a clickable link*/
+.topimg__git--click{
+	outline: none;
+	text-decoration: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	cursor: pointer;
 }
 
-#menutext,.fixed,.menu {
-    text-align: center;
-    right: 0
-}
-
+/*Styles menu bar*/
 .menu {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    z-index: 10000;
-    background-color: #f8f8f8;
-    top: 450px
+	position: absolute;
+	text-align: center;
+	top: 450px;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 50px;
+	z-index: 10000;
+	background-color: #f8f8f8;
 }
 
-#menutext,a {
-    color: #141823
-}
-
-#menutext,.fixed {
-    top: 0
-}
-
+/*Styles text in ".menu"*/
 #menutext {
-    bottom: 0;
-    list-style: none;
-    font-family: 'Lato',sans-serif;
-    font-size: 15px;
-    position: relative;
-    left: -40px
+	position: relative;
+	left: -40px;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	list-style: none;
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	color: #141823;
+	text-align: center;
 }
 
+/*Used with jQuery to make .menu fixed after scrolling past certain part in webpage*/
 .fixed {
-    position: fixed;
-    left: 0;
-    height: 50px;
-    width: 100%
+	position: fixed;
+	text-align: center;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 50px;
+	width: 100%;
 }
 
+/*Styles li in .menu*/
 li {
-    display: inline;
-    padding: 0 30px
+	display: inline;
+	padding: 0px 30px;
 }
 
-a,a:hover {
-    text-decoration: none
-}
-
+/*Styles a in .menu*/
 a {
-    outline: none;
-    transition: .3s
+	text-decoration: none;
+	outline: none;
+	color: #141823;
+	transition: .30s;
 }
 
+/*Makes text disappear when hovered over in .menu nav*/
 a:hover {
-    color: #f8f8f8;
-    cursor: pointer
+	color: #f8f8f8;
+	text-decoration: none;
+	cursor: pointer;
 }
 
-.head,.info {
-    position: absolute
-}
-
+/*Styles container for the rest of website content*/
 .info {
-    left: 0;
-    right: 0;
-    height: 750px;
-    width: 100%;
-    background-color: #f8f8f8;
-    top: 540px;
-    z-index: 1001
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 540px;
+	height: 750px;
+	width: 100%;
+	z-index: 1001;
+	background-color: #f8f8f8;
 }
 
+/*Styles Header for EVERY section*/
 .head {
-    top: 0;
-    text-align: center;
-    font-size: 39px;
-    font-family: 'Raleway',sans-serif;
-    color: #141823;
-    z-index: 5000;
-    font-weight: 700
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	text-align: center;
+	font-size: 39px;
+	font-family: 'Raleway', sans-serif;
+	color: #141823;
+	z-index: 5000;
+	font-weight: 700;
 }
 
-.about,.head,hr {
-    right: 0;
-    left: 0
-}
-
+/*Styles line through Header in EVERY section*/
 hr {
-    width: 200px;
-    transform: rotate(-5deg);
-    top: 55px
+	position: absolute;
+	width: 200px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	top: 55px;
+	transform: rotate(-5deg);
 }
 
-#aboutAnchor,#skillAnchor {
-    top: -50px;
-    height: 0;
-    width: 0
+#aboutAnchor {
+	top: -50px;
+	height: 0;
+	width: 0;
 }
 
-#skillAnchor {
-    top: 370px
-}
-
-.about,.about__body,hr {
-    position: absolute;
-    text-align: center
-}
-
+/*Container for About section*/
 .about {
-    height: 400px;
-    background-color: #f8f8f8;
-    top: 0
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 400px;
+	left: 0;
+	text-align: center;
+	background-color: #f8f8f8;
 }
 
+/*Body for About section*/
 .about__body {
-    left: 17%;
-    line-height: 55px;
-    right: 17%;
-    top: 150px;
-    font-family: 'Raleway',sans-serif;
-    font-size: 32px;
-    color: #141823
+	position: absolute;
+	left: 17%;
+	line-height: 55px;
+	right: 17%;
+	top: 150px;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 32px;
+	color: #141823;
 }
 
-.skill,.skill__slider {
-    position: absolute;
-    right: 0;
-    height: 630px;
-    transition: 1s;
-    cursor: crosshair
+/*Anchor for Skills section*/
+#skillAnchor {
+	top: 370px;
+	height: 0;
+	width: 0;
 }
 
+/*Skills section container*/
 .skill {
-    left: 0;
-    text-align: center;
-    overflow: hidden;
-    top: 420px
+	position: absolute;
+	top: 420px;
+	right: 0;
+	height: 630px;
+	left: 0;
+	text-align: center;
+	overflow: hidden;
+	cursor: crosshair;
+	transition: 1s;
 }
 
+/*Image over skills in Skills section*/
 .skill__slider {
-    top: 110px;
-    bottom: 0;
-    width: 100%;
-    background-image: url(http://i.imgur.com/DvWOp6N.jpg);
-    background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    z-index: 1000
+	position: absolute;
+	top: 110px;
+	right: 0;
+	bottom: 0;
+	height: 630px;
+	width: 100%;
+	background-image: url('http://i.imgur.com/DvWOp6N.jpg');
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	z-index: 1000;
+	transition: 1s;
+	cursor: crosshair;
 }
 
-.touch,.touchTwo {
-    position: absolute;
-    display: none
+.touch {
+	position: absolute;
+	display: none;
 }
 
+.touchTwo {
+	position: absolute;
+	display: none;
+}
+
+/*Makes image slide to right when hover over .skills*/
 .skill:hover .skill__slider {
-    right: -350%;
-    transition: 1s;
-    z-index: 960;
-    cursor: crosshair
+	right: -350%;
+	transition: 1s;
+	z-index: 960;
+	cursor: crosshair;
 }
 
+/*Small container for <ul> element in Skills section*/
 .skill__cont {
-    position: absolute;
-    top: 110px;
-    right: 0;
-    left: 0;
-    height: 500px;
-    width: 100%;
-    background-color: #f8f8f8;
-    text-align: center;
-    z-index: 980
+	position: absolute;
+	top: 110px;
+	right: 0;
+	left: 0;
+	height: 500px;
+	width: 100%;
+	background-color: #f8f8f8;
+	text-align: center;
+	z-index: 980;
 }
 
-.skill__cont__left,.skill__cont__right {
-    position: absolute;
-    top: -30px;
-    left: 0;
-    right: 50%;
-    font-family: 'Raleway',sans-serif;
-    font-size: 38px;
-    color: #141823;
-    text-align: center;
-    padding: 0
+/*Left two TEXT elements of Skills section*/
+.skill__cont__left {
+	position: absolute;
+	top: -30px;
+	left: 0;
+	right: 50%;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 38px;
+	color: #141823;
+	text-align: center;
+	padding: 0;
 }
 
+/*Right two TEXT elements of Skills section*/
 .skill__cont__right {
-    left: 50%;
-    right: 0
+	top: -30px;
+	position: absolute;
+	left: 50%;
+	right: 0;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 38px;
+	color: #141823;
+	text-align: center;
+	padding: 0;
 }
 
-.skill__cont--nopad,.skill__cont--yespad {
-    position: relative;
-    left: 0;
-    right: 0;
-    padding-top: 0;
-    display: block;
-    text-align: center
+/*Top of each left and right TEXT columns in Skills, no padding*/
+.skill__cont--nopad {
+	position: relative;
+	left: 0;
+	right: 0;
+	padding-top: 0;
+	display: block;
+	text-align: center;
 }
 
+/*Second of each left and right TEXT columns in Skills, yes padding*/
 .skill__cont--yespad {
-    padding-top: 155px
+	position: relative;
+	left: 0;
+	right: 0;
+	padding-top: 155px;
+	display: block;
+	text-align: center;
 }
 
-.skill__cont__first,.skill__cont__second {
-    position: relative;
-    top: 20px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    height: 100px;
-    width: 100px;
-    border-radius: 0
+/*First of each left and right PICTURE columns in skills*/
+.skill__cont__first {
+	position: relative;
+	top: 20px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 100px;
+	width: 100px;
+	border-radius: 0;
 }
 
-#angular,#underAngular {
-    position: absolute;
-    left: 0;
-    right: 0;
-    text-align: center
+/*First of each left and right PICTURE columns in skills*/
+.skill__cont__second{
+	position: relative;
+	top: 20px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 100px;
+	width: 100px;
+	border-radius: 0;
 }
 
+/*Text for "AngularJS" element in Skills section*/
 #angular {
-    font-family: 'Raleway',sans-serif;
-    font-size: 38px;
-    color: #141823;
-    padding: 0;
-    top: 25%
+	top: 25%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 38px;
+	color: #141823;
+	text-align: center;
+	padding: 0;
 }
 
+/*Image for "AngularJS" element in Skills section*/
 #underAngular {
-    top: 45%;
-    margin: auto;
-    height: 100px;
-    width: 100px
+	position: absolute;
+	top: 45%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+	height: 100px;
+	width: 100px;
 }
 
+/*Anchor for Work section*/
 #workAnchor {
-    top: 1105px;
-    height: 0;
-    width: 0
+	top: 1105px;
+	height: 0;
+	width: 0;
 }
 
-.work,.work__sabor {
-    position: absolute;
-    left: 0;
-    right: 0
-}
-
+/*Work section container*/
 .work {
-    text-align: center;
-    overflow: hidden;
-    top: 1155px;
-    height: 1300px
+	position: absolute;
+	top: 1155px;
+	right: 0;
+	height: 1300px;
+	left: 0;
+	text-align: center;
+	overflow: hidden;
 }
 
-.work__sabor {
-    top: 130px;
-    width: 100%;
-    height: 330px;
-    cursor: pointer
+/*Small container inside Work for SaborCulichi job
+(Allows for hover opacity effect on img)*/
+.work__sabor{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 130px;
+	width: 100%;
+	height: 330px;
+	cursor: pointer;	
 }
 
-#guidepic,.work__sabor--pic {
-    position: absolute;
-    top: 0;
-    background-position: center
-}
-
+/*Small image by .work__sabor header, alerts user that header of each job is clickable*/
 #guidepic {
-    left: 315px;
-    background-repeat: no-repeat;
-    height: 70px;
-    width: 160px;
-    background-image: url(http://i.imgur.com/AgjFCMy.png);
-    background-size: cover;
-    z-index: 100
+	position: absolute;
+	height: 70px;
+	width: 160px;
+	left: 315px;
+	top: 0;
+	background-image: url('http://i.imgur.com/AgjFCMy.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 100;
 }
 
+/*Div that covers .work__sabor container with image*/
 .work__sabor--pic {
-    right: 0;
-    width: 100%;
-    height: 330px;
-    background-image: url(http://i.imgur.com/okbgutU.jpg);
-    background-size: 100%;
-    opacity: 1;
-    z-index: 200;
-    transition: .5s;
-    cursor: pointer
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 330px;
+	background-image: url('http://i.imgur.com/okbgutU.jpg');
+	background-size: 100%;
+	background-position: center;
+	opacity: 1;
+	z-index: 200;
+	transition: .5s;
+	cursor: pointer;
 }
 
-.work__sabor:hover .work__sabor--pic,.work__via:hover .work__via--pic,.work__viier:hover .work__viier--pic {
-    transition: .5s;
-    cursor: pointer;
-    opacity: .07;
-    z-index: 1
+/*When you hover over .work__sabor container,
+pic inside .work__sabor--pic changes opacity & z-index*/
+.work__sabor:hover .work__sabor--pic {
+	transition: .5s;
+	cursor: pointer;
+	opacity: .07;
+	z-index: 1;
 }
 
+/*Small container inside .work for Via job*/
 .work__via {
-    top: 470px
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 470px;
+	width: 100%;
+	height: 330px;
+	cursor: pointer;	
 }
 
-.work__via,.work__via--pic,.work__viier,.work__viier--pic {
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 330px;
-    cursor: pointer
+/*Div that covers .work__via container with image*/
+.work__via--pic{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 330px;
+	background-image: url('http://i.imgur.com/bCT2Gw7.png');
+	background-size: 100%;
+	background-position: center;
+	opacity: 1;
+	z-index: 200;
+	transition: .5s;
+	cursor: pointer;
 }
 
-.work__via--pic {
-    background-image: url(http://i.imgur.com/bCT2Gw7.png);
-    background-size: 100%;
-    background-position: center;
-    opacity: 1;
-    z-index: 200;
-    transition: .5s;
-    top: 0
+/*When you hover over .work__via container,
+pic inside .work__via--pic changes opacity & z-index*/
+.work__via:hover .work__via--pic {
+	transition: .5s;
+	cursor: pointer;
+	opacity: .07;
+	z-index: 1;
 }
 
+/*Small container inside .work for Viier job*/
 .work__viier {
-    top: 810px
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 810px;
+	width: 100%;
+	height: 330px;
+	cursor: pointer;	
 }
 
+/*Div that covers .work__viier container with image*/
 .work__viier--pic {
-    top: 0;
-    background-image: url(http://i.imgur.com/kY6cxN2.jpg);
-    background-size: 100% 100%;
-    background-position: center;
-    opacity: 1;
-    z-index: 200;
-    transition: .5s
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 330px;
+	background-image: url('http://i.imgur.com/kY6cxN2.jpg');
+	background-size: 100% 100%;
+	background-position: center;
+	opacity: 1;
+	z-index: 200;
+	transition: .5s;
+	cursor: pointer;
 }
 
-.work0,.work0a {
-    text-align: center;
-    font-family: 'Raleway',sans-serif;
-    color: #141823;
-    font-weight: 100
+/*When you hover over .work__viier container,
+pic inside .work__viier--pic changes opacity & z-index*/
+.work__viier:hover .work__viier--pic {
+	transition: .5s;
+	cursor: pointer;
+	opacity: .07;
+	z-index: 1;
 }
 
+/*Styles the header for each of the Job sections in .work*/
 .work0 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: 180;
-    top: -5px;
-    font-size: 38px
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+	top: -5px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 38px;
+	color: #141823;
+	font-weight: 100;
+	z-index: 180;
 }
 
+/*Styles Job Position for each of the Job sections in .work*/
 .work0a {
-    top: 50px;
-    font-size: 20px
+	position: absolute;
+	text-align: center;
+	left: 0;
+	right: 0;
+	top: 50px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	color: #141823;
+	font-weight: 100;
 }
 
-.work0a,.work0c,.work0e {
-    position: absolute;
-    left: 0;
-    right: 0
-}
-
+/*Styles first Job Description for each of Job sections in .work*/
 .work0c {
-    text-align: center;
-    font-family: 'Raleway',sans-serif;
-    font-size: 28px;
-    color: #141823;
-    font-weight: 100;
-    top: 95px
+	position: absolute;
+	text-align: center;
+	left: 0;
+	right: 0;
+	top: 95px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 28px;
+	color: #141823;
+	font-weight: 100;
 }
 
+/*Styles second Job Description for each of Job sections in .work*/
 .work0e {
-    top: 135px
+	position: absolute;
+	text-align: center;
+	left: 0;
+	right: 0;
+	top: 135px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 28px;
+	color: #141823;
+	font-weight: 100;
 }
 
-.work0e,.work0g,.work0i {
-    text-align: center;
-    font-family: 'Raleway',sans-serif;
-    font-size: 28px;
-    color: #141823;
-    font-weight: 100
-}
-
+/*Styles third Job Description for each of Job sections in .work*/
 .work0g {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 175px
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+	top: 175px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 28px;
+	color: #141823;
+	font-weight: 100;
 }
 
+/*Styles fourth Job Description for each of Job sections in .work*/
 .work0i {
-    top: 215px
+	position: absolute;
+	text-align: center;
+	left: 0;
+	right: 0;
+	top: 215px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 28px;
+	color: #141823;
+	font-weight: 100;
 }
 
+/*Anchor for School section*/
 #schoolAnchor {
-    top: 2370px;
-    height: 0;
-    width: 0
+	top: 2370px;
+	height: 0;
+	width: 0;
 }
 
-#uclaimg,.school,.work0i {
-    position: absolute;
-    left: 0;
-    right: 0
-}
-
+/*School section container*/
 .school {
-    text-align: center;
-    top: 2420px;
-    height: 550px
+	position: absolute;
+	top: 2420px;
+	right: 0;
+	height: 550px;
+	left: 0;
+	text-align: center;
 }
 
+/*Styles background image for School section
+(Had to use DIV for opacity on img not text)*/
 #uclaimg {
-    top: 110px;
-    width: 100%;
-    height: 440px;
-    background-image: url(http://brand.ucla.edu/wp-content/uploads/2013/08/ucla-wordmark-main-1.jpg);
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    opacity: .17
+	position: absolute;
+	top: 110px;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 440px;
+	background-image: url('http://brand.ucla.edu/wp-content/uploads/2013/08/ucla-wordmark-main-1.jpg'); 
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	opacity: .17;
 }
 
+/*Styles University name*/
 .school__ucla {
-    top: 125px;
-    font-size: 35px;
-    font-family: 'Raleway',sans-serif;
-    color: #141823;
-    z-index: 5000
+	position: absolute;
+	top: 125px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: 35px;
+	font-family: 'Raleway', sans-serif;
+	color: #141823;
+	z-index: 5000;
 }
 
-.school__location,.school__major,.school__ucla {
-    position: absolute;
-    left: 0;
-    right: 0;
-    text-align: center
-}
-
+/*Styles University location text*/
 .school__location {
-    font-family: 'Raleway',sans-serif;
-    color: #141823;
-    z-index: 5000;
-    top: 185px;
-    font-size: 20px
+	position: absolute;
+	top: 185px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+	color: #141823;
+	z-index: 5000;
 }
 
+/*Styles major text*/
 .school__major {
-    top: 225px;
-    font-size: 25px
+	position: absolute;
+	top: 225px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Raleway', sans-serif;
+	color: #141823;
+	z-index: 5000;
 }
 
-.school__high,.school__major,.school__minor {
-    font-family: 'Raleway',sans-serif;
-    color: #141823;
-    z-index: 5000
-}
-
+/*Styles minor text*/
 .school__minor {
-    position: absolute;
-    left: 0;
-    right: 0;
-    text-align: center;
-    top: 255px;
-    font-size: 25px
+	position: absolute;
+	top: 255px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Raleway', sans-serif;
+	color: #141823;
+	z-index: 5000;
 }
 
+/*Styles HighSchool name*/
 .school__high {
-    top: 345px;
-    font-size: 35px
+	position: absolute;
+	top: 345px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: 35px;
+	font-family: 'Raleway', sans-serif;
+	color: #141823;
+	z-index: 5000;
 }
 
-.contact,.school__high,.school__location2 {
-    position: absolute;
-    right: 0;
-    left: 0;
-    text-align: center
-}
-
+/*Styles HighSchool location text*/
 .school__location2 {
-    font-size: 20px;
-    font-family: 'Raleway',sans-serif;
-    color: #141823;
-    z-index: 5000;
-    top: 405px
+	position: absolute;
+	top: 405px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+	color: #141823;
+	z-index: 5000;
 }
 
+/*Anchor for Contact section*/
 #contactAnchor {
-    top: 3020px;
-    height: 0;
-    width: 0
+	top: 3020px;
+	height: 0;
+	width: 0;
 }
 
-.contact {
-    top: 3070px;
-    height: 700px;
-    overflow: hidden
+/*Container for Contact section*/
+.contact{
+	position: absolute;
+	top: 3070px;
+	right: 0;
+	height: 700px;
+	left: 0;
+	text-align: center;
+	overflow: hidden;
 }
 
+/*Just made the class so that .reform underneath
+can be added when form button is pressed*/
 .forma {
-    height: auto;
-    width: 100%
+	height: auto;
+	width: 100%;
 }
 
+/*This gets added to .forma it moves it out of view
+from the webpage*/
 .remform {
-    display: none
-}
-
-.aftersent,input {
-    font-family: 'Raleway',sans-serif;
-    color: #141823
+	display: none;
 }
 
 .aftersent {
-    position: absolute;
-    top: 120px;
-    left: 100%;
-    right: -175%;
-    text-align: center;
-    font-weight: 300;
-    border: 3px solid #141823;
-    font-size: 34px
+	position: absolute;
+	top: 120px;
+	left: 100%;
+	right: -175%;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 34px;
+	color: #141823;
+	font-weight: 300;
+	border: 3px solid #141823;
 }
 
+/*Generally styles input area (all of the boxes) for user information*/
 input {
-    background-color: #000;
-    font-size: 22px;
-    padding-left: 8px;
-    padding-right: 8px
+	font-family: 'Raleway', sans-serif;
+	background-color: black;
+	font-size: 22px;
+	color: #141823;
+	padding-left: 8px;
+	padding-right: 8px;
 }
 
+/*Styles small container for "Name" input text area*/
 .nombre {
-    position: absolute;
-    top: 170px
+	position: absolute;
+	top: 170px;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
 
+/*Styles text for "Name" area*/
 #nombredos {
-    top: 200px
+	outline: none;
+	border: solid 3px #141823;
+	background-color: transparent;
+	height: 40px;
+	width: 375px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 200px;
 }
 
-#nombredos,.correo,.nombre,.telefo {
-    left: 0;
-    right: 0;
-    margin: auto
-}
-
+/*Styles small container for "Email" input text area*/
 .correo {
-    position: absolute;
-    top: 230px
+	position: absolute;
+	top: 230px;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
 
-#correodos,#nombredos,#telefodos {
-    outline: none;
-    border: solid 3px #141823;
-    background-color: transparent;
-    height: 40px;
-    width: 375px
+/*Styles text for "Email" area*/
+#correodos {
+	outline: none;
+	border: solid 3px #141823;
+	background-color: transparent;
+	height: 40px;
+	width: 375px;
 }
 
+/*Styles small container for "Name" input text area*/
 .telefo {
-    top: 290px
+	position: absolute;
+	top: 290px;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
 
+/*Styles text for "Phone" area*/
 #telefodos {
-    left: 30px;
-    top: 200px
+	outline: none;
+	border: solid 3px #141823;
+	background-color: transparent;
+	height: 40px;
+	width: 375px;
+	left: 30px;
+	top: 200px;
 }
 
-#usebut,.donde,.telefo {
-    position: absolute
-}
-
-.donde,textarea {
-    background-color: transparent
-}
-
+/*Styles small container for "Location of event" input text area*/
 .donde {
-    right: 0;
-    margin: auto;
-    left: 0;
-    top: 350px
+	position: absolute;
+	background-color: transparent;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 350px;
 }
 
-#sendMessage,textarea {
-    font-family: 'Raleway',sans-serif;
-    outline: none;
-    color: #141823
-}
-
+/*Styles text and size for textarea of "Location of event" input box area*/
 textarea {
-    resize: none;
-    padding-left: 8px;
-    padding-right: 8px;
-    border: solid 3px #141823;
-    font-size: 23px;
-    width: 375px;
-    height: 190px
+	background-color: transparent;
+	border: solid 3px #141823;
+	resize: none;
+	font-family: 'Raleway', sans-serif;
+	font-size: 23px;
+	padding-left: 8px;
+	padding-right: 8px;
+	color: #141823;
+	outline: none;
+	width: 375px;
+	height: 190px;
 }
 
 #usebut {
-    left: 30px;
-    top: 640px
+	position: absolute;
+	left: 30px;
+	top: 640px;
 }
 
+/*Styles "Send" button and text inside it*/
 #sendMessage {
-    position: absolute;
-    left: calc(50% + 108px);
-    top: 560px;
-    cursor: pointer;
-    height: 40px;
-    width: 90px;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-    border: 3px solid #141823;
-    background-color: #f8f8f8
+	position: absolute;
+	left: calc(50% + 108px);
+	top: 560px;
+	cursor: pointer;
+	height: 40px;
+	width: 90px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	outline: none;
+	text-decoration: none;
+	border: 3px solid #141823;
+	background-color: #f8f8f8;
+	color: #141823;
 }
 
-.contact__phone__text {
-    left: 0;
-    right: calc(50% + 187.5px);
-    top: 220px;
-    text-align: center
+/*Styles text for Phone Number in Contact section*/
+.contact__phone__text{
+	position: absolute;
+	left: 0;
+	right: calc(50% + 187.5px);
+	top: 220px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 32px;
+	color: #141823;
+	text-align: center;
 }
 
-.contact__email,.contact__email__top,.contact__phone__number,.contact__phone__text {
-    position: absolute;
-    font-family: 'Raleway',sans-serif;
-    font-size: 32px;
-    color: #141823
+/*Styles text for Phone Number in Contact section*/
+.contact__phone__number{
+	position: absolute;
+	left: 0;
+	right: calc(50% + 187.5px);
+	top: 260px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 32px;
+	color: #141823;
+	text-align: center;
 }
 
-.contact__phone__number {
-    left: 0;
-    right: calc(50% + 187.5px);
-    text-align: center;
-    top: 260px
+/*Styles text for Email in Contact section*/
+.contact__email__top{
+	position: absolute;
+	left: calc(50% + 187.5px);
+	right: 0;
+	top: 220px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 32px;
+	color: #141823;
 }
 
-.contact__email,.contact__email__top {
-    left: calc(50% + 187.5px);
-    right: 0
+/*Styles text for Email in Contact section*/
+.contact__email{
+	position: absolute;
+	left: calc(50% + 187.5px);
+	right: 0;
+	top: 260px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 32px;
+	color: #141823;
 }
 
-.contact__email__top {
-    top: 220px
+@media all and (max-width: 1000px) and (min-width: 330px) {
+	/*Height and width of website*/
+	body {
+		top: 0;
+		left: 0;
+		right: 0;
+		background-size: cover;
+		width: 100%;
+		overflow: visible;
+		overflow-x: hidden;
+		background-color: #f8f8f8;
+		padding: 0;
+		margin: auto;
+	}
+	
+	/*Styles image on the top of the site (Sets the image as background)*/ 
+	.topimg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 450px;
+		width: 100%;
+		overflow: hidden;
+		background-color: black;
+		background-image: url('http://i.imgur.com/EKax48c.jpg');
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+
+	/*Styles Name Bar over my circular pic in middle*/
+	.topimg__name {
+		position: absolute;
+		top: 40px;
+		left: 0;
+		right: 0;
+		width: 230px;
+		height: 50px;
+		margin: auto;
+		text-align: center;
+		background-color: #e9e9e9;
+	}
+
+	/*Styles text in Name Bar*/
+	.topimg__name--text {
+		position: absolute;
+		color: #141823;
+		font-family: 'Raleway', sans-serif;
+		font-size: 30px;
+		font-weight: 700;
+		top: -24px;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		text-align: center;
+	}	
+
+	/*Styles container for my img in the middle of "siteimg"*/
+	.topimg__myimg {
+		position: absolute;
+		top: 33%;
+		left: 0;
+		right: 0;	
+		text-align: center;
+		height: auto;
+		width: 100%;
+		background-color: black;
+		border: solid 2px  #7EB7A1;
+		margin: auto;
+		height: 140px;
+		width: 140px;
+		border-radius: 70px;
+		overflow: hidden;
+	}
+
+	/*Styles my image into a circle and size*/
+	.topimg__myimg--circle {
+		position: relative;
+		border-radius: 70px;
+		margin: auto;
+		height: 140px;
+		width: 140px;
+	}
+
+	/*Container for text under my circular image*/
+	.topimg__dev {
+		position: absolute;
+		top: 350px;
+		left: 0;
+		right: 0;
+		width: 330px;
+		height: 50px;
+		margin: auto;
+		text-align: center;
+		background-color: #e9e9e9;
+	}
+
+	/*Styles actual text for dev container*/
+	.topimg__dev--text {
+		position: absolute;
+		color: #141823;
+		font-family: 'Raleway', sans-serif;
+		font-size: 30px;
+		font-weight: 700;
+		top: -24px;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		text-align: center;
+	}
+	
+	/*Container for GitHub img link on top left of site*/
+	.topimg__git {
+		position: fixed;
+		left: 5px;
+		top: 10px;
+		height: 50px;
+		width: 50px;
+		display: block;
+		outline: none;
+		text-decoration: none;
+		z-index: 20000;
+	}
+
+	/*Styles actual image for Github Profile link*/
+	.topimg__git--back {
+		position: relative;
+		height: 50px;
+		width: 50px;
+		outline: none;
+		text-decoration: none;
+		background-image: url("http://i.imgur.com/f0b7fd5.png");
+		background-position: center;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		transition: .30s;
+		overflow: hidden;
+	}
+	
+	/*Makes GitHub img clickable link*/
+	.topimg__git--click {
+		outline: none;
+		text-decoration: none;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		overflow: hidden;
+	}
+
+	/*Styles menu bar (HIDES IT HERE, FOR MOBILE)*/
+	.menu {
+		position: absolute;
+		display: none;
+		height: 0px;
+	}
+
+	/*Styles container for the rest of website content*/
+	.info {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 450px;
+		height: 750px;
+		width: 100%;
+		z-index: 1001;
+		background-color: #f8f8f8;
+	}
+
+	
+	/*Styles the Header for EVERY section*/
+	.head {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		text-align: center;
+		font-size: 39px;
+		font-family: 'Raleway', sans-serif;
+		color: #141823;
+		z-index: 5000;
+		font-weight: 700;
+	}
+	
+	/*Styles line through Header for EVERY section*/
+	hr {
+		position: absolute;
+		width: 200px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		top: 55px;
+		transform: rotate(-5deg);
+		-webkit-transform: rotate(-5deg);
+	}
+	
+	/*Anchor for About section*/
+	#aboutAnchor {
+		top: -50px;
+		height: 0;
+		width: 0;
+		left: 0;
+		right: 0;
+	}
+	
+	/*Container for About section*/
+	.about {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 400px;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		background-color: #f8f8f8;
+	}
+	
+	/*Body for About section*/
+	.about__body {
+		position: absolute;
+		left: 5%;
+		right: 5%;
+		top: 90px;
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+		font-size: 30px;
+		color: #141823;
+		line-height: 40px;
+	}
+	
+	/*Anchor for Skills section*/
+	#skillAnchor {
+		top: 370px;
+		height: 0;
+		width: 0;
+		right: 0;
+		left: 0;
+	}
+
+	/*Skills section container*/
+	.skill {
+		position: absolute;
+		top: 420px;
+		right: 0;
+		height: 600px;
+		width: 100%;
+		overflow: hidden;
+		left: 0;
+		text-align: center;
+	}
+	
+	/*Image over skills in Skills section*/
+	.skill__slider {
+		position: absolute;
+		top: 110px;
+		right: 0;
+		bottom: 0;
+		height: 630px;
+		width: 100%;
+		background-image: url('http://i.imgur.com/DvWOp6N.jpg');
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		z-index: 1000;
+		transition: .8s;
+		-webkit-transition: .8s;
+		-moz-transition: .8s;
+		transition-timing-function: ease-in-out;
+		-webkit-transition-timing-function: ease-in-out;
+		-moz-transition-timing-function: ease-in-out;
+	}
+
+	/*Makes image slide to right when hover over .skills*/
+	.skill:hover .skill__slider {
+		right: -350%;
+		transition: .8s;
+		-webkit-transition: .8s;
+		-moz-transition: .8s;
+		transition-timing-function: ease-in-out;
+		-webkit-transition-timing-function: ease-in-out;
+		-moz-transition-timing-function: ease-in-out;
+		z-index: 960;
+	}
+
+	/*Small container for <ul> element in Skills section*/
+	.skill__cont {
+		position: absolute;
+		top: 110px;
+		margin: auto;
+		right: 0;
+		left: 0;
+		height: 480px;
+		width: 100%;
+		background-color: #f8f8f8;
+		transition: .8s;
+		-webkit-transition: .8s;
+		-moz-transition: .8s;
+		transition-timing-function: ease-in-out;
+		-webkit-transition-timing-function: ease-in-out;
+		-moz-transition-timing-function: ease-in-out;
+	}
+	
+	/*Left two TEXT elements of Skills section*/
+	.skill__cont__left {
+		position: absolute;
+		top: -30px;
+		left: 0;
+		right: 50%;
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+		font-size: 32px;
+		color: #141823;
+		text-align: center;
+		padding: 0;
+	}
+
+	/*Right two TEXT elements of Skills section*/
+	.skill__cont__right {
+		top: -30px;
+		position: absolute;
+		left: 50%;
+		right: 0;
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+		font-size: 32px;
+		color: #141823;
+		text-align: center;
+		padding: 0;
+	}
+
+	/*Top of each left and right TEXT columns in Skills, no padding*/
+	.skill__cont--nopad {
+		position: relative;
+		left: 0;
+		right: 0;
+		padding-top: 0;
+		display: block;
+		text-align: center;
+	}
+
+	/*Second of each left and right TEXT columns in Skills, yes padding*/
+	.skill__cont__yespad {
+		position: relative;
+		left: 0;
+		right: 0;
+		padding-top: 155px;
+		display: block;
+		text-align: center;
+	}
+
+	/*First of each left and right PICTURE columns in skills*/
+	.skill__cont__first {
+		position: relative;
+		top: 20px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		height: 80px;
+		width: 80px;
+		border-radius: 0;
+	}
+
+	/*First of each left and right PICTURE columns in skills*/
+	.skill__cont__second{
+		position: relative;
+		top: 20px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		height: 80px;
+		width: 80px;
+		border-radius: 0;
+	}
+	
+	#javcont {
+		position: relative;
+		left: -13px;
+		right: 0;
+		padding-top: 155px;
+		display: block;
+		text-align: center;
+	}
+	
+	/*Text for "AngularJS" element in Skills section*/
+	#angular {
+		top: 24%;
+		position: absolute;
+		left: 0;
+		right: 0;
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+		font-size: 32px;
+		color: #141823;
+		text-align: center;
+		padding: 0;
+	}
+
+	/*Image for "AngularJS" element in Skills section*/
+	#underAngular {
+		position: absolute;
+		top: 42%;
+		left: 0;
+		right: 0;
+		margin: auto;
+		text-align: center;
+		height: 80px;
+		width: 80px;
+	}
+	
+	/*Anchor for Work section*/
+	#workAnchor {
+		top: 1105px;
+		height: 0;
+		width: 0;
+		left: 0;
+		right: 0;
+	}
+	
+	/*Work section container*/
+	.work {
+		position: absolute;
+		top: 1100px;
+		right: 0;
+		height: 1300px;
+		left: 0;
+		text-align: center;
+		width: 100%;
+	}
+
+	/*This whole weird section makes it so
+	that when clicked, Image doesn't turn blue
+	on MOBILE*/
+	*::selection {
+		background-color: transparent;
+	}
+	*::-moz-selection {
+		background-color: transparent;
+	}
+	* {
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	}
+	input[type="text"], textarea, [contenteditable] {
+		-webkit-user-select: text;
+		-moz-user-select: text;
+		-ms-user-select: text;
+		user-select: text;
+	}	
+	
+	/*Small container inside Work for SaborCulichi job
+	(Allows for hover opacity effect on img)*/
+	.work__sabor{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 130px;
+		width: 100%;
+		height: 330px;
+		text-decoration: none;	
+		color: none;
+	}
+	
+	/*Small Gif on top of Skills and Work section,
+	allows user to know section is clickable.*/
+	.touch {
+		position: absolute;
+		display: inline;
+		height: 80px;
+		width: 80px;
+		right: 15px;
+		top: -61px;
+		background-image: url('http://i.giphy.com/l3vQWD6g6duMsX8VG.gif');
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		z-index: 1000;
+	}	
+		
+	/*Small image by .work__sabor header, alerts user that header of each job is clickable*/
+	#guidepic {
+		position: absolute;
+		height: 40px;
+		width: 90px;
+		left: 2px;
+		top: 10px;
+		background-image: url('http://i.imgur.com/TrFdaVn.png');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		z-index: 100;
+	}
+	
+	/*Div that covers .work__sabor container with image*/
+	.work__sabor--pic {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 330px;
+		background-image: url('http://i.imgur.com/cBAFUZv.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-position: center;
+		opacity: 1;
+		transition: .5s;
+		z-index: 200;
+		text-decoration: none;
+		color: none;
+	}
+	
+	/*When you hover over .work__sabor container,
+	pic inside .work__sabor--pic changes opacity & z-index*/
+	.work__sabor:hover .work__sabor--pic {
+		transition: .5s;
+		opacity: .07;
+		z-index: 1;
+		text-decoration: none;
+		color: none;
+	}
+
+	/*Small container inside .work for Via job*/
+	.work__via {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 470px;
+		width: 100%;
+		height: 330px;
+		cursor: pointer;
+		text-decoration: none;		
+	}
+	
+	/*Div that covers .work__via container with image*/
+	.work__via--pic{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 330px;
+		background-image: url('http://i.imgur.com/bCT2Gw7.png');
+		background-size: 100% 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		opacity: 1;
+		z-index: 200;
+		transition: .5s;
+		cursor: pointer;
+		text-decoration: none;
+	}
+	
+	/*When you hover over .work__via container,
+	pic inside .work__via--pic changes opacity & z-index*/
+	.work__via:hover .work__via--pic {
+		transition: .5s;
+		cursor: pointer;
+		opacity: .07;
+		z-index: 1;
+		text-decoration: none;
+	}
+	
+	/*Small container inside .work for Viier job*/
+	.work__viier {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 810px;
+		width: 100%;
+		height: 330px;
+		cursor: pointer;
+		text-decoration: none;		
+	}
+
+	/*Div that covers .work__viier container with image*/
+	.work__viier--pic {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 330px;
+		background-image: url('http://i.imgur.com/kY6cxN2.jpg');
+		background-size: 100% 100%;
+		background-position: center;
+		opacity: 1;
+		z-index: 200;
+		transition: .5s;
+		cursor: pointer;
+		text-decoration: none;
+	}
+
+	/*When you hover over .work__viier container,
+	pic inside .work__viier--pic changes opacity & z-index*/
+	.work__viier:hover .work__viier--pic {
+		transition: .5s;
+		cursor: pointer;
+		opacity: .07;
+		z-index: 1;
+		text-decoration: none;
+	}
+	
+	/*Styles the header for each of the Job sections in .work*/
+	.work0 {
+		position: absolute;
+		left: 0;
+		right: 0;
+		text-align: center;
+		top: -20px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 38px;
+		color: #141823;
+		font-weight: 100;
+	}
+	
+	/*Styles the header (.work0) for the Via section in MOBILE
+	becuase name too long and text overlaps.*/
+	#viaSmaller {
+		position: absolute;
+		left: 0;
+		right: 0;
+		text-align: center;
+		top: -15px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 34px;
+		color: #141823;
+		font-weight: 100;
+	}
+
+	/*Styles Job Position for each of the Job sections in .work*/
+	.work0a {
+		position: absolute;
+		text-align: center;
+		left: 0;
+		right: 0;
+		top: 40px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 18px;
+		color: #141823;
+		font-weight: 100;
+	}
+	
+	/*Styles Via Job Position (.work0a) because
+	Header is smaller, and it seems far*/
+	#viaCloser {
+		position: absolute;
+		text-align: center;
+		left: 0;
+		right: 0;
+		top: 35px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 18px;
+		color: #141823;
+		font-weight: 100;
+	}
+
+	/*Styles first Job Description for each of Job sections in .work*/
+	.work0c {
+		position: absolute;
+		text-align: center;
+		left: 0;
+		right: 0;
+		top: 95px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 20px;
+		color: #141823;
+		font-weight: 100;
+	}
+
+	/*Styles second Job Description for each of Job sections in .work*/
+	.work0e {
+		position: absolute;
+		text-align: center;
+		left: 0;
+		right: 0;
+		top: 145px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 20px;
+		color: #141823;
+		font-weight: 100;
+	}
+
+	/*Styles third Job Description for each of Job sections in .work*/
+	.work0g {
+		position: absolute;
+		left: 0;
+		right: 0;
+		text-align: center;
+		top: 195px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 20px;
+		color: #141823;
+		font-weight: 100;
+	}
+
+	/*Styles fourth Job Description for each of Job sections in .work*/
+	.work0i {
+		position: absolute;
+		text-align: center;
+		left: 0;
+		right: 0;
+		top: 245px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 20px;
+		color: #141823;
+		font-weight: 100;
+	}
+
+	/*Anchor for School section*/
+	#schoolAnchor {
+		top: 2370px;
+		height: 0;
+		width: 0;
+		right: 0;
+		left: 0;
+	}
+	
+	/*School section container*/
+	.school {
+		position: absolute;
+		top: 2320px;
+		right: 0;
+		height: 550px;
+		left: 0;
+		text-align: center;
+	}
+
+	/*Styles background image for School section
+	(Had to use DIV for opacity on img not text)*/
+	#uclaimg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 550px;
+		background-image: url('http://brand.ucla.edu/wp-content/uploads/2013/08/ucla-wordmark-main-1.jpg'); 
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		opacity: .17;
+	}
+
+	/*Styles University name*/
+	.school__ucla {
+		position: absolute;
+		top: 95px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		font-size: 30px;
+		font-family: 'Raleway', sans-serif;
+		color: #141823;
+		z-index: 5000;
+	}
+
+	/*Styles University location text*/
+	.school__location {
+		position: absolute;
+		top: 190px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		font-size: 20px;
+		font-family: 'Raleway', sans-serif;
+		color: #141823;
+		z-index: 5000;
+	}
+
+	/*Styles major text*/
+	.school__major {
+		position: absolute;
+		top: 225px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		font-size: 25px;
+		font-family: 'Raleway', sans-serif;
+		color: #141823;
+		z-index: 5000;
+	}
+
+	/*Styles minor text*/
+	.school__minor {
+		position: absolute;
+		top: 255px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		font-size: 25px;
+		font-family: 'Raleway', sans-serif;
+		color: #141823;
+		z-index: 5000;
+	}
+
+	/*Styles HighSchool name*/
+	.school__high {
+		position: absolute;
+		top: 345px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		font-size: 30px;
+		font-family: 'Raleway', sans-serif;
+		color: #141823;
+		z-index: 5000;
+	}
+
+	/*Styles HighSchool location text*/
+	.school__location2 {
+		position: absolute;
+		top: 405px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		font-size: 20px;
+		font-family: 'Raleway', sans-serif;
+		color: #141823;
+		z-index: 5000;
+	}
+
+	/*Anchor for Contact section*/
+	#contactAnchor {
+		top: 3020px;
+		height: 0;
+		width: 0;
+	}
+	
+	/*Container for Contact section*/
+	.contact {
+		position: absolute;
+		top: 2950px;
+		right: 0;
+		height: 1100px;
+		left: 0;
+		text-align: center;
+		overflow: hidden;
+		overflow-x: hidden;
+	}
+
+	/*Uses jQuery to add to Contact section after "Send"
+	button is pressed*/
+	.aftersent {
+		position: absolute;
+		top: 510px;
+		left: 100%;
+		right: -175%;
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+		font-size: 34px;
+		color: #141823;
+		font-weight: 300;
+		border: 3px solid #141823;
+	}
+	
+	/*Generally styles input area (all of the boxes) for user information*/
+	input {
+		font-family: 'Raleway', sans-serif;
+		background-color: black;
+		font-size: 20px;
+		color: #141823;
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+	/*Styles small container for "Name" input text area*/
+	.nombre {
+		position: absolute;
+		top: 510px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	/*Styles text for "Name" area*/
+	#nombredos {
+		outline: none;
+		border: solid 3px #141823;
+		background-color: transparent;
+		height: 40px;
+		width: 70%;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	/*Styles small container for "Email" input text area*/
+	.correo {
+		position: absolute;
+		top: 570px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	/*Styles text for "Email" area*/
+	#correodos {
+		outline: none;
+		border: solid 3px #141823;
+		background-color: transparent;
+		height: 40px;
+		width: 70%;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	/*Styles small container for "Name" input text area*/
+	.telefo {
+		position: absolute;
+		top: 630px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	/*Styles text for "Phone" area*/
+	#telefodos {
+		outline: none;
+		border: solid 3px #141823;
+		background-color: transparent;
+		height: 40px;
+		width: 70%;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	/*Styles small container for "Location of event" input text area*/
+	.donde {
+		position: absolute;
+		background-color: transparent;
+		left: 0;
+		right: 0;
+		margin: auto;
+		top: 690px;
+	}
+
+	/*Styles text and size for textarea of "Location of event" input box area*/
+	textarea {
+		background-color: transparent;
+		border: solid 3px #141823;
+		resize: none;
+		font-family: 'Raleway', sans-serif;
+		font-size: 23px;
+		padding-left: 8px;
+		padding-right: 8px;
+		color: #141823;
+		outline: none;
+		height: 190px;
+		width: 70%;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	#usebut {
+		position: absolute;
+		left: 30px;
+		top: 640px;
+	}
+
+	/*Styles "Send" button and text inside it*/
+	#sendMessage {
+		position: absolute;
+		left: calc(90% - 96px);
+		top: 900px;
+		cursor: pointer;
+		height: 40px;
+		width: 90px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 20px;
+		font-weight: 600;
+		outline: none;
+		text-decoration: none;
+		border: 3px solid #141823;
+		background-color: #f8f8f8;
+		color: #141823;
+	}
+
+	/*Styles text for Phone Number in Contact section*/
+	.contact__phone__text{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 145px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 32px;
+		color: #141823;
+		text-align: center;
+	}
+
+	/*Styles text for Phone Number in Contact section*/
+	.contact__phone__number{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 185px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 32px;
+		color: #141823;
+		text-align: center;
+	}
+
+	/*Styles text for Email in Contact section*/
+	.contact__email__top{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 285px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 32px;
+		color: #141823;
+	}
+
+	/*Styles text for Email in Contact section*/
+	.contact__email{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 325px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 32px;
+		color: #141823;
+	}
+	
 }
 
-.contact__email {
-    top: 260px
+@media all and (max-width: 330px) and (min-width: 300px) {
+	/*Height and width of website*/
+	body {
+		top: 0;
+		left: 0;
+		right: 0;
+		background-size: cover;
+		width: 100%;
+		overflow: visible;
+		overflow-x: hidden;
+		background-color: #f8f8f8;
+		padding: 0;
+		margin: auto;
+	}
+	
+	/*Styles image on the top of the site (Sets the image as background)*/ 
+	.topimg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 450px;
+		width: 100%;
+		overflow: hidden;
+		background-color: black;
+		background-image: url('http://i.imgur.com/EKax48c.jpg');
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+
+	/*Styles Name Bar over my circular pic in middle*/
+	.topimg__name {
+		position: absolute;
+		top: 40px;
+		left: 0;
+		right: 0;
+		width: 210px;
+		height: 45px;
+		margin: auto;
+		text-align: center;
+		background-color: #e9e9e9;
+	}
+
+	/*Styles text in Name Bar*/
+	.topimg__name--text {
+		position: absolute;
+		color: #141823;
+		font-family: 'Raleway', sans-serif;
+		font-size: 28px;
+		font-weight: 700;
+		top: -24px;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		text-align: center;
+	}	
+
+	/*Styles container for my img in the middle of "siteimg"*/
+	.topimg__myimg {
+		position: absolute;
+		top: 33%;
+		left: 0;
+		right: 0;	
+		text-align: center;
+		height: auto;
+		width: 100%;
+		background-color: black;
+		border: solid 2px  #7EB7A1;
+		margin: auto;
+		height: 140px;
+		width: 140px;
+		border-radius: 70px;
+		overflow: hidden;
+	}
+
+	/*Styles my image into a circle and size*/
+	.topimg__myimg--circle {
+		position: relative;
+		border-radius: 70px;
+		margin: auto;
+		height: 140px;
+		width: 140px;
+	}
+
+	/*Container for text under my circular image*/
+	.topimg__dev {
+		position: absolute;
+		top: 350px;
+		left: 0;
+		right: 0;
+		width: 305px;
+		height: 45px;
+		margin: auto;
+		text-align: center;
+		background-color: #e9e9e9;
+	}
+
+	/*Styles actual text for dev container*/
+	.topimg__dev--text {
+		position: absolute;
+		color: #141823;
+		font-family: 'Raleway', sans-serif;
+		font-size: 28px;
+		font-weight: 700;
+		top: -24px;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		text-align: center;
+	}
+	
+	/*Container for GitHub img link on top left of site*/
+	.topimg__git {
+		position: fixed;
+		left: 5px;
+		top: 10px;
+		height: 50px;
+		width: 50px;
+		display: block;
+		outline: none;
+		text-decoration: none;
+		z-index: 20000;
+	}
+
+	/*Styles actual image for Github Profile link*/
+	.topimg__git--back {
+		position: relative;
+		height: 50px;
+		width: 50px;
+		outline: none;
+		text-decoration: none;
+		background-image: url("http://i.imgur.com/f0b7fd5.png");
+		background-position: center;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		transition: .30s;
+		overflow: hidden;
+	}
+	
+	/*Makes GitHub img clickable link*/
+	.topimg__git--click {
+		outline: none;
+		text-decoration: none;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		overflow: hidden;
+	}
+
+	/*Styles menu bar (HIDES IT HERE, FOR MOBILE)*/
+	.menu {
+		position: absolute;
+		display: none;
+		height: 0px;
+	}
+
+	/*Styles container for the rest of website content*/
+	.info {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 450px;
+		height: 750px;
+		width: 100%;
+		z-index: 1001;
+		background-color: #f8f8f8;
+	}
+
+	
+	/*Styles the Header for EVERY section*/
+	.head {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		text-align: center;
+		font-size: 39px;
+		font-family: 'Raleway', sans-serif;
+		color: #141823;
+		z-index: 5000;
+		font-weight: 700;
+	}
+	
+	/*Styles line through Header for EVERY section*/
+	hr {
+		position: absolute;
+		width: 200px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		top: 55px;
+		transform: rotate(-5deg);
+		-webkit-transform: rotate(-5deg);
+	}
+	
+	/*Anchor for About section*/
+	#aboutAnchor {
+		top: -50px;
+		height: 0;
+		width: 0;
+		left: 0;
+		right: 0;
+	}
+	
+	/*Container for About section*/
+	.about {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 400px;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		background-color: #f8f8f8;
+	}
+	
+	/*Body for About section*/
+	.about__body {
+		position: absolute;
+		left: 5%;
+		right: 5%;
+		top: 80px;
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+		font-size: 29px;
+		color: #141823;
+		line-height: 40px;
+	}
+	
+	/*Anchor for Skills section*/
+	#skillAnchor {
+		top: 370px;
+		height: 0;
+		width: 0;
+		right: 0;
+		left: 0;
+	}
+
+	/*Skills section container*/
+	.skill {
+		position: absolute;
+		top: 420px;
+		right: 0;
+		height: 600px;
+		width: 100%;
+		overflow: hidden;
+		left: 0;
+		text-align: center;
+		-webkit-transition: .8s;
+		-moz-transition: .8s;
+		transition-timing-function: ease-in-out;
+		-webkit-transition-timing-function: ease-in-out;
+		-moz-transition-timing-function: ease-in-out;		
+	}
+	
+	/*Image over skills in Skills section*/
+	.skill__slider {
+		position: absolute;
+		top: 110px;
+		right: 0;
+		bottom: 0;
+		height: 630px;
+		width: 100%;
+		background-image: url('http://i.imgur.com/DvWOp6N.jpg');
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		z-index: 1000;
+		-webkit-transition: .8s;
+		-moz-transition: .8s;
+		transition-timing-function: ease-in-out;
+		-webkit-transition-timing-function: ease-in-out;
+		-moz-transition-timing-function: ease-in-out;		
+	}
+	
+	/*Small Gif on top of Skills and Work section,
+	allows user to know section is clickable.*/
+	.touch {
+		position: absolute;
+		display: inline;
+		height: 70px;
+		width: 70px;
+		right: 5px;
+		top: -54px;
+		background-image: url('http://i.giphy.com/l3vQWD6g6duMsX8VG.gif');
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		z-index: 1000;
+	}
+
+	/*Makes image slide to right when hover over .skills*/
+	.skill:hover .skill__slider {
+		right: -350%;
+		transition: .8s;
+		-webkit-transition: .8s;
+		-moz-transition: .8s;
+		transition-timing-function: ease-in-out;
+		-webkit-transition-timing-function: ease-in-out;
+		-moz-transition-timing-function: ease-in-out;
+		z-index: 960;
+	}
+
+	/*Small container for <ul> element in Skills section*/
+	.skill__cont {
+		position: absolute;
+		top: 110px;
+		margin: auto;
+		right: 0;
+		left: 0;
+		height: 480px;
+		width: 100%;
+		background-color: #f8f8f8;
+	}
+	
+	/*Left two TEXT elements of Skills section*/
+	.skill__cont__left {
+		position: absolute;
+		top: -30px;
+		left: 0;
+		right: 50%;
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+		font-size: 32px;
+		color: #141823;
+		text-align: center;
+		padding: 0;
+	}
+
+	/*Right two TEXT elements of Skills section*/
+	.skill__cont__right {
+		top: -30px;
+		position: absolute;
+		left: 50%;
+		right: 0;
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+		font-size: 32px;
+		color: #141823;
+		text-align: center;
+		padding: 0;
+	}
+
+	/*Top of each left and right TEXT columns in Skills, no padding*/
+	.skill__cont--nopad {
+		position: relative;
+		left: 0;
+		right: 0;
+		padding-top: 0;
+		display: block;
+		text-align: center;
+	}
+
+	/*Second of each left and right TEXT columns in Skills, yes padding*/
+	.skill__cont__yespad {
+		position: relative;
+		left: 0;
+		right: 0;
+		padding-top: 155px;
+		display: block;
+		text-align: center;
+	}
+
+	/*First of each left and right PICTURE columns in skills*/
+	.skill__cont__first {
+		position: relative;
+		top: 20px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		height: 80px;
+		width: 80px;
+		border-radius: 0;
+	}
+
+	/*First of each left and right PICTURE columns in skills*/
+	.skill__cont__second{
+		position: relative;
+		top: 20px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		height: 80px;
+		width: 80px;
+		border-radius: 0;
+	}
+	
+	#javcont {
+		position: relative;
+		left: -28px;
+		right: 0;
+		padding-top: 155px;
+		display: block;
+		text-align: center;
+	}
+	
+	/*Text for "AngularJS" element in Skills section*/
+	#angular {
+		top: 24%;
+		position: absolute;
+		left: 0;
+		right: 0;
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+		font-size: 32px;
+		color: #141823;
+		text-align: center;
+		padding: 0;
+	}
+
+	/*Image for "AngularJS" element in Skills section*/
+	#underAngular {
+		position: absolute;
+		top: 42%;
+		left: 0;
+		right: 0;
+		margin: auto;
+		text-align: center;
+		height: 80px;
+		width: 80px;
+	}
+	
+	/*Anchor for Work section*/
+	#workAnchor {
+		top: 1105px;
+		height: 0;
+		width: 0;
+		left: 0;
+		right: 0;
+	}
+	
+	/*Work section container*/
+	.work {
+		position: absolute;
+		top: 1100px;
+		right: 0;
+		height: 1300px;
+		left: 0;
+		text-align: center;
+		width: 100%;
+	}
+	
+	/*This whole weird section makes it so
+	that when clicked, Image doesn't turn blue
+	on MOBILE*/
+	*::selection {
+		background-color: transparent;
+	}
+	*::-moz-selection {
+		background-color: transparent;
+	}
+	* {
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	}
+	input[type="text"], textarea, [contenteditable] {
+		-webkit-user-select: text;
+		-moz-user-select: text;
+		-ms-user-select: text;
+		user-select: text;
+	}
+
+	/*Small container inside Work for SaborCulichi job
+	(Allows for hover opacity effect on img)*/
+	.work__sabor{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 130px;
+		width: 100%;
+		height: 330px;
+		text-decoration: none;	
+		color: transparent;
+	}
+		
+	/*Small image by .work__sabor header, alerts user that header of each job is clickable*/
+	#guidepic {
+		position: absolute;
+		height: 40px;
+		width: 90px;
+		left: 3px;
+		top: 5px;
+		background-image: url('http://i.imgur.com/ZuX2DI7.png');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		z-index: 100;
+	}
+	
+	/*Div that covers .work__sabor container with image*/
+	.work__sabor--pic {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 330px;
+		background-image: url('http://i.imgur.com/cBAFUZv.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-position: center;
+		opacity: 1;
+		transition: .5s;
+		z-index: 200;
+		text-decoration: none;
+		background-color: transparent;
+		color: transparent;
+	}
+	
+	/*When you hover over .work__sabor container,
+	pic inside .work__sabor--pic changes opacity & z-index*/
+	.work__sabor:hover .work__sabor--pic {
+		transition: .5s;
+		cursor: pointer;
+		opacity: .07;
+		z-index: 1;
+		text-decoration: none;
+		color: transparent;
+	}
+
+	/*Small container inside .work for Via job*/
+	.work__via {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 470px;
+		width: 100%;
+		height: 330px;
+		cursor: pointer;
+		text-decoration: none;		
+	}
+
+	/*Div that covers .work__via container with image*/
+	.work__via--pic{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 330px;
+		background-image: url('http://i.imgur.com/bCT2Gw7.png');
+		background-size: 100% 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		opacity: 1;
+		z-index: 200;
+		transition: .5s;
+		cursor: pointer;
+		text-decoration: none;
+	}
+	
+	/*When you hover over .work__via container,
+	pic inside .work__via--pic changes opacity & z-index*/
+	.work__via:hover .work__via--pic {
+		transition: .5s;
+		cursor: pointer;
+		opacity: .07;
+		z-index: 1;
+		text-decoration: none;
+	}
+	
+	/*Small container inside .work for Viier job*/
+	.work__viier {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 810px;
+		width: 100%;
+		height: 330px;
+		cursor: pointer;
+		text-decoration: none;		
+	}
+
+	/*Div that covers .work__viier container with image*/
+	.work__viier--pic {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 330px;
+		background-image: url('http://i.imgur.com/kY6cxN2.jpg');
+		background-size: 100% 100%;
+		background-position: center;
+		opacity: 1;
+		z-index: 200;
+		transition: .5s;
+		cursor: pointer;
+		text-decoration: none;
+	}
+
+	/*When you hover over .work__viier container,
+	pic inside .work__viier--pic changes opacity & z-index*/
+	.work__viier:hover .work__viier--pic {
+		transition: .5s;
+		cursor: pointer;
+		opacity: .07;
+		z-index: 1;
+		text-decoration: none;
+	}
+	
+	/*Styles the header for each of the Job sections in .work*/
+	.work0 {
+		position: absolute;
+		left: 0;
+		right: 0;
+		text-align: center;
+		top: -15px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 34px;
+		color: #141823;
+		font-weight: 100;
+	}
+	
+	/*Styles the header (.work0) for the Via section in MOBILE
+	becuase name too long and text overlaps.*/
+	#viaSmaller {
+		position: absolute;
+		left: 0;
+		right: 0;
+		text-align: center;
+		top: -15px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 30px;
+		color: #141823;
+		font-weight: 100;
+	}
+
+	/*Styles Job Position for each of the Job sections in .work*/
+	.work0a {
+		position: absolute;
+		text-align: center;
+		left: 0;
+		right: 0;
+		top: 40px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 16px;
+		color: #141823;
+		font-weight: 100;
+	}
+	
+	/*Styles Via Job Position (.work0a) because
+	Header is smaller, and it seems far*/
+	#viaCloser {
+		position: absolute;
+		text-align: center;
+		left: 0;
+		right: 0;
+		top: 35px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 16px;
+		color: #141823;
+		font-weight: 100;
+	}
+
+	/*Styles first Job Description for each of Job sections in .work*/
+	.work0c {
+		position: absolute;
+		text-align: center;
+		left: 0;
+		right: 0;
+		top: 95px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 19px;
+		color: #141823;
+		font-weight: 100;
+	}
+
+	/*Styles second Job Description for each of Job sections in .work*/
+	.work0e {
+		position: absolute;
+		text-align: center;
+		left: 0;
+		right: 0;
+		top: 145px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 19px;
+		color: #141823;
+		font-weight: 100;
+	}
+
+	/*Styles third Job Description for each of Job sections in .work*/
+	.work0g {
+		position: absolute;
+		left: 0;
+		right: 0;
+		text-align: center;
+		top: 195px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 19px;
+		color: #141823;
+		font-weight: 100;
+	}
+
+	/*Styles fourth Job Description for each of Job sections in .work*/
+	.work0i {
+		position: absolute;
+		text-align: center;
+		left: 0;
+		right: 0;
+		top: 245px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 19px;
+		color: #141823;
+		font-weight: 100;
+	}
+
+	/*Anchor for School section*/
+	#schoolAnchor {
+		top: 2370px;
+		height: 0;
+		width: 0;
+		right: 0;
+		left: 0;
+	}
+	
+	/*School section container*/
+	.school {
+		position: absolute;
+		top: 2320px;
+		right: 0;
+		height: 550px;
+		left: 0;
+		text-align: center;
+	}
+
+	/*Styles background image for School section
+	(Had to use DIV for opacity on img not text)*/
+	#uclaimg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 550px;
+		background-image: url('http://brand.ucla.edu/wp-content/uploads/2013/08/ucla-wordmark-main-1.jpg'); 
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		opacity: .17;
+	}
+
+	/*Styles University name*/
+	.school__ucla {
+		position: absolute;
+		top: 95px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		font-size: 30px;
+		font-family: 'Raleway', sans-serif;
+		color: #141823;
+		z-index: 5000;
+	}
+
+	/*Styles University location text*/
+	.school__location {
+		position: absolute;
+		top: 190px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		font-size: 20px;
+		font-family: 'Raleway', sans-serif;
+		color: #141823;
+		z-index: 5000;
+	}
+
+	/*Styles major text*/
+	.school__major {
+		position: absolute;
+		top: 225px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		font-size: 25px;
+		font-family: 'Raleway', sans-serif;
+		color: #141823;
+		z-index: 5000;
+	}
+
+	/*Styles minor text*/
+	.school__minor {
+		position: absolute;
+		top: 255px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		font-size: 25px;
+		font-family: 'Raleway', sans-serif;
+		color: #141823;
+		z-index: 5000;
+	}
+
+	/*Styles HighSchool name*/
+	.school__high {
+		position: absolute;
+		top: 345px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		font-size: 30px;
+		font-family: 'Raleway', sans-serif;
+		color: #141823;
+		z-index: 5000;
+	}
+
+	/*Styles HighSchool location text*/
+	.school__location2 {
+		position: absolute;
+		top: 405px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		font-size: 20px;
+		font-family: 'Raleway', sans-serif;
+		color: #141823;
+		z-index: 5000;
+	}
+
+	/*Anchor for Contact section*/
+	#contactAnchor {
+		top: 3020px;
+		height: 0;
+		width: 0;
+	}
+	
+	/*Container for Contact section*/
+	.contact {
+		position: absolute;
+		top: 2950px;
+		right: 0;
+		height: 1100px;
+		left: 0;
+		text-align: center;
+		overflow: hidden;
+		overflow-x: hidden;
+	}
+
+	/*Uses jQuery to add to Contact section after "Send"
+	button is pressed*/
+	.aftersent {
+		position: absolute;
+		top: 510px;
+		left: 100%;
+		right: -175%;
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+		font-size: 34px;
+		color: #141823;
+		font-weight: 300;
+		border: 3px solid #141823;
+	}
+	
+	/*Generally styles input area (all of the boxes) for user information*/
+	input {
+		font-family: 'Raleway', sans-serif;
+		background-color: black;
+		font-size: 20px;
+		color: #141823;
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+	/*Styles small container for "Name" input text area*/
+	.nombre {
+		position: absolute;
+		top: 510px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	/*Styles text for "Name" area*/
+	#nombredos {
+		outline: none;
+		border: solid 3px #141823;
+		background-color: transparent;
+		height: 40px;
+		width: 70%;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	/*Styles small container for "Email" input text area*/
+	.correo {
+		position: absolute;
+		top: 570px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	/*Styles text for "Email" area*/
+	#correodos {
+		outline: none;
+		border: solid 3px #141823;
+		background-color: transparent;
+		height: 40px;
+		width: 70%;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	/*Styles small container for "Name" input text area*/
+	.telefo {
+		position: absolute;
+		top: 630px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	/*Styles text for "Phone" area*/
+	#telefodos {
+		outline: none;
+		border: solid 3px #141823;
+		background-color: transparent;
+		height: 40px;
+		width: 70%;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	/*Styles small container for "Location of event" input text area*/
+	.donde {
+		position: absolute;
+		background-color: transparent;
+		left: 0;
+		right: 0;
+		margin: auto;
+		top: 690px;
+	}
+
+	/*Styles text and size for textarea of "Location of event" input box area*/
+	textarea {
+		background-color: transparent;
+		border: solid 3px #141823;
+		resize: none;
+		font-family: 'Raleway', sans-serif;
+		font-size: 23px;
+		padding-left: 8px;
+		padding-right: 8px;
+		color: #141823;
+		outline: none;
+		height: 190px;
+		width: 70%;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	#usebut {
+		position: absolute;
+		left: 30px;
+		top: 640px;
+	}
+
+	/*Styles "Send" button and text inside it*/
+	#sendMessage {
+		position: absolute;
+		left: calc(90% - 96px);
+		top: 900px;
+		cursor: pointer;
+		height: 40px;
+		width: 90px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 20px;
+		font-weight: 600;
+		outline: none;
+		text-decoration: none;
+		border: 3px solid #141823;
+		background-color: #f8f8f8;
+		color: #141823;
+	}
+
+	/*Styles text for Phone Number in Contact section*/
+	.contact__phone__text{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 145px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 32px;
+		color: #141823;
+		text-align: center;
+	}
+
+	/*Styles text for Phone Number in Contact section*/
+	.contact__phone__number{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 185px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 32px;
+		color: #141823;
+		text-align: center;
+	}
+
+	/*Styles text for Email in Contact section*/
+	.contact__email__top{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 285px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 32px;
+		color: #141823;
+	}
+
+	/*Styles text for Email in Contact section*/
+	.contact__email{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 325px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 32px;
+		color: #141823;
+	}
 }
-
-@media all and (max-width:1000px) and (min-width:330px) {
-    .topimg,body {
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 100%
-    }
-
-    body {
-        overflow-x: hidden;
-        padding: 0;
-        margin: auto;
-        background-size: cover;
-        overflow: visible;
-        background-color: #f8f8f8
-    }
-
-    .topimg {
-        position: absolute;
-        height: 450px;
-        overflow: hidden;
-        background-color: #000;
-        background-image: url(http://i.imgur.com/EKax48c.jpg);
-        background-position: center;
-        background-size: 100% 100%;
-        background-repeat: no-repeat
-    }
-
-    .topimg__name,.topimg__name--text {
-        position: absolute;
-        right: 0;
-        left: 0;
-        text-align: center
-    }
-
-    .topimg__name {
-        width: 230px;
-        height: 50px;
-        margin: auto;
-        background-color: #e9e9e9;
-        top: 40px
-    }
-
-    .topimg__name--text {
-        color: #141823;
-        font-family: 'Raleway',sans-serif;
-        font-size: 30px;
-        font-weight: 700;
-        top: -24px;
-        bottom: 0
-    }
-
-    .topimg__myimg,.topimg__myimg--circle {
-        border-radius: 70px;
-        margin: auto;
-        height: 140px;
-        width: 140px
-    }
-
-    .topimg__myimg {
-        top: 33%;
-        left: 0;
-        right: 0;
-        text-align: center;
-        background-color: #000;
-        border: solid 2px #7eb7a1;
-        overflow: hidden;
-        position: absolute
-    }
-
-    .topimg__myimg--circle {
-        position: relative
-    }
-
-    .topimg__dev,.topimg__dev--text {
-        position: absolute;
-        right: 0;
-        left: 0;
-        text-align: center
-    }
-
-    .topimg__dev {
-        width: 330px;
-        height: 50px;
-        margin: auto;
-        background-color: #e9e9e9;
-        top: 350px
-    }
-
-    .topimg__dev--text {
-        color: #141823;
-        font-family: 'Raleway',sans-serif;
-        font-size: 30px;
-        font-weight: 700;
-        top: -24px;
-        bottom: 0
-    }
-
-    .topimg__git {
-        position: fixed;
-        left: 5px;
-        top: 10px;
-        height: 50px;
-        width: 50px;
-        display: block;
-        outline: none;
-        text-decoration: none;
-        z-index: 20000
-    }
-
-    .topimg__git--back,.topimg__git--click {
-        outline: none;
-        text-decoration: none;
-        overflow: hidden
-    }
-
-    .topimg__git--back {
-        height: 50px;
-        width: 50px;
-        background-image: url(http://i.imgur.com/f0b7fd5.png);
-        background-position: center;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        transition: .3s;
-        position: relative
-    }
-
-    .topimg__git--click {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0
-    }
-
-    .menu {
-        display: none;
-        height: 0
-    }
-
-    .head,.info,.menu {
-        position: absolute
-    }
-
-    .info {
-        left: 0;
-        right: 0;
-        height: 750px;
-        width: 100%;
-        background-color: #f8f8f8;
-        top: 450px;
-        z-index: 1001
-    }
-
-    .head {
-        top: 0;
-        text-align: center;
-        font-size: 39px;
-        font-family: 'Raleway',sans-serif;
-        color: #141823;
-        z-index: 5000;
-        font-weight: 700
-    }
-
-    .about,.head,hr {
-        right: 0;
-        left: 0
-    }
-
-    hr {
-        transform: rotate(-5deg);
-        -webkit-transform: rotate(-5deg);
-        width: 200px;
-        top: 55px
-    }
-
-    #aboutAnchor,#skillAnchor {
-        top: -50px;
-        height: 0;
-        width: 0;
-        left: 0;
-        right: 0
-    }
-
-    #skillAnchor {
-        top: 370px
-    }
-
-    .about,.about__body,hr {
-        position: absolute;
-        text-align: center
-    }
-
-    .about {
-        height: 400px;
-        width: 100%;
-        background-color: #f8f8f8;
-        top: 0
-    }
-
-    .about__body {
-        left: 5%;
-        right: 5%;
-        top: 90px;
-        font-family: 'Raleway',sans-serif;
-        font-size: 30px;
-        color: #141823;
-        line-height: 40px
-    }
-
-    .skill,.skill__slider {
-        position: absolute;
-        right: 0;
-        width: 100%
-    }
-
-    .skill {
-        overflow: hidden;
-        left: 0;
-        text-align: center;
-        top: 420px;
-        height: 600px
-    }
-
-    .skill__slider {
-        top: 110px;
-        bottom: 0;
-        height: 630px;
-        background-image: url(http://i.imgur.com/DvWOp6N.jpg);
-        background-position: center;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        z-index: 1000
-    }
-
-    .skill:hover .skill__slider,.skill__cont,.skill__slider {
-        transition: .8s;
-        -webkit-transition: .8s;
-        -moz-transition: .8s;
-        transition-timing-function: ease-in-out;
-        -webkit-transition-timing-function: ease-in-out;
-        -moz-transition-timing-function: ease-in-out
-    }
-
-    .skill:hover .skill__slider {
-        z-index: 960;
-        right: -350%
-    }
-
-    .skill__cont {
-        position: absolute;
-        top: 110px;
-        margin: auto;
-        right: 0;
-        left: 0;
-        height: 480px;
-        width: 100%;
-        background-color: #f8f8f8
-    }
-
-    .skill__cont__left,.skill__cont__right {
-        position: absolute;
-        top: -30px;
-        left: 0;
-        right: 50%;
-        font-family: 'Raleway',sans-serif;
-        font-size: 32px;
-        color: #141823;
-        text-align: center;
-        padding: 0
-    }
-
-    .skill__cont__right {
-        left: 50%;
-        right: 0
-    }
-
-    #javcont,.skill__cont--nopad,.skill__cont__yespad {
-        position: relative;
-        right: 0;
-        display: block;
-        text-align: center;
-        left: -13px
-    }
-
-    .skill__cont--nopad,.skill__cont__yespad {
-        left: 0;
-        padding-top: 0
-    }
-
-    #javcont,.skill__cont__yespad {
-        padding-top: 155px
-    }
-
-    .skill__cont__first,.skill__cont__second {
-        position: relative;
-        top: 20px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        height: 80px;
-        width: 80px;
-        border-radius: 0
-    }
-
-    #angular,#underAngular {
-        position: absolute;
-        left: 0;
-        right: 0;
-        text-align: center
-    }
-
-    #angular {
-        font-family: 'Raleway',sans-serif;
-        font-size: 32px;
-        color: #141823;
-        padding: 0;
-        top: 24%
-    }
-
-    #underAngular {
-        top: 42%;
-        margin: auto;
-        height: 80px;
-        width: 80px
-    }
-
-    #workAnchor,.work {
-        top: 1105px;
-        height: 0;
-        width: 0;
-        left: 0;
-        right: 0
-    }
-
-    .work {
-        position: absolute;
-        top: 1100px;
-        height: 1300px;
-        text-align: center;
-        width: 100%
-    }
-
-    ::selection {
-        background-color: transparent
-    }
-
-    ::-moz-selection {
-        background-color: transparent
-    }
-
-    * {
-        -webkit-tap-highlight-color: rgba(0,0,0,0)
-    }
-
-    [contenteditable],input[type=text],textarea {
-        -webkit-user-select: text;
-        -moz-user-select: text;
-        -ms-user-select: text;
-        user-select: text
-    }
-
-    .work__sabor {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 130px;
-        width: 100%;
-        height: 330px;
-        text-decoration: none;
-        color: none
-    }
-
-    .touch {
-        position: absolute;
-        display: inline;
-        height: 80px;
-        width: 80px;
-        right: 15px;
-        top: -61px;
-        background-image: url(http://i.giphy.com/l3vQWD6g6duMsX8VG.gif);
-        background-size: 100% 100%;
-        z-index: 1000
-    }
-
-    #guidepic,.touch,.work__sabor--pic {
-        background-repeat: no-repeat;
-        background-position: center
-    }
-
-    #guidepic {
-        position: absolute;
-        left: 2px;
-        height: 40px;
-        width: 90px;
-        top: 10px;
-        background-image: url(http://i.imgur.com/TrFdaVn.png);
-        background-size: cover;
-        z-index: 100
-    }
-
-    .work__sabor--pic {
-        top: 0;
-        width: 100%;
-        height: 330px;
-        background-image: url(http://i.imgur.com/cBAFUZv.png);
-        background-size: 100% 100%;
-        opacity: 1;
-        transition: .5s;
-        z-index: 200;
-        text-decoration: none;
-        color: none
-    }
-
-    .work__sabor:hover .work__sabor--pic {
-        transition: .5s;
-        opacity: .07;
-        z-index: 1;
-        text-decoration: none;
-        color: none
-    }
-
-    .work__sabor--pic,.work__via,.work__via--pic {
-        position: absolute;
-        left: 0;
-        right: 0
-    }
-
-    .work__via {
-        width: 100%;
-        height: 330px;
-        cursor: pointer;
-        text-decoration: none;
-        top: 470px
-    }
-
-    .work__via--pic {
-        top: 0;
-        background-image: url(http://i.imgur.com/bCT2Gw7.png);
-        background-size: 100% 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        opacity: 1;
-        z-index: 200;
-        transition: .5s
-    }
-
-    .work__via:hover .work__via--pic,.work__viier:hover .work__viier--pic {
-        transition: .5s;
-        cursor: pointer;
-        opacity: .07;
-        z-index: 1;
-        text-decoration: none
-    }
-
-    .work__via--pic,.work__viier,.work__viier--pic {
-        width: 100%;
-        height: 330px;
-        cursor: pointer;
-        text-decoration: none
-    }
-
-    .work__viier {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 810px
-    }
-
-    .work__viier--pic {
-        top: 0;
-        background-image: url(http://i.imgur.com/kY6cxN2.jpg);
-        background-size: 100% 100%;
-        background-position: center;
-        opacity: 1;
-        z-index: 200;
-        transition: .5s
-    }
-
-    #viaSmaller,.work0,.work0a,.work__viier--pic {
-        position: absolute;
-        left: 0;
-        right: 0
-    }
-
-    .work0 {
-        text-align: center;
-        font-family: 'Raleway',sans-serif;
-        color: #141823;
-        font-weight: 100;
-        top: -20px;
-        font-size: 38px
-    }
-
-    #viaSmaller {
-        top: -15px;
-        font-size: 34px
-    }
-
-    .work0a {
-        top: 40px;
-        font-size: 18px
-    }
-
-    #viaCloser,#viaSmaller,.work0a,.work0c,.work0e,.work0g {
-        text-align: center;
-        font-family: 'Raleway',sans-serif;
-        color: #141823;
-        font-weight: 100
-    }
-
-    #viaCloser,.work0c {
-        position: absolute;
-        left: 0;
-        right: 0
-    }
-
-    #viaCloser {
-        font-size: 18px;
-        top: 35px
-    }
-
-    .work0c {
-        top: 95px
-    }
-
-    .work0c,.work0e,.work0g {
-        font-size: 20px
-    }
-
-    .work0e {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 145px
-    }
-
-    .work0g {
-        top: 195px
-    }
-
-    #uclaimg,.school,.work0g,.work0i {
-        position: absolute;
-        left: 0;
-        right: 0
-    }
-
-    .work0i {
-        text-align: center;
-        top: 245px;
-        font-family: 'Raleway',sans-serif;
-        font-size: 20px;
-        color: #141823;
-        font-weight: 100
-    }
-
-    #schoolAnchor {
-        top: 2370px;
-        height: 0;
-        width: 0;
-        right: 0;
-        left: 0
-    }
-
-    #uclaimg,.school {
-        height: 550px
-    }
-
-    .school {
-        text-align: center;
-        top: 2320px
-    }
-
-    #uclaimg {
-        top: 0;
-        width: 100%;
-        background-image: url(http://brand.ucla.edu/wp-content/uploads/2013/08/ucla-wordmark-main-1.jpg);
-        background-position: center;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        opacity: .17
-    }
-
-    .school__ucla {
-        top: 95px;
-        font-size: 30px;
-        font-family: 'Raleway',sans-serif;
-        color: #141823;
-        z-index: 5000
-    }
-
-    .school__location,.school__major,.school__ucla {
-        position: absolute;
-        left: 0;
-        right: 0;
-        text-align: center
-    }
-
-    .school__location {
-        font-family: 'Raleway',sans-serif;
-        color: #141823;
-        z-index: 5000;
-        top: 190px;
-        font-size: 20px
-    }
-
-    .school__major {
-        top: 225px;
-        font-size: 25px
-    }
-
-    .school__high,.school__major,.school__minor {
-        font-family: 'Raleway',sans-serif;
-        color: #141823;
-        z-index: 5000
-    }
-
-    .school__minor {
-        position: absolute;
-        left: 0;
-        right: 0;
-        text-align: center;
-        top: 255px;
-        font-size: 25px
-    }
-
-    .school__high {
-        top: 345px;
-        font-size: 30px
-    }
-
-    .contact,.school__high,.school__location2 {
-        position: absolute;
-        right: 0;
-        left: 0;
-        text-align: center
-    }
-
-    .school__location2 {
-        font-size: 20px;
-        font-family: 'Raleway',sans-serif;
-        color: #141823;
-        z-index: 5000;
-        top: 405px
-    }
-
-    #contactAnchor {
-        top: 3020px;
-        height: 0;
-        width: 0
-    }
-
-    .contact {
-        top: 2950px;
-        height: 1100px;
-        overflow: hidden;
-        overflow-x: hidden
-    }
-
-    .aftersent,input {
-        font-family: 'Raleway',sans-serif;
-        color: #141823
-    }
-
-    .aftersent {
-        left: 100%;
-        right: -175%;
-        text-align: center;
-        font-weight: 300;
-        border: 3px solid #141823;
-        font-size: 34px
-    }
-
-    input {
-        background-color: #000;
-        font-size: 20px;
-        padding-left: 8px;
-        padding-right: 8px
-    }
-
-    .aftersent,.nombre {
-        position: absolute;
-        top: 510px
-    }
-
-    #correodos,#nombredos,#telefodos {
-        outline: none;
-        border: solid 3px #141823;
-        background-color: transparent;
-        height: 40px;
-        width: 70%;
-        left: 0;
-        right: 0;
-        margin: auto
-    }
-
-    .correo,.nombre,.telefo {
-        left: 0;
-        right: 0;
-        margin: auto
-    }
-
-    .correo {
-        position: absolute;
-        top: 570px
-    }
-
-    .telefo {
-        top: 630px
-    }
-
-    #usebut,.donde,.telefo {
-        position: absolute
-    }
-
-    .donde,textarea {
-        left: 0;
-        right: 0;
-        margin: auto;
-        background-color: transparent
-    }
-
-    .donde {
-        top: 690px
-    }
-
-    #sendMessage,textarea {
-        font-family: 'Raleway',sans-serif;
-        outline: none;
-        color: #141823
-    }
-
-    textarea {
-        resize: none;
-        padding-left: 8px;
-        padding-right: 8px;
-        border: solid 3px #141823;
-        font-size: 23px;
-        height: 190px;
-        width: 70%
-    }
-
-    #usebut {
-        left: 30px;
-        top: 640px
-    }
-
-    #sendMessage {
-        position: absolute;
-        left: calc(90% - 96px);
-        top: 900px;
-        cursor: pointer;
-        height: 40px;
-        width: 90px;
-        font-size: 20px;
-        font-weight: 600;
-        text-decoration: none;
-        border: 3px solid #141823;
-        background-color: #f8f8f8
-    }
-
-    .contact__phone__text {
-        top: 145px;
-        text-align: center
-    }
-
-    .contact__email,.contact__email__top,.contact__phone__number,.contact__phone__text {
-        position: absolute;
-        left: 0;
-        right: 0;
-        font-family: 'Raleway',sans-serif;
-        font-size: 32px;
-        color: #141823
-    }
-
-    .contact__phone__number {
-        text-align: center;
-        top: 185px
-    }
-
-    .contact__email__top {
-        top: 285px
-    }
-
-    .contact__email {
-        top: 325px
-    }
-}
-
-@media all and (max-width:330px) and (min-width:300px) {
-    .topimg,body {
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 100%
-    }
-
-    body {
-        overflow-x: hidden;
-        padding: 0;
-        margin: auto;
-        background-size: cover;
-        overflow: visible;
-        background-color: #f8f8f8
-    }
-
-    .topimg {
-        position: absolute;
-        height: 450px;
-        overflow: hidden;
-        background-color: #000;
-        background-image: url(http://i.imgur.com/EKax48c.jpg);
-        background-position: center;
-        background-size: 100% 100%;
-        background-repeat: no-repeat
-    }
-
-    .topimg__name,.topimg__name--text {
-        position: absolute;
-        right: 0;
-        left: 0;
-        text-align: center
-    }
-
-    .topimg__name {
-        width: 210px;
-        height: 45px;
-        margin: auto;
-        background-color: #e9e9e9;
-        top: 40px
-    }
-
-    .topimg__name--text {
-        color: #141823;
-        font-family: 'Raleway',sans-serif;
-        font-size: 28px;
-        font-weight: 700;
-        top: -24px;
-        bottom: 0
-    }
-
-    .topimg__myimg,.topimg__myimg--circle {
-        border-radius: 70px;
-        margin: auto;
-        height: 140px;
-        width: 140px
-    }
-
-    .topimg__myimg {
-        top: 33%;
-        left: 0;
-        right: 0;
-        text-align: center;
-        background-color: #000;
-        border: solid 2px #7eb7a1;
-        overflow: hidden;
-        position: absolute
-    }
-
-    .topimg__myimg--circle {
-        position: relative
-    }
-
-    .topimg__dev,.topimg__dev--text {
-        position: absolute;
-        right: 0;
-        left: 0;
-        text-align: center
-    }
-
-    .topimg__dev {
-        width: 305px;
-        height: 45px;
-        margin: auto;
-        background-color: #e9e9e9;
-        top: 350px
-    }
-
-    .topimg__dev--text {
-        color: #141823;
-        font-family: 'Raleway',sans-serif;
-        font-size: 28px;
-        font-weight: 700;
-        top: -24px;
-        bottom: 0
-    }
-
-    .topimg__git {
-        position: fixed;
-        left: 5px;
-        top: 10px;
-        height: 50px;
-        width: 50px;
-        display: block;
-        outline: none;
-        text-decoration: none;
-        z-index: 20000
-    }
-
-    .topimg__git--back,.topimg__git--click {
-        outline: none;
-        text-decoration: none;
-        overflow: hidden
-    }
-
-    .topimg__git--back {
-        height: 50px;
-        width: 50px;
-        background-image: url(http://i.imgur.com/f0b7fd5.png);
-        background-position: center;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        transition: .3s;
-        position: relative
-    }
-
-    .topimg__git--click {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0
-    }
-
-    .menu {
-        display: none;
-        height: 0
-    }
-
-    .head,.info,.menu {
-        position: absolute
-    }
-
-    .info {
-        left: 0;
-        right: 0;
-        height: 750px;
-        width: 100%;
-        background-color: #f8f8f8;
-        top: 450px;
-        z-index: 1001
-    }
-
-    .head {
-        top: 0;
-        text-align: center;
-        font-size: 39px;
-        font-family: 'Raleway',sans-serif;
-        color: #141823;
-        z-index: 5000;
-        font-weight: 700
-    }
-
-    #aboutAnchor,.about,.head,hr {
-        right: 0;
-        left: 0
-    }
-
-    hr {
-        transform: rotate(-5deg);
-        -webkit-transform: rotate(-5deg);
-        width: 200px;
-        top: 55px
-    }
-
-    #aboutAnchor {
-        top: -50px;
-        height: 0;
-        width: 0
-    }
-
-    .about,.about__body,hr {
-        position: absolute;
-        text-align: center
-    }
-
-    .about {
-        height: 400px;
-        width: 100%;
-        background-color: #f8f8f8;
-        top: 0
-    }
-
-    .about__body {
-        left: 5%;
-        right: 5%;
-        top: 80px;
-        font-family: 'Raleway',sans-serif;
-        font-size: 29px;
-        color: #141823;
-        line-height: 40px
-    }
-
-    #skillAnchor,.skill {
-        top: 370px;
-        height: 0;
-        width: 0;
-        right: 0;
-        left: 0
-    }
-
-    .skill {
-        position: absolute;
-        top: 420px;
-        height: 600px;
-        width: 100%;
-        overflow: hidden;
-        text-align: center;
-        -webkit-transition: .8s;
-        -moz-transition: .8s;
-        transition-timing-function: ease-in-out;
-        -webkit-transition-timing-function: ease-in-out;
-        -moz-transition-timing-function: ease-in-out
-    }
-
-    .skill__slider,.touch {
-        position: absolute;
-        background-position: center;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        z-index: 1000
-    }
-
-    .skill__slider {
-        bottom: 0;
-        -webkit-transition: .8s;
-        -moz-transition: .8s;
-        transition-timing-function: ease-in-out;
-        -webkit-transition-timing-function: ease-in-out;
-        -moz-transition-timing-function: ease-in-out;
-        top: 110px;
-        right: 0;
-        height: 630px;
-        width: 100%;
-        background-image: url(http://i.imgur.com/DvWOp6N.jpg)
-    }
-
-    .touch {
-        display: inline;
-        height: 70px;
-        width: 70px;
-        right: 5px;
-        top: -54px;
-        background-image: url(http://i.giphy.com/l3vQWD6g6duMsX8VG.gif)
-    }
-
-    .skill:hover .skill__slider {
-        right: -350%;
-        transition: .8s;
-        -webkit-transition: .8s;
-        -moz-transition: .8s;
-        transition-timing-function: ease-in-out;
-        -webkit-transition-timing-function: ease-in-out;
-        -moz-transition-timing-function: ease-in-out;
-        z-index: 960
-    }
-
-    .skill__cont {
-        position: absolute;
-        top: 110px;
-        margin: auto;
-        right: 0;
-        left: 0;
-        height: 480px;
-        width: 100%;
-        background-color: #f8f8f8
-    }
-
-    .skill__cont__left,.skill__cont__right {
-        position: absolute;
-        top: -30px;
-        left: 0;
-        right: 50%;
-        font-family: 'Raleway',sans-serif;
-        font-size: 32px;
-        color: #141823;
-        text-align: center;
-        padding: 0
-    }
-
-    .skill__cont__right {
-        left: 50%;
-        right: 0
-    }
-
-    #javcont,.skill__cont--nopad,.skill__cont__yespad {
-        position: relative;
-        right: 0;
-        display: block;
-        text-align: center;
-        left: -28px
-    }
-
-    .skill__cont--nopad,.skill__cont__yespad {
-        left: 0;
-        padding-top: 0
-    }
-
-    #javcont,.skill__cont__yespad {
-        padding-top: 155px
-    }
-
-    .skill__cont__first,.skill__cont__second {
-        position: relative;
-        top: 20px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        height: 80px;
-        width: 80px;
-        border-radius: 0
-    }
-
-    #angular,#underAngular {
-        position: absolute;
-        left: 0;
-        right: 0;
-        text-align: center
-    }
-
-    #angular {
-        font-family: 'Raleway',sans-serif;
-        font-size: 32px;
-        color: #141823;
-        padding: 0;
-        top: 24%
-    }
-
-    #underAngular {
-        top: 42%;
-        margin: auto;
-        height: 80px;
-        width: 80px
-    }
-
-    #workAnchor,.work {
-        top: 1105px;
-        height: 0;
-        width: 0;
-        left: 0;
-        right: 0
-    }
-
-    .work {
-        position: absolute;
-        top: 1100px;
-        height: 1300px;
-        text-align: center;
-        width: 100%
-    }
-
-    ::selection {
-        background-color: transparent
-    }
-
-    ::-moz-selection {
-        background-color: transparent
-    }
-
-    * {
-        -webkit-tap-highlight-color: rgba(0,0,0,0)
-    }
-
-    [contenteditable],input[type=text],textarea {
-        -webkit-user-select: text;
-        -moz-user-select: text;
-        -ms-user-select: text;
-        user-select: text
-    }
-
-    .work__sabor {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 130px;
-        width: 100%;
-        height: 330px;
-        text-decoration: none;
-        color: transparent
-    }
-
-    #guidepic,.work__sabor--pic {
-        position: absolute;
-        height: 40px;
-        width: 90px;
-        left: 3px;
-        top: 5px;
-        background-image: url(http://i.imgur.com/ZuX2DI7.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        z-index: 100
-    }
-
-    .work__sabor--pic {
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 330px;
-        background-image: url(http://i.imgur.com/cBAFUZv.png);
-        background-size: 100% 100%;
-        opacity: 1;
-        transition: .5s;
-        z-index: 200;
-        text-decoration: none;
-        background-color: transparent;
-        color: transparent
-    }
-
-    .work__sabor:hover .work__sabor--pic {
-        color: transparent
-    }
-
-    .work__via {
-        top: 470px
-    }
-
-    .work__via,.work__via--pic,.work__viier,.work__viier--pic {
-        position: absolute;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 330px;
-        cursor: pointer;
-        text-decoration: none
-    }
-
-    .work__via--pic {
-        background-image: url(http://i.imgur.com/bCT2Gw7.png);
-        background-size: 100% 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        opacity: 1;
-        z-index: 200;
-        transition: .5s;
-        top: 0
-    }
-
-    .work__sabor:hover .work__sabor--pic,.work__via:hover .work__via--pic,.work__viier:hover .work__viier--pic {
-        transition: .5s;
-        cursor: pointer;
-        opacity: .07;
-        z-index: 1;
-        text-decoration: none
-    }
-
-    .work__viier {
-        top: 810px
-    }
-
-    .work__viier--pic {
-        top: 0;
-        background-image: url(http://i.imgur.com/kY6cxN2.jpg);
-        background-size: 100% 100%;
-        background-position: center;
-        opacity: 1;
-        z-index: 200;
-        transition: .5s
-    }
-
-    #viaSmaller,.work0 {
-        top: -15px
-    }
-
-    #viaSmaller,.work0,.work0a {
-        position: absolute;
-        left: 0;
-        right: 0
-    }
-
-    .work0 {
-        text-align: center;
-        font-family: 'Raleway',sans-serif;
-        color: #141823;
-        font-weight: 100;
-        font-size: 34px
-    }
-
-    #viaSmaller {
-        font-size: 30px
-    }
-
-    .work0a {
-        top: 40px;
-        font-size: 16px
-    }
-
-    #viaCloser,#viaSmaller,.work0a,.work0c,.work0e,.work0g {
-        text-align: center;
-        font-family: 'Raleway',sans-serif;
-        color: #141823;
-        font-weight: 100
-    }
-
-    #viaCloser,.work0c {
-        position: absolute;
-        left: 0;
-        right: 0
-    }
-
-    #viaCloser {
-        font-size: 16px;
-        top: 35px
-    }
-
-    .work0c {
-        top: 95px
-    }
-
-    .work0c,.work0e,.work0g {
-        font-size: 19px
-    }
-
-    .work0e {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 145px
-    }
-
-    .work0g {
-        top: 195px
-    }
-
-    #uclaimg,.school,.work0g,.work0i {
-        position: absolute;
-        left: 0;
-        right: 0
-    }
-
-    .work0i {
-        text-align: center;
-        top: 245px;
-        font-family: 'Raleway',sans-serif;
-        font-size: 19px;
-        color: #141823;
-        font-weight: 100
-    }
-
-    #schoolAnchor {
-        top: 2370px;
-        height: 0;
-        width: 0;
-        right: 0;
-        left: 0
-    }
-
-    #uclaimg,.school {
-        height: 550px
-    }
-
-    .school {
-        text-align: center;
-        top: 2320px
-    }
-
-    #uclaimg {
-        top: 0;
-        width: 100%;
-        background-image: url(http://brand.ucla.edu/wp-content/uploads/2013/08/ucla-wordmark-main-1.jpg);
-        background-position: center;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        opacity: .17
-    }
-
-    .school__ucla {
-        top: 95px;
-        font-size: 30px;
-        font-family: 'Raleway',sans-serif;
-        color: #141823;
-        z-index: 5000
-    }
-
-    .school__location,.school__major,.school__ucla {
-        position: absolute;
-        left: 0;
-        right: 0;
-        text-align: center
-    }
-
-    .school__location {
-        font-family: 'Raleway',sans-serif;
-        color: #141823;
-        z-index: 5000;
-        top: 190px;
-        font-size: 20px
-    }
-
-    .school__major {
-        top: 225px;
-        font-size: 25px
-    }
-
-    .school__high,.school__major,.school__minor {
-        font-family: 'Raleway',sans-serif;
-        color: #141823;
-        z-index: 5000
-    }
-
-    .school__minor {
-        position: absolute;
-        left: 0;
-        right: 0;
-        text-align: center;
-        top: 255px;
-        font-size: 25px
-    }
-
-    .school__high {
-        top: 345px;
-        font-size: 30px
-    }
-
-    .contact,.school__high,.school__location2 {
-        position: absolute;
-        right: 0;
-        left: 0;
-        text-align: center
-    }
-
-    .school__location2 {
-        font-size: 20px;
-        font-family: 'Raleway',sans-serif;
-        color: #141823;
-        z-index: 5000;
-        top: 405px
-    }
-
-    #contactAnchor {
-        top: 3020px;
-        height: 0;
-        width: 0
-    }
-
-    .contact {
-        top: 2950px;
-        height: 1100px;
-        overflow: hidden;
-        overflow-x: hidden
-    }
-
-    .aftersent,input {
-        font-family: 'Raleway',sans-serif;
-        color: #141823
-    }
-
-    .aftersent {
-        left: 100%;
-        right: -175%;
-        text-align: center;
-        font-weight: 300;
-        border: 3px solid #141823;
-        font-size: 34px
-    }
-
-    input {
-        background-color: #000;
-        font-size: 20px;
-        padding-left: 8px;
-        padding-right: 8px
-    }
-
-    .aftersent,.nombre {
-        position: absolute;
-        top: 510px
-    }
-
-    #correodos,#nombredos,#telefodos {
-        outline: none;
-        border: solid 3px #141823;
-        background-color: transparent;
-        height: 40px;
-        width: 70%;
-        left: 0;
-        right: 0;
-        margin: auto
-    }
-
-    .correo,.nombre,.telefo {
-        left: 0;
-        right: 0;
-        margin: auto
-    }
-
-    .correo {
-        position: absolute;
-        top: 570px
-    }
-
-    .telefo {
-        top: 630px
-    }
-
-    #usebut,.donde,.telefo {
-        position: absolute
-    }
-
-    .donde,textarea {
-        left: 0;
-        right: 0;
-        margin: auto;
-        background-color: transparent
-    }
-
-    .donde {
-        top: 690px
-    }
-
-    #sendMessage,textarea {
-        font-family: 'Raleway',sans-serif;
-        outline: none;
-        color: #141823
-    }
-
-    textarea {
-        resize: none;
-        padding-left: 8px;
-        padding-right: 8px;
-        border: solid 3px #141823;
-        font-size: 23px;
-        height: 190px;
-        width: 70%
-    }
-
-    #usebut {
-        left: 30px;
-        top: 640px
-    }
-
-    #sendMessage {
-        position: absolute;
-        left: calc(90% - 96px);
-        top: 900px;
-        cursor: pointer;
-        height: 40px;
-        width: 90px;
-        font-size: 20px;
-        font-weight: 600;
-        text-decoration: none;
-        border: 3px solid #141823;
-        background-color: #f8f8f8
-    }
-
-    .contact__phone__text {
-        top: 145px;
-        text-align: center
-    }
-
-    .contact__email,.contact__email__top,.contact__phone__number,.contact__phone__text {
-        position: absolute;
-        left: 0;
-        right: 0;
-        font-family: 'Raleway',sans-serif;
-        font-size: 32px;
-        color: #141823
-    }
-
-    .contact__phone__number {
-        text-align: center;
-        top: 185px
-    }
-
-    .contact__email__top {
-        top: 285px
-    }
-
-    .contact__email {
-        top: 325px
-    }
-}
+	
