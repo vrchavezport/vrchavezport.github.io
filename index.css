@@ -16,7 +16,7 @@ body {
 }
 
 .topimg {
-    background-image: url(http://i.imgur.com/j1zShdz.jpg);
+    background-image: url('http://i.imgur.com/j1zShdz.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: repeat;
