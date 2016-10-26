@@ -58,7 +58,7 @@ body {
     right: 0;
     text-align: center;
     background-color: #000;
-    border: solid 2px #7eb7a1;
+    border: solid 2px #000;
     position: absolute
 }
 
@@ -838,7 +838,7 @@ textarea {
         right: 0;
         text-align: center;
         background-color: #000;
-        border: solid 2px #7eb7a1;
+        border: solid 2px #000;
         overflow: hidden;
         position: absolute
     }
@@ -1630,7 +1630,7 @@ textarea {
         right: 0;
         text-align: center;
         background-color: #000;
-        border: solid 2px #7eb7a1;
+        border: solid 2px #000;
         overflow: hidden;
         position: absolute
     }
