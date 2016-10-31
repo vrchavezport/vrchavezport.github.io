@@ -182,7 +182,7 @@ a {
 }
 
 a:hover {
-    color: #f8f8f8;
+    border: solid 3px #141823;
     cursor: pointer
 }
 
