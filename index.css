@@ -217,7 +217,8 @@ hr {
     width: 200px;
     transform: rotate(-5deg);
     top: 55px;
-    text-align: center
+    text-align: center;
+    margin: auto;
 }
 
 #aboutAnchor,#skillAnchor {
