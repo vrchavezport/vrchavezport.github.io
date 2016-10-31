@@ -6,7 +6,9 @@ body {
     height: auto;
     width: 100%;
     overflow: visible;
-    background-color: #f8f8f8
+    background-color: #f8f8f8;
+    -webkit-font-smoothing: antialiased !important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
 .topimg,.topimg__name {
