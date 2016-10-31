@@ -216,7 +216,8 @@ a:hover {
 hr {
     width: 200px;
     transform: rotate(-5deg);
-    top: 55px
+    top: 55px;
+    text-align: center
 }
 
 #aboutAnchor,#skillAnchor {
