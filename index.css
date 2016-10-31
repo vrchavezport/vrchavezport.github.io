@@ -178,11 +178,12 @@ a,a:hover {
 
 a {
     outline: none;
+    border: solid 1.5px #f8f8f8;
     transition: .3s
 }
 
 a:hover {
-    border: solid 3px #141823;
+    border: solid 1.5px #141823;
     cursor: pointer
 }
 
