@@ -409,7 +409,7 @@ hr {
     height: 330px;
     background-image: url(http://i.imgur.com/okbgutU.jpg);
     background-size: 100%;
-    opacity: 1;
+    opacity: .07;
     z-index: 200;
     transition: .5s;
     cursor: pointer
@@ -439,7 +439,7 @@ hr {
     background-image: url(http://i.imgur.com/bCT2Gw7.png);
     background-size: 100%;
     background-position: center;
-    opacity: 1;
+    opacity: .07;
     z-index: 200;
     transition: .5s;
     top: 0
@@ -454,7 +454,7 @@ hr {
     background-image: url(http://i.imgur.com/kY6cxN2.jpg);
     background-size: 100% 100%;
     background-position: center;
-    opacity: 1;
+    opacity: .07;
     z-index: 200;
     transition: .5s
 }
