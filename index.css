@@ -157,7 +157,12 @@ body {
 }
 
 #menutext,a {
-    color: #141823
+    color: #141823;
+}
+
+#menutext a {
+    border: solid 1.5px #f8f8f8;
+    transition: .3s
 }
 
 #menutext,.fixed {
@@ -191,12 +196,14 @@ a,a:hover {
 
 a {
     outline: none;
-    border: solid 1.5px #f8f8f8;
-    transition: .3s
 }
 
-a:hover {
+#menutext a:hover {
     border: solid 1.5px #141823;
+    cursor: pointer
+}
+
+a {
     cursor: pointer
 }
 
