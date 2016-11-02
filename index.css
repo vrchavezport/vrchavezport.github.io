@@ -234,7 +234,7 @@ a {
 }
 
 .head span {
-    background-color: red;
+    border: solid 3px #141823;
 }
 
 .about,.head,hr {
