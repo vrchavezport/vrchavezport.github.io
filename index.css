@@ -243,11 +243,8 @@ a {
 }
 
 hr {
-    width: 200px;
-    transform: rotate(-5deg);
-    top: 55px;
-    text-align: center;
-    margin: auto;
+    width: 0px;
+    height: 0px;
 }
 
 #menutext li .menH {
