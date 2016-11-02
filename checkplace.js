@@ -11,6 +11,9 @@ function checkplace() {
 			$('#abou').mouseover(function(){
 			    $('#abou').css({"border": "solid 2px #141823"});
 			});
+			$('#abou').mouseout(function(){
+			    $('#abou').css({"border": "solid 2px #141823"});
+			});
 		} else if(($(window).scrollTop() < 300) ||($(window).scrollTop() > 810)){
 			$('#abou').css({"border" : "solid 2px #f8f8f8"});
 			$('#abou').mouseover(function(){
