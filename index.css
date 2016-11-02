@@ -163,7 +163,7 @@ body {
 }
 
 #menutext a {
-    border: solid 1.5px #f8f8f8;
+    border: solid 2px #f8f8f8;
     transition: .3s
 }
 
@@ -201,7 +201,7 @@ a {
 }
 
 #menutext a:hover {
-    border: solid 1.5px #141823;
+    border: solid 2px #141823;
     cursor: pointer
 }
 
