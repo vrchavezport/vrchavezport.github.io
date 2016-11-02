@@ -247,8 +247,9 @@ hr {
 }
 
 #menutext a .menH {
+    display: inline;
     position: relative;
-    width: 25px;
+    width: 45px;
     transform: rotate(-5deg);
     top: 5px;
     text-align: center;
