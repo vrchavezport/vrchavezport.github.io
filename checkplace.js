@@ -14,6 +14,9 @@ function checkplace() {
 			$('#abou').mouseover(function(){
 			    $("#abou").css("border", "solid 2px #141823");
 			});
+			$('#abou').mouseout(function(){
+			    $('#abou').css("border", "solid 2px #f8f8f8");
+			});
 		}
 	});
 			
