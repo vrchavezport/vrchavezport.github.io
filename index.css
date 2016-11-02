@@ -247,7 +247,7 @@ hr {
 }
 
 .menH {
-    position: relative;
+    display: none;
     width: 100%;
     transform: rotate(-5deg);
     top: 5px;
