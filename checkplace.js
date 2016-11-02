@@ -9,15 +9,15 @@ function checkplace() {
 		if(($(window).scrollTop() > 300) &&($(window).scrollTop() < 810)) {
 			$('#abou').css({"border" : "solid 2px #141823"});
 			$('#abou').mouseover(function(){
-			    $('#abou').css({"border": "solid 2px #141823"});
+			    $('#abou').css({"border": "solid 2px #C9C7C7"});
 			});
 			$('#abou').mouseout(function(){
-			    $('#abou').css({"border": "solid 2px #141823"});
+			    $('#abou').css({"border": "solid 2px #C9C7C7"});
 			});
 		} else if(($(window).scrollTop() < 300) ||($(window).scrollTop() > 810)){
 			$('#abou').css({"border" : "solid 2px #f8f8f8"});
 			$('#abou').mouseover(function(){
-			    $('#abou').css({"border": "solid 2px #141823"});
+			    $('#abou').css({"border": "solid 2px #C9C7C7"});
 			});
 			$('#abou').mouseout(function(){
 			    $('#abou').css({"border": "solid 2px #f8f8f8"});
