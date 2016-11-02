@@ -1,3 +1,9 @@
+$(document).ready(function() {
+			
+	checkplace();
+			
+	$(window).resize(checkplace);
+})	
 function checkplace() {	
 	$(window).bind('scroll', function() {
 		if(($(window).scrollTop() > 300) &&($(window).scrollTop() < 810)) {
