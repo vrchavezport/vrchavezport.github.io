@@ -163,7 +163,6 @@ body {
 }
 
 #menutext a {
-    outline: solid 2px #f8f8f8;
     transition: .3s
 }
 
@@ -201,7 +200,6 @@ a {
 }
 
 #menutext a:hover {
-    outline: solid 2px #141823;
     cursor: pointer
 }
 
