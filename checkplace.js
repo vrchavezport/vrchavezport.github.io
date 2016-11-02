@@ -1,7 +1,7 @@
 function checkplace() {	
 	$(window).bind('scroll', function() {
 		if(($(window).scrollTop() > 300) &&($(window).scrollTop() < 810)) {
-			$('#abou').css({"border" : "solid 2px #141823"});
+			$('#abou').css({"border" : "solid 2px #141823"})
 		} else {
 			$('#abou').css({"border" : "solid 2px #f8f8f8"});
 		}
@@ -9,7 +9,7 @@ function checkplace() {
 			
 	$(window).bind('scroll', function() {
 		if(($(window).scrollTop() > 825) &&($(window).scrollTop() < 1523)) {
-			$('#ski').css({"border" : "solid 2px #141823"});
+			$('#ski').css({"border" : "solid 2px #141823"})
 		} else {
 			$('#ski').css({"border" : "solid 2px #f8f8f8"});
 		}
@@ -17,7 +17,7 @@ function checkplace() {
 			
 	$(window).bind('scroll', function() {
 		if(($(window).scrollTop() > 1580) &&($(window).scrollTop() < 2700)) {
-			$('#wor').css({"border" : "solid 2px #141823"});
+			$('#wor').css({"border" : "solid 2px #141823"})
 		} else {
 			$('#wor').css({"border" : "solid 2px #f8f8f8"});
 		}
@@ -25,7 +25,7 @@ function checkplace() {
 			
 	$(window).bind('scroll', function() {
 		if(($(window).scrollTop() > 2770) &&($(window).scrollTop() < 3300)) {
-			$('#schoo').css({"border" : "solid 2px #141823"});
+			$('#schoo').css({"border" : "solid 2px #141823"})
 		} else {
 			$('#shoo').css({"border" : "solid 2px #f8f8f8"});
 		}
@@ -33,7 +33,7 @@ function checkplace() {
 			
 	$(window).bind('scroll', function() {
 		if($(window).scrollTop() > 3300) {
-			$('#conta').css({"border" : "solid 2px #141823"});
+			$('#conta').css({"border" : "solid 2px #141823"})
 		} else {
 			$('#conta').css({"border" : "solid 2px #f8f8f8"});
 		}
