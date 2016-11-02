@@ -162,7 +162,6 @@ body {
 
 #menutext a {
     border: solid 1.5px #f8f8f8;
-    background-color: red;
     transition: .3s
 }
 
@@ -188,7 +187,6 @@ body {
 
 li {
     display: inline;
-    background-color: yellow;
     padding: 0 30px
 }
 
