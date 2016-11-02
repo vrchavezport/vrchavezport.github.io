@@ -246,7 +246,7 @@ hr {
     margin: auto;
 }
 
-#menutext a .menH {
+#menutext li .menH {
     display: inline;
     position: relative;
     width: 45px;
