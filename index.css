@@ -244,6 +244,14 @@ hr {
     margin: auto;
 }
 
+.menH {
+    width: 100%;
+    transform: rotate(-5deg);
+    top: 5px;
+    text-align: center;
+    margin: auto;
+}
+
 #aboutAnchor,#skillAnchor {
     top: -50px;
     height: 0;
