@@ -230,8 +230,11 @@ a {
     font-family: 'Raleway',sans-serif;
     color: #141823;
     z-index: 5000;
-    background-color: red;
     font-weight: normal
+}
+
+.head span {
+    background-color: red;
 }
 
 .about,.head,hr {
