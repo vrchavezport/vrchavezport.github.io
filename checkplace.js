@@ -8,41 +8,41 @@ $(document).ready(function() {
 function checkplace() {	
 	$(window).bind('scroll', function() {
 		if(($(window).scrollTop() > 300) &&($(window).scrollTop() < 810)) {
-			$('#abou').css({"color" : "red"})
+			$('#abou').css({"border" : "solid 2px #141823"})
 		} else {
-			$('#abou').css({"color" : "black"});
+			$('#abou').css({"border" : "solid 2px #e9e9e9"});
 		}
 	});
 			
 	$(window).bind('scroll', function() {
 		if(($(window).scrollTop() > 825) &&($(window).scrollTop() < 1523)) {
-			$('#ski').css({"color" : "red"})
+			$('#ski').css({"border" : "solid 2px #141823"})
 		} else {
-			$('#ski').css({"color" : "black"});
+			$('#ski').css({"border" : "solid 2px #e9e9e9"});
 		}
 	});
 			
 	$(window).bind('scroll', function() {
 		if(($(window).scrollTop() > 1580) &&($(window).scrollTop() < 2700)) {
-			$('#wor').css({"color" : "red"})
+			$('#wor').css({"border" : "solid 2px #141823"})
 		} else {
-			$('#wor').css({"color" : "black"});
+			$('#wor').css({"border" : "solid 2px #e9e9e9"});
 		}
 	});
 			
 	$(window).bind('scroll', function() {
 		if(($(window).scrollTop() > 2770) &&($(window).scrollTop() < 3300)) {
-			$('#schoo').css({"color" : "red"})
+			$('#schoo').css({"border" : "solid 2px #141823"})
 		} else {
-			$('#schoo').css({"color" : "black"});
+			$('#schoo').css({"border" : "solid 2px #e9e9e9"});
 		}
 	});
 			
 	$(window).bind('scroll', function() {
 		if($(window).scrollTop() > 3300) {
-			$('#conta').css({"color" : "red"})
+			$('#conta').css({"border" : "solid 2px #141823"})
 		} else {
-			$('#conta').css({"color" : "black"});
+			$('#conta').css({"border" : "solid 2px #e9e9e9"});
 		}
 	});
 }
