@@ -52,7 +52,7 @@ function checkplace() {
 			    $('#wor').css({"border": "solid 2px #141823"});
 			});
 			$('#wor').mouseout(function(){
-			    $('#abou').css({"border": "solid 2px #141823"});
+			    $('#wor').css({"border": "solid 2px #141823"});
 			});
 		} else {
 			$('#wor').css({"border" : "solid 2px #f8f8f8"});
