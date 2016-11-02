@@ -40,12 +40,12 @@ body {
     height: 50px;
     margin: auto;
     text-align: center;
-    background-color: #e9e9e9
+    background-color: #141823
 }
 
 .topimg__name--text {
     position: relative;
-    color: #141823;
+    color: #e9e9e9;
     font-family: 'Raleway',sans-serif;
     font-size: 32px;
     font-weight: normal;
@@ -88,12 +88,12 @@ body {
     height: 50px;
     margin: auto;
     text-align: center;
-    background-color: #e9e9e9
+    background-color: #141823
 }
 
 .topimg__dev--text {
     position: relative;
-    color: #141823;
+    color: #e9e9e9;
     font-family: 'Raleway',sans-serif;
     font-size: 32px;
     font-weight: normal;
