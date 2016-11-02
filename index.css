@@ -246,8 +246,9 @@ hr {
     margin: auto;
 }
 
-.menH {
-    display: none;
+#menutext a .menH {
+    position: relative;
+    display: inline;
     width: 100%;
     transform: rotate(-5deg);
     top: 5px;
