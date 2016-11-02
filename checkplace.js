@@ -30,10 +30,10 @@ function checkplace() {
 	});
 			
 	$(window).bind('scroll', function() {
-		if(($(window).scrollTop() > 2770) &&($(window).scrollTop() < 3300)) {
+		if(($(window).scrollTop() > 2770) &&($(window).scrollTop() < 3200)) {
 			$('#schoo').css({"border" : "solid 2px #141823"})
 		} else {
-			$('#shoo').css({"border" : "solid 2px #f8f8f8"});
+			$('#schoo').css({"border" : "solid 2px #f8f8f8"});
 		}
 	});
 			
