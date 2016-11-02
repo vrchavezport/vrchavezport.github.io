@@ -19,6 +19,10 @@ function checkplace() {
 			$('#conta').css({"border" : "solid 2px #141823"})
 		} else {
 			$('#abou').css({"border" : "solid 2px #f8f8f8"});
+			$('#ski').css({"border" : "solid 2px #f8f8f8"});
+			$('#wor').css({"border" : "solid 2px #f8f8f8"});
+			$('#schoo').css({"border" : "solid 2px #f8f8f8"});
+			$('#conta').css({"border" : "solid 2px #f8f8f8"});
 			$('#abou').mouseover(function(){
 			    $("#abou").css("border", "solid 2px #141823");
 			});
