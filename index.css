@@ -247,7 +247,6 @@ hr {
 }
 
 #menutext li .menH {
-    display: inline;
     position: relative;
     width: 45px;
     transform: rotate(-5deg);
