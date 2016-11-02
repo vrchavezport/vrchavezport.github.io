@@ -248,7 +248,6 @@ hr {
 
 #menutext a .menH {
     position: relative;
-    display: inline;
     width: 100%;
     transform: rotate(-5deg);
     top: 5px;
