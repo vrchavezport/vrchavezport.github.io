@@ -1357,8 +1357,8 @@ textarea {
 
     .work0g,.work0i {
         position: absolute;
-        left: 15px;
-        right: 15px
+        left: 10px;
+        right: 10px
     }
 
     .work0i {
@@ -1379,11 +1379,11 @@ textarea {
     }
 
     .school {
-		position: absolute;
-		left: 0;
-		right: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
         text-align: center;
-		height: 550px;
+	height: 550px;
         top: 2320px
     }
 
