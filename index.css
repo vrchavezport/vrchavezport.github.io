@@ -224,15 +224,18 @@ a {
 .head {
     top: 0;
     text-align: center;
-    font-size: 39px;
+    font-size: 42px;
     font-family: 'Raleway',sans-serif;
-    color: #141823;
+    color: #f8f8f8;
     z-index: 5000;
     font-weight: normal
 }
 
 .head span {
     border: solid 3px #141823;
+	background-image: url( http://i.imgur.com/zQYYPZv.jpg );
+	background-position: center;
+	background-size: 100%;
 }
 
 .about,.head,hr {
@@ -448,16 +451,13 @@ hr {
     background-image: url(http://i.imgur.com/okbgutU.jpg);
     background-size: 100%;
     opacity: .07;
-    z-index: 200;
+    z-index: 80;
     transition: .5s;
     cursor: pointer
 }
 
-.work__sabor:hover .work__sabor--pic,.work__via:hover .work__via--pic,.work__viier:hover .work__viier--pic {
-    transition: .5s;
-    cursor: pointer;
-    opacity: .07;
-    z-index: 1
+.work0 a:hover{
+	border: solid 2px #141823;
 }
 
 .work__via {
@@ -478,7 +478,7 @@ hr {
     background-size: 100%;
     background-position: center;
     opacity: .07;
-    z-index: 200;
+    z-index: 80;
     transition: .5s;
     top: 0
 }
@@ -493,7 +493,7 @@ hr {
     background-size: 100% 100%;
     background-position: center;
     opacity: .07;
-    z-index: 200;
+    z-index: 80;
     transition: .5s
 }
 
@@ -509,7 +509,7 @@ hr {
     left: 0;
     right: 0;
     z-index: 180;
-    top: -5px;
+    top: -15px;
     font-size: 38px
 }
 
@@ -776,7 +776,13 @@ textarea {
     font-weight: normal;
     text-decoration: none;
     border: 3px solid #141823;
+	transition: .3s;
     background-color: #f8f8f8
+}
+
+#sendMessage:hover {
+	background-image: url( http://i.imgur.com/zQYYPZv.jpg );
+	background-size: 100%;
 }
 
 .contact__phone__text {
