@@ -783,6 +783,7 @@ textarea {
 #sendMessage:hover {
 	background-image: url( http://i.imgur.com/zQYYPZv.jpg );
 	background-size: 100%;
+	color: #f8f8f8;
 }
 
 .contact__phone__text {
@@ -856,7 +857,8 @@ textarea {
         width: 230px;
         height: 50px;
         margin: auto;
-        background-color: #e9e9e9;
+		background-color: #e9e9e9;
+		border: solid 3px #141823;
         top: 40px
     }
 
@@ -976,7 +978,7 @@ textarea {
         text-align: center;
         font-size: 39px;
         font-family: 'Raleway',sans-serif;
-        color: #141823;
+        color: #f8f8f8;
         z-index: 5000;
         font-weight: normal
     }
@@ -987,9 +989,7 @@ textarea {
     }
 
     hr {
-        transform: rotate(-5deg);
-        -webkit-transform: rotate(-5deg);
-        width: 200px;
+        height: 0px;
         top: 55px
     }
 
@@ -1198,10 +1198,12 @@ textarea {
     .touch {
         position: absolute;
         display: inline;
-        height: 80px;
-        width: 80px;
-        right: 15px;
-        top: -61px;
+        height: 60px;
+        width: 60px;
+        right: 20px;
+		left: 0;
+		margin: auto;
+        top: -25px;
         background-image: url(http://i.giphy.com/l3vQWD6g6duMsX8VG.gif);
         background-size: 100% 100%;
         z-index: 1000
@@ -1229,17 +1231,9 @@ textarea {
         height: 330px;
         background-image: url(http://i.imgur.com/cBAFUZv.png);
         background-size: 100% 100%;
-        opacity: 1;
-        transition: .5s;
-        z-index: 200;
-        text-decoration: none;
-        color: none
-    }
-
-    .work__sabor:hover .work__sabor--pic {
-        transition: .5s;
         opacity: .07;
-        z-index: 1;
+        transition: .5s;
+        z-index: 99;
         text-decoration: none;
         color: none
     }
@@ -1264,17 +1258,9 @@ textarea {
         background-size: 100% 100%;
         background-position: center;
         background-repeat: no-repeat;
-        opacity: 1;
-        z-index: 200;
-        transition: .5s
-    }
-
-    .work__via:hover .work__via--pic,.work__viier:hover .work__viier--pic {
-        transition: .5s;
-        cursor: pointer;
         opacity: .07;
-        z-index: 1;
-        text-decoration: none
+        z-index: 99;
+        transition: .5s
     }
 
     .work__via--pic,.work__viier,.work__viier--pic {
@@ -1296,12 +1282,12 @@ textarea {
         background-image: url(http://i.imgur.com/kY6cxN2.jpg);
         background-size: 100% 100%;
         background-position: center;
-        opacity: 1;
-        z-index: 200;
+        opacity: .07;
+        z-index: 99;
         transition: .5s
     }
 
-    #viaSmaller,.work0,.work0a,.work__viier--pic {
+    #viaSmaller,.work0,.work__viier--pic {
         position: absolute;
         left: 0;
         right: 0
@@ -1322,6 +1308,9 @@ textarea {
     }
 
     .work0a {
+		position: absolute;
+		left: 35px;
+		right: 35px;
         top: 40px;
         font-size: 18px
     }
@@ -1333,13 +1322,16 @@ textarea {
         font-weight: normal
     }
 
-    #viaCloser,.work0c {
+	.work0c {
         position: absolute;
-        left: 0;
-        right: 0
+        left: 15px;
+        right: 15px
     }
 
     #viaCloser {
+		position: absolute;
+		left: 20px;
+		right: 20px;
         font-size: 18px;
         top: 35px
     }
@@ -1354,8 +1346,8 @@ textarea {
 
     .work0e {
         position: absolute;
-        left: 0;
-        right: 0;
+        left: 15px;
+        right: 15px;
         top: 145px
     }
 
@@ -1363,10 +1355,10 @@ textarea {
         top: 195px
     }
 
-    #uclaimg,.school,.work0g,.work0i {
+    .work0g,.work0i {
         position: absolute;
-        left: 0;
-        right: 0
+        left: 15px;
+        right: 15px
     }
 
     .work0i {
@@ -1386,12 +1378,12 @@ textarea {
         left: 0
     }
 
-    #uclaimg,.school {
-        height: 550px
-    }
-
     .school {
+		position: absolute;
+		left: 0;
+		right: 0;
         text-align: center;
+		height: 550px;
         top: 2320px
     }
 
@@ -1402,10 +1394,17 @@ textarea {
         background-position: center;
         background-size: 100% 100%;
         background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        right: 0;
+		height: 550px;
         opacity: .17
     }
 
     .school__ucla {
+		position: absolute;
+		left: 15px;
+		right: 15px;
         top: 95px;
         font-size: 30px;
         font-family: 'Raleway',sans-serif;
@@ -1413,7 +1412,7 @@ textarea {
         z-index: 5000
     }
 
-    .school__location,.school__major,.school__ucla {
+    .school__location,.school__major {
         position: absolute;
         left: 0;
         right: 0;
@@ -1768,7 +1767,7 @@ textarea {
         text-align: center;
         font-size: 39px;
         font-family: 'Raleway',sans-serif;
-        color: #141823;
+        color: #f8f8f8;
         z-index: 5000;
         font-weight: normal
     }
@@ -1779,9 +1778,7 @@ textarea {
     }
 
     hr {
-        transform: rotate(-5deg);
-        -webkit-transform: rotate(-5deg);
-        width: 200px;
+        height: 0;
         top: 55px
     }
 
@@ -1804,11 +1801,11 @@ textarea {
     }
 
     .about__body {
-        left: 5%;
-        right: 5%;
+        left: 15px;
+        right: 15px;
         top: 80px;
         font-family: 'Raleway',sans-serif;
-        font-size: 29px;
+        font-size: 28px;
         color: #141823;
         line-height: 40px
     }
@@ -1859,22 +1856,13 @@ textarea {
 
     .touch {
         display: inline;
-        height: 70px;
-        width: 70px;
-        right: 5px;
-        top: -54px;
+        height: 55px;
+        width: 55px;
+        right: 25px;
+		left: 0;
+		margin: auto;
+        top: -17px;
         background-image: url(http://i.giphy.com/l3vQWD6g6duMsX8VG.gif)
-    }
-
-    .skill:hover .skill__slider {
-        right: -350%;
-        transition: .8s;
-        -webkit-transition: .8s;
-        -moz-transition: .8s;
-        transition-timing-function: ease-in-out;
-        -webkit-transition-timing-function: ease-in-out;
-        -moz-transition-timing-function: ease-in-out;
-        z-index: 960
     }
 
     .skill__cont {
@@ -2006,7 +1994,7 @@ textarea {
         color: transparent
     }
 
-    #guidepic,.work__sabor--pic {
+    #guidepic{
         position: absolute;
         height: 40px;
         width: 90px;
@@ -2027,15 +2015,11 @@ textarea {
         height: 330px;
         background-image: url(http://i.imgur.com/cBAFUZv.png);
         background-size: 100% 100%;
-        opacity: 1;
+        opacity: .07;
         transition: .5s;
-        z-index: 200;
+        z-index: 80;
         text-decoration: none;
         background-color: transparent;
-        color: transparent
-    }
-
-    .work__sabor:hover .work__sabor--pic {
         color: transparent
     }
 
@@ -2058,18 +2042,10 @@ textarea {
         background-size: 100% 100%;
         background-position: center;
         background-repeat: no-repeat;
-        opacity: 1;
-        z-index: 200;
+        opacity: .07;
+        z-index: 80;
         transition: .5s;
         top: 0
-    }
-
-    .work__sabor:hover .work__sabor--pic,.work__via:hover .work__via--pic,.work__viier:hover .work__viier--pic {
-        transition: .5s;
-        cursor: pointer;
-        opacity: .07;
-        z-index: 1;
-        text-decoration: none
     }
 
     .work__viier {
@@ -2081,19 +2057,16 @@ textarea {
         background-image: url(http://i.imgur.com/kY6cxN2.jpg);
         background-size: 100% 100%;
         background-position: center;
-        opacity: 1;
-        z-index: 200;
+        opacity: .07;
+        z-index: 80;
         transition: .5s
     }
 
-    #viaSmaller,.work0 {
-        top: -15px
-    }
-
-    #viaSmaller,.work0,.work0a {
+	.work0,.work0a {
+		top: -15px;
         position: absolute;
-        left: 0;
-        right: 0
+        left: 15px;
+        right: 15px
     }
 
     .work0 {
@@ -2105,6 +2078,10 @@ textarea {
     }
 
     #viaSmaller {
+		top: -15px;
+		position: absolute;
+		right: 0;
+		left: 0;
         font-size: 30px
     }
 
@@ -2122,8 +2099,8 @@ textarea {
 
     #viaCloser,.work0c {
         position: absolute;
-        left: 0;
-        right: 0
+        left: 15px;
+        right: 15px
     }
 
     #viaCloser {
@@ -2136,13 +2113,13 @@ textarea {
     }
 
     .work0c,.work0e,.work0g {
-        font-size: 19px
+        font-size: 17px
     }
 
     .work0e {
         position: absolute;
-        left: 0;
-        right: 0;
+        left: 15px;
+        right: 15px;
         top: 145px
     }
 
@@ -2150,17 +2127,17 @@ textarea {
         top: 195px
     }
 
-    #uclaimg,.school,.work0g,.work0i {
+    .work0g,.work0i {
         position: absolute;
-        left: 0;
-        right: 0
+        left: 15px;
+        right: 15px
     }
 
     .work0i {
         text-align: center;
         top: 245px;
         font-family: 'Raleway',sans-serif;
-        font-size: 19px;
+        font-size: 17px;
         color: #141823;
         font-weight: normal
     }
@@ -2174,6 +2151,9 @@ textarea {
     }
 
     #uclaimg,.school {
+		position: absolute;
+		left: 0;
+		right: 0;
         height: 550px
     }
 
