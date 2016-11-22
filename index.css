@@ -296,7 +296,7 @@ hr {
     right: 0;
     height: 630px;
     transition: 1s;
-    cursor: crosshair
+    cursor: default
 }
 
 .skill {
@@ -326,7 +326,7 @@ hr {
     right: -350%;
     transition: 1s;
     z-index: 960;
-    cursor: crosshair
+    cursor: default
 }
 
 .skill__cont {
@@ -453,7 +453,7 @@ hr {
     opacity: .07;
     z-index: 80;
     transition: .5s;
-    cursor: pointer
+    cursor: default
 }
 
 .work0 a:hover{
@@ -470,7 +470,7 @@ hr {
     right: 0;
     width: 100%;
     height: 330px;
-    cursor: pointer
+    cursor: default
 }
 
 .work__via--pic {
@@ -776,7 +776,7 @@ textarea {
     font-weight: normal;
     text-decoration: none;
     border: 3px solid #141823;
-	transition: .3s;
+    transition: .3s;
     background-color: #f8f8f8
 }
 
