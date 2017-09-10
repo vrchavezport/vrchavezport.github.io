@@ -233,9 +233,10 @@ a {
 
 .head span {
     border: solid 3px #141823;
-	background-image: url( https://www.walldevil.com/wallpapers/w07/simple-background-simple-hd-background.jpg );
+	/*background-image: url( https://www.walldevil.com/wallpapers/w07/simple-background-simple-hd-background.jpg );*/
 	background-position: center;
 	background-size: 100%;
+	background-color: #141823;
 }
 
 .about,.head,hr {
