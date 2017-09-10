@@ -363,7 +363,7 @@ hr {
     position: relative;
     left: 0;
     right: 0;
-    padding-top: 0;
+    padding-top: 30px;
     display: block;
     text-align: center
 }
