@@ -90,7 +90,7 @@ function checkplace() {
 			$('#wor').css({"color": "#141823"});
 			$('#wor').mouseover(function(){
 			    $('#wor').css({"border": "solid 2px #141823"});
-				$('#wor').css({"background-image": "url( http://i.imgur.com/zQYYPZv.jpg )"});
+				$('#wor').css({"background-image": "url( https://www.walldevil.com/wallpapers/w07/simple-background-simple-hd-background.jpg )"});
 				$('#wor').css({"color": "#f8f8f8"});				
 			});
 			$('#wor').mouseout(function(){
