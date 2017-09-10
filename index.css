@@ -348,7 +348,7 @@ hr {
     left: 0;
     right: 50%;
     font-family: 'Raleway',sans-serif;
-    font-size: 28px;
+    font-size: 23px;
     color: #141823;
     text-align: center;
     padding: 0
@@ -368,9 +368,9 @@ hr {
     text-align: center
 }
 
-.skill__cont--yespad {
+/*.skill__cont--yespad {
     padding-top: 155px
-}
+}*/
 
 .skill__cont__first,.skill__cont__second {
     position: relative;
