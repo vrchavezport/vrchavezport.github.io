@@ -202,6 +202,7 @@
 			</script>
 			<script>
 			$("#sendMessage").on("click", function(e) {
+				console.log($('input[name="name"]').val());
 				var name = $('input[name="name"]').val();
 				var email = $('input[name="_replyto"]').val();
 				var num = $('input[name="numero"]').val();
