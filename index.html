@@ -133,6 +133,7 @@
 									<div class="form-group">
 										<div class="nombre">
 											<input type="text" name="name" id="nombredos" class="form-control" placeholder="Name">
+											<p id="valName" style="display: none; color: red; font-family: Raleway">Name Is Requred</p>
 										</div>
 										<div class="correo">
 											<input type="email" name="_replyto" id="correodos" class="form-control" placeholder="Email" required>
@@ -202,13 +203,15 @@
 			</script>
 			<script>
 			$("#sendMessage").on("click", function(e) {
-				console.log($('input[name="name"]').val());
 				var name = $('input[name="name"]').val();
+				if (name = '') {
+					$('valName').style.display = 'block'
+				}
 				var email = $('input[name="_replyto"]').val();
 				var num = $('input[name="numero"]').val();
 				var locationof = $('textarea[name="locationof"]').val();
 				e.preventDefault();
-				$.ajax({
+				/*$.ajax({
 					url: "//formspree.io/vrchavez07@gmail.com", 
 					method: "POST",
 					data: {NAME: name, EMAIL: email, PHONE: num, MESSAGE: locationof},
@@ -219,7 +222,7 @@
 					$(".aftersent").css("right", "30%").css("left", "30%");
 				} else if($(".menu").css("height") != "50px"){
 					$(".aftersent").css("right", "7%").css("left", "7%");
-				}
+				}*/
 				return false;
 			});
 			</script>
