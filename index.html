@@ -208,10 +208,10 @@
 				var num = $('input[name="numero"]').val();
 				var locationof = $('textarea[name="locationof"]').val();
 				e.preventDefault();
-				if (name = '') {
+				/*if (name = '') {
 					$('#valName').css("display", "block");
-				}
-				/*$.ajax({
+				}*/
+				$.ajax({
 					url: "//formspree.io/vrchavez07@gmail.com", 
 					method: "POST",
 					data: {NAME: name, EMAIL: email, PHONE: num, MESSAGE: locationof},
@@ -222,7 +222,7 @@
 					$(".aftersent").css("right", "30%").css("left", "30%");
 				} else if($(".menu").css("height") != "50px"){
 					$(".aftersent").css("right", "7%").css("left", "7%");
-				}*/
+				}
 				return false;
 			});
 			</script>
