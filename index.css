@@ -28,7 +28,7 @@ body {
 
 .topimg {
     background-image: url(http://www.danieleliberti.org/wp-content/uploads/2014/08/20140819_backgroundk.jpg);
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     top: 0;
     height: 450px;
     background-color: #000
