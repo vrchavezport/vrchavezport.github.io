@@ -537,7 +537,6 @@ hr {
     position: absolute;
     left: 0;
     right: 0;
-    width: 45%;
 }
 
 .work0c {
@@ -546,7 +545,8 @@ hr {
     font-size: 28px;
     color: #141823;
     font-weight: normal;
-    top: 95px
+    top: 95px;
+    width: 45%;
 }
 
 .work0e {
