@@ -4,7 +4,6 @@
          url('raleway-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 body {
@@ -1386,6 +1385,12 @@ textarea {
         font-size: 20px;
         color: #141823;
         font-weight: normal
+    }
+	
+    .workStuff {
+	top: 0;
+	background-color: red;
+	position: absolute;
     }
 
     #schoolAnchor {
