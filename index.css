@@ -535,8 +535,9 @@ hr {
 
 .work0a,.work0c,.work0e {
     position: absolute;
-    left: 0;
-    right: 0;
+    left: 20%;
+    right: 20%;
+    text-align: center;
 }
 
 .work0c {
