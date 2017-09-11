@@ -1082,6 +1082,7 @@ textarea {
 
     .skill__cont__left,.skill__cont__right {
         position: absolute;
+	list-style-type: circle;
         top: -30px;
         left: 0;
         right: 50%;
