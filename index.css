@@ -384,6 +384,19 @@ hr {
     border-radius: 0
 }
 
+.skill__cont__mid {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    font-family: 'Raleway',sans-serif;
+    list-style-type: circle;
+    font-size: 23px;
+    color: #141823;
+    text-align: center;
+    padding: 0
+}
+
 #angular,#underAngular {
     left: 0;
     right: 0
