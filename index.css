@@ -348,6 +348,7 @@ hr {
     left: 0;
     right: 50%;
     font-family: 'Raleway',sans-serif;
+    list-style-type: circle;
     font-size: 23px;
     color: #141823;
     text-align: center;
