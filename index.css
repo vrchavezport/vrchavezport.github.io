@@ -1388,9 +1388,8 @@ textarea {
     }
 	
     .workStuff {
-	top: 0;
-	background-color: red;
-	position: absolute;
+	top: 20px;
+	position: relative;
     }
 
     #schoolAnchor {
