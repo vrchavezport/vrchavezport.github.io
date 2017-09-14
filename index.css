@@ -444,7 +444,7 @@ hr {
 
 #guidepic,.work__sabor--pic {
     position: absolute;
-    top: 0;
+    top: -30px;
     background-position: center
 }
 
