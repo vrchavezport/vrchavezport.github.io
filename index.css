@@ -441,6 +441,12 @@ hr {
     font-size: 38px
 }
 
+#workAnchor {
+    top: 1105px;
+    height: 0;
+    width: 0;
+}
+
 .companyLink {
 	text-decoration: underline;
 	color: #6eb9d2;
