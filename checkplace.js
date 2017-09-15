@@ -150,7 +150,7 @@ function checkplace() {
 			});
 		} else if($(window).scrollTop() < 3300) {
 			$('#conta').css({"border" : "solid 2px #f8f8f8"});
-			$('#conta').css({"background-color": "none"});
+			$('#conta').css({"background-color": "transparent"});
 			$('#conta').css({"color": "#141823"});
 			$('#conta').mouseover(function(){
 			    $('#conta').css({"border": "solid 2px #141823"});
