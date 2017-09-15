@@ -70,7 +70,7 @@ function checkplace() {
 	});
 			
 	$(window).bind('scroll', function() {
-		if(($(window).scrollTop() > 1580) &&($(window).scrollTop() < 2700)) {
+		if(($(window).scrollTop() > 1480) &&($(window).scrollTop() < 2800)) {
 			$('#wor').css({"border" : "solid 2px #141823"});
 			$('#wor').css({"background-image": "url( https://www.walldevil.com/wallpapers/w07/simple-background-simple-hd-background.jpg )"});
 			$('#wor').css({"color": "#f8f8f8"});
