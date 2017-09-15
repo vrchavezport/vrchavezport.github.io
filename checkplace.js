@@ -38,7 +38,7 @@ function checkplace() {
 	});
 			
 	$(window).bind('scroll', function() {
-		if(($(window).scrollTop() > 825) &&($(window).scrollTop() < 1523)) {
+		if(($(window).scrollTop() > 825) &&($(window).scrollTop() < 1478)) {
 			$('#ski').css({"border" : "solid 2px #141823"});
 			$('#ski').css({"background-image": "url( https://www.walldevil.com/wallpapers/w07/simple-background-simple-hd-background.jpg )"});
 			$('#ski').css({"color": "#f8f8f8"});
