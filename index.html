@@ -151,16 +151,18 @@
 									<div class="form-group">
 										<div class="nombre">
 											<input type="text" name="name" id="nombredos" class="form-control" placeholder="Name">
-											<p id="valName" style="display: none; color: red; font-family: Raleway">Name Is Requred</p>
+											<p id="valName" style="position: absolute; left: 0; right: 0; top: 40px; text-align: center;color: red; font-family: Raleway; display: none;">Name Is Requred</p>
 										</div>
 										<div class="correo">
 											<input type="email" name="_replyto" id="correodos" class="form-control" placeholder="Email" required>
+											<p id="valEmail" style="position: absolute; left: 0; right: 0; top: 40px; text-align: center;color: red; font-family: Raleway; display: none;">Email Is Requred</p>
 										</div>
 										<div class="telefo">
 											<input type="text" name="numero" id="telefodos" class="form-control" placeholder="Phone">
 										</div>											
 										<div class="donde">
 											<textarea name="locationof" id="dondedos" class="form-control" rows="2" cols="60" placeholder="Message" required></textarea>
+											<p id="valMess" style="position: absolute; left: 0; right: 0; top: 190px; text-align: center;color: red; font-family: Raleway; display: none;">Message Is Requred</p>
 										</div>									
 										<input type="text" name="_gotcha" id="usebut" style="display:none" />
 										<!--Button to send information from form-->
@@ -225,23 +227,36 @@
 				var email = $('input[name="_replyto"]').val();
 				var num = $('input[name="numero"]').val();
 				var locationof = $('textarea[name="locationof"]').val();
-				e.preventDefault();
-				/*if (name = '') {
-					$('#valName').css("display", "block");
-				}*/
-				$.ajax({
-					url: "//formspree.io/vrchavez11@gmail.com", 
-					method: "POST",
-					data: {NAME: name, EMAIL: email, PHONE: num, MESSAGE: locationof},
-					dataType: "json"
-				});
-				$('.forma').addClass('remform');
-				if($(".menu").css("height") == "50px"){
-					$(".aftersent").css("right", "30%").css("left", "30%");
-				} else if($(".menu").css("height") != "50px"){
-					$(".aftersent").css("right", "7%").css("left", "7%");
+				if (name == '') {
+					$('#valName').css("display", "inline");
+				} else {
+					$('#valName').css("display", "none");
 				}
-				return false;
+				if (email == '') {
+					$('#valEmail').css("display", "inline");
+				} else {
+					$('#valEmail').css("display", "none");
+				}
+				if (locationof == '') {
+					$('#valMess').css("display", "inline");
+				} else {
+					$('#valMess').css("display", "none");
+				}
+				if ((name != '') && (email != '') && (locationof != '')) {
+					$.ajax({
+						url: "//formspree.io/vrchavez11@gmail.com", 
+						method: "POST",
+						data: {NAME: name, EMAIL: email, PHONE: num, MESSAGE: locationof},
+						dataType: "json"
+					});
+					$('.forma').addClass('remform');
+					if($(".menu").css("height") == "50px"){
+						$(".aftersent").css("right", "30%").css("left", "30%");
+					} else if($(".menu").css("height") != "50px"){
+						$(".aftersent").css("right", "7%").css("left", "7%");
+					}
+					return false;
+				}
 			});
 			</script>
 			<script type='text/javascript' src='scroller.js'></script>
