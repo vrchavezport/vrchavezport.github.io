@@ -711,7 +711,7 @@ input {
 
 .nombre {
     position: absolute;
-    top: 170px
+    top: 130px
 }
 
 #nombredos {
@@ -726,7 +726,7 @@ input {
 
 .correo {
     position: absolute;
-    top: 230px
+    top: 210px
 }
 
 #correodos,#nombredos,#telefodos {
@@ -758,7 +758,7 @@ input {
     right: 0;
     margin: auto;
     left: 0;
-    top: 350px
+    top: 370px
 }
 
 #sendMessage,textarea {
@@ -785,7 +785,7 @@ textarea {
 #sendMessage {
     position: absolute;
     left: calc(50% + 108px);
-    top: 560px;
+    top: 600px;
     cursor: pointer;
     height: 40px;
     width: 90px;
